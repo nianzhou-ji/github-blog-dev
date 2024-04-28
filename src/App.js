@@ -15,6 +15,10 @@ import React, {useEffect, useState} from "react";
 import {observer} from "mobx-react-lite";
 import {useStore} from "./stores";
 import SearchComp from "./components/searchComp/searchComp";
+import ModalContainerComp from "./components/ModalComp/ModalComp";
+import SearchEngine from "./components/searchComp/searchEngine";
+import Swal from "sweetalert2";
+import {IoSettings as SettingIcon} from "react-icons/io5";
 
 
 
@@ -23,16 +27,6 @@ import SearchComp from "./components/searchComp/searchComp";
 function App() {
     const {commonStore} = useStore()
 
-
-
-
-
-    useEffect(() => {
-        if (!commonStore.searchEngineConfig.searchResultMenuOpen && commonStore.searchEngineConfig.searchedText.length === 0) {
-            commonStore.updateSearchFilter([])
-        }
-
-    }, [commonStore.searchEngineConfig.searchResultMenuOpen]);
 
 
     useEffect(() => {
@@ -145,7 +139,240 @@ function App() {
                     <p className='text-[#7C97B1]'>{commonStore.getFilterArticles()?.length} articles</p>
                 </div>
 
-                <SearchComp/>
+                {/*<SearchComp/>*/}
+                <div className='mt-[20px] relative'>
+                    <ModalContainerComp>
+                        <dialog id="modalSearchConfig" className="modal ">
+                            <div className="modal-box min-w-[30vw] border border-[#38BDF8] bg-[#122231]">
+                                <h3 className="font-bold text-lg text-[#AAD3F5]">Search Config</h3>
+
+                                <div className="form-control">
+                                    <label className="label cursor-pointer">
+                                <span className="label-text tooltip tooltip-right text-[#AFC3D3]"
+                                      data-tip={'Indicates whether comparisons should be case sensitive.'}>Is Case Sensitive</span>
+                                        <input type="checkbox" className="checkbox"
+                                               defaultChecked={commonStore.searchEngineConfig.isCaseSensitive}
+                                               value={commonStore.searchEngineConfig.isCaseSensitive}
+                                               onChange={e => commonStore.patchSearchEngineConfig({
+                                                   isCaseSensitive: e.target.checked
+                                               })}
+                                        />
+                                    </label>
+                                </div>
+
+
+                                <div className="form-control">
+                                    <label className="label cursor-pointer">
+                                <span className="label-text tooltip tooltip-right text-[#AFC3D3]"
+                                      data-tip={'When true, the matching function will continue to the end of a search pattern even if a perfect match has already been located in the string.'}>Find All Matches</span>
+                                        <input type="checkbox" className="checkbox"
+                                               defaultChecked={commonStore.searchEngineConfig.findAllMatches}
+                                               value={commonStore.searchEngineConfig.findAllMatches}
+                                               onChange={e => commonStore.patchSearchEngineConfig({
+                                                   findAllMatches: e.target.checked
+                                               })}
+                                        />
+                                    </label>
+                                </div>
+
+
+                                <div className="form-control">
+                                    <label className="label cursor-pointer">
+                                <span className="label-text tooltip tooltip-right text-[#AFC3D3]"
+                                      data-tip={'Only the matches whose length exceeds this value will be returned. (For instance, if you want to ignore single character matches in the result, set it to 2)'}>Min Match Char Length</span>
+                                        <input type="number" placeholder="Type here"
+                                               className="input input-bordered w-full max-w-xs "
+
+                                               value={commonStore.searchEngineConfig.minMatchCharLength}
+                                               onChange={e => commonStore.patchSearchEngineConfig({
+                                                   minMatchCharLength: e.target.value
+                                               })}
+
+                                        />
+                                    </label>
+                                </div>
+
+
+                                <div className="form-control">
+                                    <label className="label cursor-pointer">
+                                <span className="label-text tooltip tooltip-right text-[#AFC3D3]"
+                                      data-tip={'Determines approximately where in the text is the pattern expected to be found.'}>Location</span>
+                                        <input type="number" placeholder="Type here"
+                                               className="input input-bordered w-full max-w-xs "
+
+                                               value={commonStore.searchEngineConfig.location}
+                                               onChange={e => commonStore.patchSearchEngineConfig({
+                                                   location: e.target.value
+                                               })}
+                                        />
+                                    </label>
+                                </div>
+
+                                <div className="form-control">
+                                    <label className="label cursor-pointer">
+                                <span className="label-text tooltip tooltip-right text-[#AFC3D3]"
+                                      data-tip={'At what point does the match algorithm give up. A threshold of 0.0 requires a perfect match (of both letters and location), a threshold of 1.0 would match anything.'}>Threshold</span>
+                                        <input type="number" placeholder="Type here"
+                                               className="input input-bordered w-full max-w-xs "
+
+                                               value={commonStore.searchEngineConfig.threshold}
+                                               onChange={e => commonStore.patchSearchEngineConfig({
+                                                   threshold: e.target.value
+                                               })}
+                                        />
+                                    </label>
+                                </div>
+
+                                <div className="form-control">
+                                    <label className="label cursor-pointer">
+                                <span className="label-text tooltip  tooltip-right text-[#AFC3D3]"
+                                      data-tip={'Determines how close the match must be to the fuzzy location (specified by location). An exact letter match which is distance characters away from the fuzzy location would score as a complete mismatch. A distance of 0 requires the match be at the exact location specified. A distance of 1000 would require a perfect match to be within 800 characters of the location to be found using a threshold of 0.8.'}>Distance</span>
+                                        <input type="number" placeholder="Type here"
+                                               className="input input-bordered w-full max-w-xs "
+
+                                               value={commonStore.searchEngineConfig.distance}
+                                               onChange={e => commonStore.patchSearchEngineConfig({
+                                                   distance: e.target.value
+                                               })}
+                                        />
+                                    </label>
+                                </div>
+
+
+                                <div className="form-control">
+                                    <label className="label cursor-pointer">
+                                <span className="label-text tooltip tooltip-right text-[#AFC3D3]"
+                                      data-tip={'When true, search will ignore location and distance, so it won\'t matter where in the string the pattern appears.'}>Ignore Location</span>
+                                        <input type="checkbox" className="checkbox "
+
+                                               value={commonStore.searchEngineConfig.ignoreLocation}
+                                               onChange={e => commonStore.patchSearchEngineConfig({
+                                                   ignoreLocation: e.target.checked
+                                               })}
+                                        />
+                                    </label>
+                                </div>
+
+                                <div className="modal-action">
+                                    <form method="dialog">
+                                        {/* if there is a button in form, it will close the modal */}
+                                        <button className="btn">Close</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
+                    </ModalContainerComp>
+
+
+                    <div className='flex justify-between items-center'>
+                        <input type="text"
+                               className=" pl-4 text-white w-full h-[50px]  bg-[#040F1A]    rounded-[8px] border border-[#1D3041] focus:border-[#38BDF8]   focus:outline-none"
+                               placeholder="Search articles, enter key confirm ..."
+                               onKeyDown={async e => {
+                                   if (e.key === 'Enter') {
+                                       if (commonStore.searchEngineConfig.searchedText.length === 0) return
+                                       const searchPattern = commonStore.searchEngineConfig.searchedText
+                                       const searchObj = new SearchEngine(commonStore.articles, {
+                                           isCaseSensitive: commonStore.searchEngineConfig.isCaseSensitive,
+                                           findAllMatches: commonStore.searchEngineConfig.findAllMatches,
+                                           minMatchCharLength: commonStore.searchEngineConfig.minMatchCharLength,
+                                           location: commonStore.searchEngineConfig.location,
+                                           threshold: commonStore.searchEngineConfig.threshold,
+                                           distance: commonStore.searchEngineConfig.distance,
+                                           ignoreLocation: commonStore.searchEngineConfig.ignoreLocation,
+                                           includeMatches: true,
+                                           keys: ['name', 'summary']
+                                       })
+
+
+                                       searchObj.search(searchPattern)
+                                       console.log(searchObj.res, 'searchObj.res')
+                                       const res = searchObj.postSearchResult()
+                                       // const res = searchObj.res
+                                       // console.log(_.cloneDeep(res), 'searchObj.res')
+
+
+                                       if (res === null) {
+                                           await Swal.fire({
+                                               position: "top-end",
+                                               icon: "warning",
+                                               title: "Not search  result",
+                                               showConfirmButton: false,
+                                               timer: 1500
+                                           });
+
+                                           return
+
+                                       }
+
+                                       commonStore.patchSearchEngineConfig({
+                                           searchResultMenuOpen: true,
+                                           searchResultList: res
+                                       })
+
+
+                                       commonStore.updateSearchFilter(commonStore.searchEngineConfig.searchResultList.map(item => item.id))
+
+                                   }
+                               }}
+                               value={commonStore.searchEngineConfig.searchedText}
+                               onChange={e => {
+                                   commonStore.patchSearchEngineConfig({
+                                       searchedText: e.target.value
+                                   })
+
+                                   if (commonStore.searchEngineConfig.searchedText.length === 0) {
+                                       commonStore.patchSearchEngineConfig({
+                                           searchResultMenuOpen: false
+                                       })
+
+                                       commonStore.updateSearchFilter([])
+                                   }
+
+
+
+                               }}
+                        />
+
+                        <div className='tooltip' data-tip={'Search config'}>
+                            <SettingIcon onClick={() => document.getElementById('modalSearchConfig').showModal()}
+                                         size={32}
+                                         color='#AAD3F5'
+                                         className='ml-2 cursor-pointer scale-100 hover:scale-110 transition-transform duration-300'/>
+                        </div>
+                    </div>
+
+
+                    <ul className={`${commonStore.searchEngineConfig.searchResultMenuOpen ? 'menu-dropdown-show' : 'hidden'} menu bg-[#122231]  rounded-[8px]  mt-4 w-[100%] z-20 border border-[#38BDF8]`}>
+                        {commonStore.searchEngineConfig.searchResultList.map((item, index) => <li
+                            key={item.id}
+                            onClick={async (e) => {
+                                const el = document.getElementById(item.id)
+                                if (el) {
+                                        el.click()
+
+                                }
+
+                                commonStore.patchSearchEngineConfig({
+                                    searchResultMenuOpen: false
+                                })
+
+
+                            }}><a className='flex justify-between'>
+
+                            <div
+                                className={commonStore.getAbbreviateStr(item.name, commonStore.HOME_SEARCH_MAX_LENGTH).class}
+                                data-tip={commonStore.getAbbreviateStr(item.name, commonStore.HOME_SEARCH_MAX_LENGTH).tooltip}>{commonStore.getAbbreviateStr(item.name, commonStore.HOME_SEARCH_MAX_LENGTH).text}</div>
+                            <div
+                                className="badge badge-primary badge-outline ml-2 text-nowrap">{item.match.key === 'name' ? 'match article title' : 'match article abstract'}</div>
+
+
+                        </a></li>)}
+                    </ul>
+
+
+                </div>
+
 
             </div>
 
