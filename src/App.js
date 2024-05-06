@@ -100,7 +100,7 @@ function App() {
 
 
         <div id={'JpRoot'} ref={rootRef}
-             className='pt-[2px] max-h-screen  w-screen bg-[#071422] relative flex items-center flex-col overflow-auto '>
+             className='pt-[2px] min-h-screen max-h-screen  w-screen bg-[#071422] relative flex items-center flex-col overflow-auto '>
             <div ref={headRef} className='bg-[#0C1F33]    w-full    flex justify-center
             '>
                 <div className='w-full flex justify-between items-center'>
@@ -117,7 +117,7 @@ function App() {
                 w-[80%] 
                  p-[16px]
                 
-                 `} style={{top: headSize.height - 8}}>
+                 `} style={{top: headSize.height - 4}}>
 
                 <img src={AvatarImg} alt="" className='w-[10%]'/>
                 <div className='ml-[32px] mr-[24px]  h-full  flex-auto '>
@@ -150,7 +150,7 @@ function App() {
                 w-[80%] 
                  p-[16px]
                 
-                 `} style={{top: headSize.height - 10}}>
+                 `} style={{top: headSize.height - 4}}>
 
                 <div className=' cursor-pointer hover:border-b hover:border-[#3799F6]' onClick={() => {
                     commonStore.setViewArticle(false)
@@ -171,18 +171,18 @@ function App() {
                 </div>
 
 
-                <div className={`$${commonStore.viewArticle ? null : 'hidden'} flex  mt-[4px]`}>
-                    <div className='flex items-center mr-[3rem]'>
-                        <CalendarIcon size={16} color={'#AFC3D3'}/>
+                <div className={`$${commonStore.viewArticle ? null : 'hidden'} flex  mt-[4px] justify-between`}>
+                    <div className='flex items-center '>
+                        <CalendarIcon size={20} color={'#AFC3D3'}/>
                         <p data-tip={'document creating time.'}
-                           className='tooltip text-[#7C97B1] ml-[10px] '>{commonStore.articleObj?.date}</p>
+                           className='tooltip text-[#7C97B1] ml-1 '>{commonStore.articleObj?.date}</p>
                     </div>
 
 
-                    <div className='flex items-center mr-[3rem]'>
-                        <TimeICon size={16} color={'#AFC3D3'}/>
+                    <div className='flex items-center ml-2'>
+                        <TimeICon size={20} color={'#AFC3D3'}/>
                         <p data-tip={'Reading consumes time.'}
-                           className='tooltip text-[#7C97B1] ml-[10px] '>{commonStore.convertMinutesToHMS(commonStore.articleContent.length / commonStore.averageReadVelocity)}</p>
+                           className='tooltip text-[#7C97B1]  ml-1'>{commonStore.convertMinutesToHMS(commonStore.articleContent.length / commonStore.averageReadVelocity)}</p>
                     </div>
 
 
@@ -334,9 +334,8 @@ function App() {
             </div>
 
 
-            <div className={`${commonStore.viewArticle ? null : 'hidden'} mt-[150px] mb-[100px] w-[90vw]`}>
+            <div className={`${commonStore.viewArticle ? null : 'hidden'} mt-[150px] mb-[100px] w-[90vw]`} data-color-mode="dark">
                 <MDEditor.Markdown source={commonStore.articleContent} style={{
-                    fontSize: '1.5rem',
                     whiteSpace: 'pre-wrap',
                     backgroundColor: '#071522',
                     color: '#AFC3D3'

@@ -69,7 +69,7 @@ const SearchComp = () => {
 
                                 <div className='flex items-center'>
                                     <span className="label-text  text-[#AFC3D3]">Ignore Location</span>
-                                    <div className='tooltip tooltip-bottom'
+                                    <div className='tooltip tooltip-right'
                                          data-tip={'When true, search will ignore location and distance, so it won\'t matter where in the string the pattern appears.'}>
                                         <TooltipIcon size={16} className='ml-2'/>
                                     </div>
@@ -116,7 +116,7 @@ const SearchComp = () => {
 
                                 <div className='flex items-center'>
                                     <span className="label-text  text-[#AFC3D3]">Location</span>
-                                    <div className='tooltip tooltip-bottom'
+                                    <div className='tooltip tooltip-right'
                                          data-tip={'Determines approximately where in the text is the pattern expected to be found.'}>
                                         <TooltipIcon size={16} className='ml-2'/>
                                     </div>
@@ -139,7 +139,7 @@ const SearchComp = () => {
 
                                 <div className='flex items-center'>
                                     <span className="label-text  text-[#AFC3D3]">Threshold</span>
-                                    <div className='tooltip tooltip-bottom'
+                                    <div className='tooltip tooltip-right'
                                          data-tip={'At what point does the match algorithm give up. A threshold of 0.0 requires a perfect match (of both letters and location), a threshold of 1.0 would match anything.'}>
                                         <TooltipIcon size={16} className='ml-2'/>
                                     </div>
@@ -194,7 +194,7 @@ const SearchComp = () => {
             <div className='flex justify-between items-center'>
                 <input type="text"
                        className=" pl-4 text-white w-full h-[50px]  bg-[#040F1A]    rounded-[8px] border border-[#1D3041] focus:border-[#38BDF8]   focus:outline-none"
-                       placeholder="Search articles, enter key confirm ..."
+                       placeholder="Search, enter confirm..."
                        onKeyDown={async e => {
                            if (e.key === 'Enter') {
                                if (commonStore.searchEngineConfig.searchedText.length === 0) return
