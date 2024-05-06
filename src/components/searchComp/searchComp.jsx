@@ -15,17 +15,17 @@ const SearchComp = () => {
     return (
 
 
-        <div className='mt-[20px] relative'>
+        <div className='mt-[10px] relative'>
             <ModalContainerComp>
                 <dialog id="modalSearchConfig" className="modal  ">
-                    <div className="modal-box  p-[16px]  w-[95vw] max-w-[95vw] border border-[#38BDF8] bg-[#122231] ">
+                    <div className="modal-box  p-[16px]  w-[95vw] max-w-[600px] border border-[#38BDF8] bg-[#122231] ">
                         <h3 className="font-bold text-lg text-[#AAD3F5]">Search Config</h3>
 
                         <div className="form-control mt-2">
                             <div className="flex justify-between">
                                 <div className='flex items-center'>
                                     <span className="label-text  text-[#AFC3D3]">Is Case Sensitive</span>
-                                    <div className='tooltip tooltip-bottom'
+                                    <div className='tooltip tooltip-right'
                                          data-tip={'Indicates whether comparisons should be case sensitive.'}>
                                         <TooltipIcon size={16} className='ml-2'/>
                                     </div>
@@ -47,7 +47,7 @@ const SearchComp = () => {
                             <div className="flex justify-between">
                                 <div className='flex items-center'>
                                     <span className="label-text  text-[#AFC3D3]">Find All Matches</span>
-                                    <div className='tooltip tooltip-bottom'
+                                    <div className='tooltip tooltip-right'
                                          data-tip={'When true, the matching function will continue to the end of a search pattern even if a perfect match has already been located in the string.'}>
                                         <TooltipIcon size={16} className='ml-2'/>
                                     </div>
@@ -91,7 +91,7 @@ const SearchComp = () => {
 
                                 <div className='flex items-center'>
                                     <span className="label-text  text-[#AFC3D3]">Min Match Char Length</span>
-                                    <div className='tooltip tooltip-bottom'
+                                    <div className='tooltip tooltip-right'
                                          data-tip={'Only the matches whose length exceeds this value will be returned. (For instance, if you want to ignore single character matches in the result, set it to 2)'}>
                                         <TooltipIcon size={16} className='ml-2'/>
                                     </div>
@@ -194,7 +194,7 @@ const SearchComp = () => {
             <div className='flex justify-between items-center'>
                 <input type="text"
                        className=" pl-4 text-white w-full h-[50px]  bg-[#040F1A]    rounded-[8px] border border-[#1D3041] focus:border-[#38BDF8]   focus:outline-none"
-                       placeholder="Search, enter confirm..."
+                       placeholder="Search and 'Enter' key  confirm."
                        onKeyDown={async e => {
                            if (e.key === 'Enter') {
                                if (commonStore.searchEngineConfig.searchedText.length === 0) return

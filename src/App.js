@@ -192,10 +192,10 @@ function App() {
             </div>
 
 
-            <div style={{marginTop: profileContainerSize.height}}
-                 className={`${commonStore.viewArticle ? 'hidden' : null}   w-[80%]`}>
+            <div style={{marginTop: profileContainerSize.height+20}}
+                 className={`${commonStore.viewArticle ? 'hidden' : null}   w-[80%]  `}>
 
-                <div className='flex  justify-between'>
+                <div className='flex  justify-between items-center'>
                     <p className='text-2xl text-[#C4D5E3]'>Articles</p>
                     <p className='text-[#7C97B1]'>{commonStore.getFilterArticles()?.length} articles</p>
                 </div>
