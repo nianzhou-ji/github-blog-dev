@@ -66,15 +66,23 @@ function App() {
     const rootRef = useRef(null)
 
     useEffect(() => {
+        const scrollElement = rootRef.current;
         // 当组件加载后，添加滚动事件监听器
         const handleScroll = () => {
-            if (rootRef.current) {
+            if (scrollElement) {
                 // console.log('Scroll position:', rootRef.current.scrollTop);
-                setRootScrollPos(rootRef.current.scrollTop)
+
+                const totalHeight = scrollElement.scrollHeight - scrollElement.clientHeight;
+                const scrollPosition = scrollElement.scrollTop;
+
+                // 计算滚动的百分比
+                const scrolledPercentage = (scrollPosition / totalHeight) * 100;
+
+                setRootScrollPos(scrolledPercentage)
             }
         };
 
-        const scrollElement = rootRef.current;
+
         if (scrollElement) {
             scrollElement.addEventListener('scroll', handleScroll);
         }
@@ -91,8 +99,8 @@ function App() {
     return (
 
 
-        <div ref={rootRef}
-             className='max-h-screen  w-screen bg-[#071422] relative flex items-center flex-col overflow-auto'>
+        <div id={'JpRoot'} ref={rootRef}
+             className='pt-[2px] max-h-screen  w-screen bg-[#071422] relative flex items-center flex-col overflow-auto '>
             <div ref={headRef} className='bg-[#0C1F33]    w-full    flex justify-center
             '>
                 <div className='w-full flex justify-between items-center'>
@@ -202,7 +210,7 @@ function App() {
             <div style={{marginTop: 30}}
                  className={`${commonStore.viewArticle ? 'hidden' : null}  w-[80%] flex flex-wrap justify-between`}>
                 {
-                    commonStore.getFilterArticles().map((item, index) => <div  id={item.id}
+                    commonStore.getFilterArticles().map((item, index) => <div id={item.id}
                                                                               className={'p-[32px] pb-[40px] rounded-[8px] w-full h-[300x] bg-[#122231]  mb-[40px] border border-[#122231] hover:border-[#38BDF8] cursor-pointer relative'}
                                                                               onClick={() => {
                                                                                   commonStore.setViewArticle(true)
@@ -304,7 +312,7 @@ function App() {
                             {
                                 commonStore.tags.map((item, index) =>
                                     <li key={index}>
-                                        <input  id={`tag-${index}`}
+                                        <input id={`tag-${index}`}
                                                type="checkbox" aria-label={item}
                                                className="btn btn-sm mr-2 mt-2 bg-[#122231] checked:bg-red-600 hover:border-b hover:border-[#38BDF8]"
                                                onChange={(e) => {
@@ -336,13 +344,16 @@ function App() {
             </div>
 
 
-            <div className={`${rootScrollPos > 300 ? null : 'hidden'} fixed left-1 bottom-3`} onClick={() => {
+            <div className={`${rootScrollPos > 5 ? null : 'hidden'} fixed left-1 bottom-3`} onClick={() => {
                 rootRef.current.scrollTop = 0;
             }}>
 
                 <ToTopIcon size={32} color={'#AAD3F5'}/>
 
             </div>
+
+
+            <progress className="fixed top-0 h-[2px] rounded-0 w-screen progress bg-[#0C2036] progress-success" value={rootScrollPos} max="100"></progress>
 
 
         </div>

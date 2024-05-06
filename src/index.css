@@ -38,6 +38,17 @@ body {
     border: 2px solid #38BDF8;  /* 设置边框为2像素的实线，颜色为蓝色 */
   }
 
+
+  #JpRoot {
+    overflow: auto; /* 启用滚动 */
+    -ms-overflow-style: none;  /* IE和Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  #JpRoot::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari 和 Opera */
+  }
+
 }
 
 code {
