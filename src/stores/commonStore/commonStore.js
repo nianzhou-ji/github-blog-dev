@@ -4,6 +4,21 @@ import _ from "lodash";
 
 class CommonStore {
 
+    profileSize = {}
+
+
+    updateProfileSize(value) {
+        this.profileSize = value
+    }
+
+
+    detectDeviceType() {
+        const userAgent = navigator.userAgent.toLowerCase();
+        const isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/.test(userAgent);
+        return isMobile ? 'Mobile' : 'Desktop';
+    }
+
+
     // 每分钟
     averageReadVelocity = 250
 
@@ -26,8 +41,6 @@ class CommonStore {
     HOME_SUMMARY_MAX_LENGTH = 300
     HOME_SEARCH_MAX_LENGTH = 80
     DETAIL_TITLE_MAX_LENGTH = 50
-
-
 
 
     searchEngineConfig = {
@@ -131,6 +144,18 @@ class CommonStore {
     tagsFilter = {}
 
 
+    checkTagsChecked() {
+        const t = []
+        Object.keys(this.tagsFilter).forEach(item => {
+            if (this.tagsFilter[item]) {
+                t.push(this.tagsFilter[item])
+            }
+        })
+
+        return t.length !== 0
+    }
+
+
     getFilterArticles = () => {
         let temp = this.articles?.filter(item => {
             if (this.filterTagsChecked().length === 0) return true
@@ -143,7 +168,7 @@ class CommonStore {
         })
 
 
-        console.log(_.cloneDeep(this.searchFilter), 'this.searchFilter')
+        // console.log(_.cloneDeep(this.searchFilter), 'this.searchFilter')
 
 
         temp = temp?.filter(item => {

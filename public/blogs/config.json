@@ -15,7 +15,7 @@
       "url": "test2.md",
       "date": "2024/03/24",
       "summary": "Modern computers are incredibly fast, and getting faster all the time. However, computers also have some significant constraints: they only natively understand a limited set of commands, and must be told exactly what to do.",
-      "tags": ["CPP"]
+      "tags": ["CPP","jabva","JAVAdSCRyIPT"]
 
     },
     {
@@ -42,7 +42,7 @@
       "url": "test3.md",
       "date": "2024/03/21",
       "summary": "ata structures, but these often differ from one\n                        language to another. This article attempts to list the built-in data structures available in\n                        JavaScript and what properties they have. These can be used to build other data structures.\n                        Wherever possible, comparisons with other languages are drawn.\n\n                        Dynamic typing\n                        JavaScript is a loosely typed and dynamic language. Variables in JavaScript are not directly\n                        associated with any particular value type, and any variable can be assigned (and re-assigned)\n                        values of all types:\n\n                        let foo = 42; // foo is now a number\n                        foo = 'bar'; // foo is now a string\n                        foo = true; // foo is now a boolean",
-      "tags": ["JAVASCRIPT"]
+      "tags": ["JAVASCRIPT", "javwea","JAVA3SCRIPT"]
 
     },
     {
@@ -51,7 +51,7 @@
       "url": "test3.md",
       "date": "2024/03/21",
       "summary": "ata structures, but these often differ from one\n                        language to another. This article attempts to list the built-in data structures available in\n                        JavaScript and what properties they have. These can be used to build other data structures.\n                        Wherever possible, comparisons with other languages are drawn.\n\n                        Dynamic typing\n                        JavaScript is a loosely typed and dynamic language. Variables in JavaScript are not directly\n                        associated with any particular value type, and any variable can be assigned (and re-assigned)\n                        values of all types:\n\n                        let foo = 42; // foo is now a number\n                        foo = 'bar'; // foo is now a string\n                        foo = true; // foo is now a boolean",
-      "tags": ["JAVASCRIPT"]
+      "tags": ["JAVASCRIPT", "jadva","JAVdASCRIPT"]
 
     },
     {
@@ -60,7 +60,7 @@
       "url": "test3.md",
       "date": "2024/03/21",
       "summary": "ata structures, but these often differ from one\n                        language to another. This article attempts to list the built-in data structures available in\n                        JavaScript and what properties they have. These can be used to build other data structures.\n                        Wherever possible, comparisons with other languages are drawn.\n\n                        Dynamic typing\n                        JavaScript is a loosely typed and dynamic language. Variables in JavaScript are not directly\n                        associated with any particular value type, and any variable can be assigned (and re-assigned)\n                        values of all types:\n\n                        let foo = 42; // foo is now a number\n                        foo = 'bar'; // foo is now a string\n                        foo = true; // foo is now a boolean",
-      "tags": ["JAVASCRIPT"]
+      "tags": ["JAVASCRIPT", "JAVAdShCRIPT",  "jayva"]
 
     }
   ]
