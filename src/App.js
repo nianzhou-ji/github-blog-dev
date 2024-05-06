@@ -119,7 +119,7 @@ function App() {
                 
                  `} style={{top: headSize.height - 4}}>
 
-                <img src={AvatarImg} alt="" className='w-[10%]'/>
+                <img src={AvatarImg} alt="" className='w-[15%]'/>
                 <div className='ml-[32px] mr-[24px]  h-full  flex-auto '>
                     <div className='flex  justify-between'>
                         <p className='text-white font-bold'>Nianzhou Ji</p>
@@ -158,7 +158,7 @@ function App() {
                     <img src={BackImg} alt=""/>
                 </div>
 
-                <div>
+                <div className='mt-[8px]'>
 
                     <AbbreviatedComp
                         averageWordSize={10}
@@ -171,7 +171,7 @@ function App() {
                 </div>
 
 
-                <div className={`$${commonStore.viewArticle ? null : 'hidden'} flex  mt-[4px] justify-between`}>
+                <div className={`$${commonStore.viewArticle ? null : 'hidden'} flex  mt-[8px] justify-between`}>
                     <div className='flex items-center '>
                         <CalendarIcon size={20} color={'#AFC3D3'}/>
                         <p data-tip={'document creating time.'}
