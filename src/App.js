@@ -27,7 +27,7 @@ import {IoPricetags as TagsIcon} from "react-icons/io5";
 function App() {
 
 
-    const BorderClass=' cursor-pointer  border-[2px] border-[#071422] hover:rounded-[6px] hover:border-[#38BDF8]'
+    const BorderClass=' cursor-pointer  hover:border-[2px] border-[#071422] hover:rounded-[6px] hover:border-[#38BDF8]'
 
     const [rootScrollPos, setRootScrollPos] = useState(0)
 
@@ -293,7 +293,7 @@ function App() {
             </div>
 
 
-            <div className={`${commonStore.viewArticle ? 'hidden' : null} fixed right-1 bottom-3 p-1` + BorderClass}>
+            <div className={`${commonStore.viewArticle ? 'hidden' : null} fixed right-1 bottom-3 p-1 cursor-pointer` }>
 
 
                 <TagsIcon size={32} color={commonStore.checkTagsChecked() ? '#38BDF8' : '#AAD3F5'} onClick={() => {
@@ -380,7 +380,7 @@ function App() {
             </div>
 
 
-            <div className={`${rootScrollPos > 5 ? null : 'hidden'} fixed left-1 bottom-3 p-1 ` + BorderClass} onClick={() => {
+            <div className={`${rootScrollPos > 1 ? null : 'hidden'} fixed left-1 bottom-3 p-1  cursor-pointer` } onClick={() => {
                 rootRef.current.scrollTop = 0;
             }}>
 
