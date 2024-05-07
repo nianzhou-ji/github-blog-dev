@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+#  My Personal Blog Template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A clean, responsive GitHub Pages personal blog template that lets you quickly build an online personal blog system. This template, built with React, is designed for both desktop and mobile devices. It features a beautiful user interface and includes search and filtering functionalities. Follow the instructions below to start your own personal blog easily! 🌟
 
-## Available Scripts
+## Key Features
 
-In the project directory, you can run:
+- **Beautiful Interface:** A clean and modern design that provides an excellent reading experience. ✨
+- **Responsive Design:** Fully responsive for mobile and desktop devices. 📱💻
+- **Search Capability:** Search for titles and article summaries. 🔍
+- **Tag-Based Filtering:** Easily filter articles based on tags for more focused browsing. 🏷️
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js
+- GitHub Pages enabled on your GitHub repository
 
-### `npm test`
+### Configuration Guide
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **`public/blogs/blogAssetsConfig.json`**: This file is for blog article configuration. The parameters are as follows:
 
-### `npm run build`
+   | Parameter | Type   | Description                                   |
+   | --------- | ------ | --------------------------------------------- |
+   | id        | string | Unique identifier                             |
+   | name      | string | Article title                                 |
+   | date      | string | Article creation date                         |
+   | url       | string | Resource location relative to `public/blogs/` |
+   | summary   | string | Article summary                               |
+   | tags      | array  | Article tags, can have multiple               |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **`public/blogs/profileConfig.json`**: This file is for configuring your personal information displayed on the blog. The parameters are as follows:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   | Parameter   | Type   | Description                  |
+   | ----------- | ------ | ---------------------------- |
+   | name        | string | Personal name                |
+   | description | string | Personal profile description |
+   | GitHubUrl   | string | Personal website link        |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation & Setup
 
-### `npm run eject`
+1. **Fork and Clone the Repository:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```
+   git clone https://github.com/nianzhou-ji/github-blog-dev.git
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Install Dependencies:** Navigate to the project directory and install the required packages:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Configure Your Site:** Update `config.json` to customize your blog with your name, description, and other information.
 
-## Learn More
+4. **Run Locally:** To preview the blog locally before deploying, start the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```
+   sql
+   Copy code
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   Access the blog at `http://localhost:3000`.
 
-### Code Splitting
+5. **Deploy to GitHub Pages:** Create a `<username>.github.io` repository, upload the built files to the repository, and access your blog at `https://<username>.github.io` to complete deployment!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+------
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Happy Blogging!** 🌟
