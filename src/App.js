@@ -26,11 +26,14 @@ import {IoPricetags as TagsIcon} from "react-icons/io5";
 
 function App() {
 
+
+    const BorderClass=' cursor-pointer  border-[2px] border-[#071422] hover:rounded-[6px] hover:border-[#38BDF8]'
+
     const [rootScrollPos, setRootScrollPos] = useState(0)
 
     const {commonStore} = useStore()
     useEffect(() => {
-        fetch('/blogs/config.json')
+        fetch('/blogs/blogAssetsConfig.json')
             .then(response => {
                 if (response.ok) {
                     return response.text();
@@ -40,8 +43,6 @@ function App() {
             .then(text => {
                 const assets = JSON.parse(text).assets
                 commonStore.setArticles(assets)
-                // console.log(JSON.parse(text))
-
                 const waitedTags = {}
                 assets.forEach(item => {
                     item.tags.forEach(innerItem => {
@@ -54,6 +55,27 @@ function App() {
 
             })
             .catch(error => console.error('There was a problem with the fetch operation:', error));
+
+
+
+        fetch('/blogs/profileConfig.json')
+            .then(response => {
+                if (response.ok) {
+                    return response.text();
+                }
+                throw new Error('Network response was not ok.');
+            })
+            .then(text => {
+                const profileConfig = JSON.parse(text)
+
+                commonStore.updateProfileConfig(profileConfig)
+
+            })
+            .catch(error => console.error('There was a problem with the fetch operation:', error));
+
+
+
+
     }, []);
 
 
@@ -122,10 +144,10 @@ function App() {
                 <img src={AvatarImg} alt="" className='w-[15%]'/>
                 <div className='ml-[32px] mr-[24px]  h-full  flex-auto '>
                     <div className='flex  justify-between'>
-                        <p className='text-white font-bold'>Nianzhou Ji</p>
+                        <p className='text-white font-bold'>{commonStore.profileConfig.name}</p>
                         <img src={GithubImg} alt="" className='cursor-pointer hover:border-b hover:border-[#3799F6]'
                              onClick={() => {
-                                 window.open('https://github.com/nianzhou-ji', '_blank');
+                                 window.open(commonStore.profileConfig.GitHubUrl, '_blank');
                              }}/>
                     </div>
 
@@ -133,11 +155,7 @@ function App() {
                         averageWordSize={10}
                         lineNum={4}
                         className={' text-[#AFC3D3] mt-3  tooltip-bottom'}
-                        text={'  I am a versatile software engineer skilled in C++,\n' +
-                            '                        Python, HTML, and JavaScript. I have\n' +
-                            '                        experience with frameworks such as React, Qt, and Django, enabling me to build robust and\n' +
-                            '                        scalable applications. My technical proficiency supports efficient development across\n' +
-                            '                        multiple platforms.'}/>
+                        text={commonStore.profileConfig.description}/>
 
                 </div>
             </div>
@@ -192,7 +210,7 @@ function App() {
             </div>
 
 
-            <div style={{marginTop: profileContainerSize.height+20}}
+            <div style={{marginTop: profileContainerSize.height + 20}}
                  className={`${commonStore.viewArticle ? 'hidden' : null}   w-[80%]  `}>
 
                 <div className='flex  justify-between items-center'>
@@ -211,25 +229,30 @@ function App() {
                  className={`${commonStore.viewArticle ? 'hidden' : null}  w-[80%] flex flex-wrap justify-between`}>
                 {
                     commonStore.getFilterArticles().map((item, index) => <div id={item.id}
-                                                                              className={'p-[32px] pb-[40px] rounded-[8px] w-full h-[300x] bg-[#122231]  mb-[40px] border border-[#122231] hover:border-[#38BDF8] cursor-pointer relative'}
+                                                                              className={BorderClass+' p-[32px] pb-[40px] rounded-[8px] w-full h-[300x] bg-[#122231]  mb-[40px] relative '}
                                                                               onClick={() => {
                                                                                   commonStore.setViewArticle(true)
                                                                                   commonStore.setArticleObj(item)
 
-                                                                                  fetch(`/blogs/${item.url}`)
-                                                                                      .then(response => {
-                                                                                          if (response.ok) {
 
-                                                                                              console.log(response, 'response')
+                                                                                  if (item.url.includes('.md')) {
+                                                                                      fetch(`/blogs/${item.url}`)
+                                                                                          .then(response => {
+                                                                                              if (response.ok) {
 
-                                                                                              return response.text();
-                                                                                          }
-                                                                                          throw new Error('Network response was not ok.');
-                                                                                      })
-                                                                                      .then(text => {
-                                                                                          commonStore.setArticleContent(text)
-                                                                                      })
-                                                                                      .catch(error => console.error('There was a problem with the fetch operation:', error));
+                                                                                                  console.log(response, 'response')
+
+                                                                                                  return response.text();
+                                                                                              }
+                                                                                              throw new Error('Network response was not ok.');
+                                                                                          })
+                                                                                          .then(text => {
+                                                                                              commonStore.setArticleContent(text)
+                                                                                          })
+                                                                                          .catch(error => console.error('There was a problem with the fetch operation:', error));
+                                                                                  } else if (item.url.includes('.pdf')) {
+                                                                                      commonStore.setArticleContent(`/blogs/${item.url}`)
+                                                                                  }
 
 
                                                                               }}
@@ -270,7 +293,7 @@ function App() {
             </div>
 
 
-            <div className={`${commonStore.viewArticle ? 'hidden' : null} fixed right-1 bottom-3 `}>
+            <div className={`${commonStore.viewArticle ? 'hidden' : null} fixed right-1 bottom-3 p-1` + BorderClass}>
 
 
                 <TagsIcon size={32} color={commonStore.checkTagsChecked() ? '#38BDF8' : '#AAD3F5'} onClick={() => {
@@ -334,16 +357,30 @@ function App() {
             </div>
 
 
-            <div className={`${commonStore.viewArticle ? null : 'hidden'} mt-[150px] mb-[100px] w-[90vw]`} data-color-mode="dark">
+            <div
+                className={`${commonStore.viewArticle && commonStore.articleObj?.url.includes('.md') ? null : 'hidden'} mt-[150px] mb-[100px] w-[90vw]`}
+                data-color-mode="dark">
                 <MDEditor.Markdown source={commonStore.articleContent} style={{
                     whiteSpace: 'pre-wrap',
                     backgroundColor: '#071522',
                     color: '#AFC3D3'
                 }}/>
+
+                <embed src={commonStore.articleContent} width="100%" type='application/pdf'/>
+
             </div>
 
 
-            <div className={`${rootScrollPos > 5 ? null : 'hidden'} fixed left-1 bottom-3`} onClick={() => {
+            <div
+                className={`${commonStore.viewArticle && commonStore.articleObj?.url.includes('.pdf') ? null : 'hidden'} mt-[150px] mb-[100px] w-[90vw] flex-auto`}
+            >
+
+                <embed src={commonStore.articleContent} width="100%"  type='application/pdf'/>
+
+            </div>
+
+
+            <div className={`${rootScrollPos > 5 ? null : 'hidden'} fixed left-1 bottom-3 p-1 ` + BorderClass} onClick={() => {
                 rootRef.current.scrollTop = 0;
             }}>
 
@@ -352,7 +389,8 @@ function App() {
             </div>
 
 
-            <progress className="fixed top-0 h-[2px] rounded-0 w-screen progress bg-[#0C2036] progress-success" value={rootScrollPos} max="100"></progress>
+            <progress className="fixed top-0 h-[4px] rounded-0 w-screen progress bg-[#0C2036] progress-success"
+                      value={rootScrollPos} max="100"></progress>
 
 
         </div>

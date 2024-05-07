@@ -11,6 +11,13 @@ class CommonStore {
         this.profileSize = value
     }
 
+    profileConfig = {}
+
+    updateProfileConfig(value){
+        this.profileConfig = value
+
+    }
+
 
     detectDeviceType() {
         const userAgent = navigator.userAgent.toLowerCase();
