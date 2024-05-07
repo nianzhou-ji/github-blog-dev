@@ -56,8 +56,6 @@ A clean, responsive GitHub Pages personal blog template that lets you quickly bu
 4. **Run Locally:** To preview the blog locally before deploying, start the development server:
 
    ```
-   sql
-   Copy code
    npm start
    ```
 
