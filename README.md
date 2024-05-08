@@ -73,18 +73,18 @@ A clean, responsive GitHub Pages personal blog template that lets you quickly bu
 
 - Search Parameter Configuration Interface
 
-![搜索参数配置](./README.assets/搜索参数配置-1715134461897-5.png)
+![搜索参数配置](https://raw.githubusercontent.com/nianzhou-ji/JpPics/main/github-blog-dev-assets/搜索参数配置.png)
 
 
 
 - Reading Interface
 
-![阅读界面](./README.assets/阅读界面-1715134465829-8.png)
+![阅读界面](https://raw.githubusercontent.com/nianzhou-ji/JpPics/main/github-blog-dev-assets/阅读界面.png)
 
 
 
 - Tag Selection Interface
-![image-20240508100124176](./README.assets/image-20240508100124176.png)
+![image-20240508100124176](https://raw.githubusercontent.com/nianzhou-ji/JpPics/main/github-blog-dev-assets/标签设置界面.png)
 
 ## License
 
