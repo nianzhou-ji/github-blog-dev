@@ -84,6 +84,7 @@ A clean, responsive GitHub Pages personal blog template that lets you quickly bu
 
 
 - Tag Selection Interface
+
 ![image-20240508100124176](https://raw.githubusercontent.com/nianzhou-ji/JpPics/main/github-blog-dev-assets/标签设置界面.png)
 
 ## License
