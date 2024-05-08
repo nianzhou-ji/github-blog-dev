@@ -21,7 +21,7 @@ A clean, responsive GitHub Pages personal blog template that lets you quickly bu
 1. **`public/blogs/blogAssetsConfig.json`**: This file is for blog article configuration. The parameters are as follows:
 
    | Parameter | Type   | Description                                   |
-      | --------- | ------ | --------------------------------------------- |
+   | --------- | ------ | --------------------------------------------- |
    | id        | string | Unique identifier                             |
    | name      | string | Article title                                 |
    | date      | string | Article creation date                         |
@@ -32,7 +32,7 @@ A clean, responsive GitHub Pages personal blog template that lets you quickly bu
 2. **`public/blogs/profileConfig.json`**: This file is for configuring your personal information displayed on the blog. The parameters are as follows:
 
    | Parameter   | Type   | Description                  |
-      | ----------- | ------ | ---------------------------- |
+   | ----------- | ------ | ---------------------------- |
    | name        | string | Personal name                |
    | description | string | Personal profile description |
    | GitHubUrl   | string | Personal website link        |
@@ -56,36 +56,14 @@ A clean, responsive GitHub Pages personal blog template that lets you quickly bu
 4. **Run Locally:** To preview the blog locally before deploying, start the development server:
 
    ```
+   sql
+   Copy code
    npm start
    ```
 
    Access the blog at `http://localhost:3000`.
 
 5. **Deploy to GitHub Pages:** Create a `<username>.github.io` repository, upload the built files to the repository, and access your blog at `https://<username>.github.io` to complete deployment!
-
-
-
-## Demonstrations
-
-- Main Interface
-
-![主界面](https://raw.githubusercontent.com/nianzhou-ji/JpPics/main/github-blog-dev-assets/主界面.png)
-
-- Search Parameter Configuration Interface
-
-![搜索参数配置](https://raw.githubusercontent.com/nianzhou-ji/JpPics/main/github-blog-dev-assets/搜索参数配置.png)
-
-
-
-- Reading Interface
-
-![阅读界面](https://raw.githubusercontent.com/nianzhou-ji/JpPics/main/github-blog-dev-assets/阅读界面.png)
-
-
-
-- Tag Selection Interface
-
-![image-20240508100124176](https://raw.githubusercontent.com/nianzhou-ji/JpPics/main/github-blog-dev-assets/标签设置界面.png)
 
 ## License
 
