@@ -31,6 +31,11 @@ function App() {
 
     const [rootScrollPos, setRootScrollPos] = useState(0)
 
+    const sketchBg = '#4E92F6'
+
+
+    const [isLoaded, setIsLoaded] = useState(false)
+
     const {commonStore} = useStore()
     useEffect(() => {
         fetch('/blogs/blogAssetsConfig.json')
@@ -69,6 +74,8 @@ function App() {
                 const profileConfig = JSON.parse(text)
 
                 commonStore.updateProfileConfig(profileConfig)
+
+
 
             })
             .catch(error => console.error('There was a problem with the fetch operation:', error));
@@ -229,10 +236,12 @@ function App() {
                  className={`${commonStore.viewArticle ? 'hidden' : null}  w-[80%] flex flex-wrap justify-between`}>
                 {
                     commonStore.getFilterArticles().map((item, index) => <div id={item.id}
-                                                                              className={BorderClass+' p-[32px] pb-[40px] rounded-[8px] w-full h-[300x] bg-[#122231]  mb-[40px] relative '}
+                                                                              className={BorderClass + ' p-[32px] pb-[40px] rounded-[8px] w-full h-[300x] bg-[#122231]  mb-[40px] relative '}
                                                                               onClick={() => {
                                                                                   commonStore.setViewArticle(true)
                                                                                   commonStore.setArticleObj(item)
+
+                                                                                  setIsLoaded(false)
 
 
                                                                                   if (item.url.includes('.md')) {
@@ -240,7 +249,7 @@ function App() {
                                                                                           .then(response => {
                                                                                               if (response.ok) {
 
-                                                                                                  console.log(response, 'response')
+                                                                                                  // console.log(response, 'response')
 
                                                                                                   return response.text();
                                                                                               }
@@ -248,6 +257,12 @@ function App() {
                                                                                           })
                                                                                           .then(text => {
                                                                                               commonStore.setArticleContent(text)
+                                                                                              // setTimeout(()=>{
+                                                                                              //     setIsLoaded(true)
+                                                                                              // }, 30000)
+
+                                                                                              setIsLoaded(true)
+
                                                                                           })
                                                                                           .catch(error => console.error('There was a problem with the fetch operation:', error));
                                                                                   } else if (item.url.includes('.pdf')) {
@@ -293,7 +308,7 @@ function App() {
             </div>
 
 
-            <div className={`${commonStore.viewArticle ? 'hidden' : null} fixed right-1 bottom-3 p-1 cursor-pointer` }>
+            <div className={`${commonStore.viewArticle ? 'hidden' : null} fixed right-1 bottom-3 p-1 cursor-pointer`}>
 
 
                 <TagsIcon size={32} color={commonStore.checkTagsChecked() ? '#38BDF8' : '#AAD3F5'} onClick={() => {
@@ -358,31 +373,20 @@ function App() {
 
 
             <div
-                className={`${commonStore.viewArticle && commonStore.articleObj?.url.includes('.md') ? null : 'hidden'} mt-[150px] mb-[100px] w-[90vw]`}
+                className={`${commonStore.viewArticle && commonStore.articleObj?.url.includes('.md') && isLoaded? null : 'hidden'} mt-[150px] mb-[100px] w-[80vw]`}
                 data-color-mode="dark">
                 <MDEditor.Markdown source={commonStore.articleContent} style={{
                     whiteSpace: 'pre-wrap',
                     backgroundColor: '#071522',
                     color: '#AFC3D3'
                 }}/>
-
-                <embed src={commonStore.articleContent} width="100%" type='application/pdf'/>
-
             </div>
 
 
-            <div
-                className={`${commonStore.viewArticle && commonStore.articleObj?.url.includes('.pdf') ? null : 'hidden'} mt-[150px] mb-[100px] w-[90vw] flex-auto`}
-            >
-
-                <embed src={commonStore.articleContent} width="100%"  type='application/pdf'/>
-
-            </div>
-
-
-            <div className={`${rootScrollPos > 1 ? null : 'hidden'} fixed left-1 bottom-3 p-1  cursor-pointer` } onClick={() => {
-                rootRef.current.scrollTop = 0;
-            }}>
+            <div className={`${rootScrollPos > 1 ? null : 'hidden'} fixed left-1 bottom-3 p-1  cursor-pointer`}
+                 onClick={() => {
+                     rootRef.current.scrollTop = 0;
+                 }}>
 
                 <ToTopIcon size={32} color={'#AAD3F5'}/>
 
@@ -391,6 +395,16 @@ function App() {
 
             <progress className="fixed top-0 h-[4px] rounded-0 w-screen progress bg-[#0C2036] progress-success"
                       value={rootScrollPos} max="100"></progress>
+
+
+
+            {/*sketch*/}
+            <div className={`flex flex-col gap-4 mt-[150px] w-[80vw] ${!isLoaded?null:'hidden'}`}>
+                <div className={`skeleton h-32 w-full bg-[#152231]`}></div>
+                <div className={`skeleton h-4 w-28 bg-[#152231]`}></div>
+                <div className={`skeleton h-4 w-full bg-[#152231]`}></div>
+                <div className={`skeleton h-4 w-full bg-[#152231]`}></div>
+            </div>
 
 
         </div>
