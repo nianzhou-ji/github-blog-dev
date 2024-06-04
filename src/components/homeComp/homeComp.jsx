@@ -100,15 +100,15 @@ function HomeComp() {
                  className={`${commonStore.viewArticle ? 'hidden' : null} bg-[#122231]   
                  absolute  flex items-center 
                 w-[80%] 
-                 p-[16px]
+         
                 
                  `} style={{top: headSize.height - 60}}>
 
 
-                <AvatarComp className='w-[45%]'/>
+                <AvatarComp className='h-[60%]'/>
 
 
-                <div className='ml-[32px] mr-[24px]  h-full  flex-auto '>
+                <div className='ml-[20px] mr-[24px]  h-full  flex-auto '>
                     <div className='flex  justify-between'>
                         <p className='text-white font-bold'>{commonStore.profileConfig.name}</p>
                         {/*<img src={GithubImg} alt="" className='cursor-pointer hover:border-b hover:border-[#3799F6]'*/}
@@ -122,7 +122,7 @@ function HomeComp() {
                     </div>
 
                     <AbbreviatedComp
-                        averageWordSize={10}
+                        averageWordSize={15}
                         lineNum={4}
                         className={' text-[#AFC3D3] mt-3  tooltip-bottom'}
                         text={commonStore.profileConfig.description}/>

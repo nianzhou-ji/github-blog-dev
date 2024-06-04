@@ -115,7 +115,7 @@ function DetailComp() {
                 w-[80%] 
                  p-[16px]
                 
-                 `} style={{top: headSize.height - 4}}>
+                 `} style={{top: headSize.height - 60}}>
 
             <div className=' cursor-pointer hover:border-b hover:border-[#3799F6]' onClick={() => {
                     commonStore.setViewArticle(false)
