@@ -6,6 +6,9 @@ import AvatarImg from './assets/profile/avatar.svg'
 import GithubImg from './assets/profile/github.svg'
 import BackImg from './assets/post/back.svg'
 
+
+
+
 import {ImCalendar as CalendarIcon} from "react-icons/im";
 import {GiTimeBomb as TimeICon} from "react-icons/gi";
 import MDEditor from '@uiw/react-md-editor';
@@ -27,14 +30,14 @@ import {IoPricetags as TagsIcon} from "react-icons/io5";
 function App() {
 
 
-    const BorderClass=' cursor-pointer  hover:border-[2px] border-[#071422] hover:rounded-[6px] hover:border-[#38BDF8]'
+    const BorderClass = ' cursor-pointer  hover:border-[2px] border-[#071422] hover:rounded-[6px] hover:border-[#38BDF8]'
 
     const [rootScrollPos, setRootScrollPos] = useState(0)
 
     const sketchBg = '#4E92F6'
 
 
-    const [isLoaded, setIsLoaded] = useState(false)
+    const [isLoaded, setIsLoaded] = useState(true)
 
     const {commonStore} = useStore()
     useEffect(() => {
@@ -62,7 +65,6 @@ function App() {
             .catch(error => console.error('There was a problem with the fetch operation:', error));
 
 
-
         fetch('/blogs/profileConfig.json')
             .then(response => {
                 if (response.ok) {
@@ -76,11 +78,8 @@ function App() {
                 commonStore.updateProfileConfig(profileConfig)
 
 
-
             })
             .catch(error => console.error('There was a problem with the fetch operation:', error));
-
-
 
 
     }, []);
@@ -179,6 +178,7 @@ function App() {
 
                 <div className=' cursor-pointer hover:border-b hover:border-[#3799F6]' onClick={() => {
                     commonStore.setViewArticle(false)
+                    setIsLoaded(true)
                 }}>
                     <img src={BackImg} alt=""/>
                 </div>
@@ -244,30 +244,29 @@ function App() {
                                                                                   setIsLoaded(false)
 
 
-                                                                                  if (item.url.includes('.md')) {
-                                                                                      fetch(`/blogs/${item.url}`)
-                                                                                          .then(response => {
-                                                                                              if (response.ok) {
+                                                                                  fetch(`/blogs/${item.url}`)
+                                                                                      .then(response => {
+                                                                                          if (response.ok) {
 
-                                                                                                  // console.log(response, 'response')
+                                                                                              // console.log(response, 'response')
 
-                                                                                                  return response.text();
-                                                                                              }
-                                                                                              throw new Error('Network response was not ok.');
-                                                                                          })
-                                                                                          .then(text => {
-                                                                                              commonStore.setArticleContent(text)
-                                                                                              // setTimeout(()=>{
-                                                                                              //     setIsLoaded(true)
-                                                                                              // }, 30000)
+                                                                                              return response.text();
+                                                                                          }
+                                                                                          throw new Error('Network response was not ok.');
+                                                                                      })
+                                                                                      .then(text => {
+                                                                                          commonStore.setArticleContent(text)
+                                                                                          // setTimeout(()=>{
+                                                                                          //     setIsLoaded(true)
+                                                                                          // }, 30000)
 
-                                                                                              setIsLoaded(true)
+                                                                                          setIsLoaded(true)
 
-                                                                                          })
-                                                                                          .catch(error => console.error('There was a problem with the fetch operation:', error));
-                                                                                  } else if (item.url.includes('.pdf')) {
-                                                                                      commonStore.setArticleContent(`/blogs/${item.url}`)
-                                                                                  }
+                                                                                      })
+                                                                                      .catch(error => {
+                                                                                          console.error('There was a problem with the fetch operation:', error)
+                                                                                          setIsLoaded(true)
+                                                                                      });
 
 
                                                                               }}
@@ -373,7 +372,7 @@ function App() {
 
 
             <div
-                className={`${commonStore.viewArticle && commonStore.articleObj?.url.includes('.md') && isLoaded? null : 'hidden'} mt-[150px] mb-[100px] w-[80vw]`}
+                className={`${commonStore.viewArticle && isLoaded ? null : 'hidden'} mt-[150px] mb-[100px] w-[80vw]`}
                 data-color-mode="dark">
                 <MDEditor.Markdown source={commonStore.articleContent} style={{
                     whiteSpace: 'pre-wrap',
@@ -397,9 +396,8 @@ function App() {
                       value={rootScrollPos} max="100"></progress>
 
 
-
             {/*sketch*/}
-            <div className={`flex flex-col gap-4 mt-[150px] w-[80vw] ${!isLoaded?null:'hidden'}`}>
+            <div className={`flex flex-col gap-4 mt-[150px] w-[80vw] ${!isLoaded ? null : 'hidden'}`}>
                 <div className={`skeleton h-32 w-full bg-[#152231]`}></div>
                 <div className={`skeleton h-4 w-28 bg-[#152231]`}></div>
                 <div className={`skeleton h-4 w-full bg-[#152231]`}></div>
