@@ -1,10 +1,3 @@
-import EffectLImg from '../../assets/cover/effectL.svg'
-import EffectRImg from '../../assets/cover/effectR.svg'
-import LogoImg from '../../assets/cover/logo.svg'
-import AvatarImg from '../../assets/profile/avatar.svg'
-import GithubImg from '../../assets/profile/github.svg'
-import BackImg from '../../assets/post/back.svg'
-
 
 import {ImCalendar as CalendarIcon} from "react-icons/im";
 import {GiTimeBomb as TimeICon} from "react-icons/gi";
@@ -12,18 +5,17 @@ import MDEditor from '@uiw/react-md-editor';
 
 import React, {useEffect, useRef, useState} from "react";
 import {observer} from "mobx-react-lite";
-import Swal from "sweetalert2";
-import {IoSettings as SettingIcon} from "react-icons/io5";
 import {useStore} from "../../stores";
 
 import {useResizeObserver} from "../../hooks/useResizeObserver";
 import AbbreviatedComp from "../../abbreviatedComp/abbreviatedComp";
-import SearchComp from "../../components/searchComp/searchComp";
-import _ from 'lodash'
 import {BiSolidToTop as ToTopIcon} from "react-icons/bi";
-import {IoPricetags as TagsIcon} from "react-icons/io5";
 import {useNavigate, useParams} from "react-router-dom";
 import {useBlogsHooks} from "../../hooks/useBlogsHooks";
+import EffectLComp from "../../assetsComp/effectLComp";
+import LogoComp from "../../assetsComp/logoComp";
+import EffectRComp from "../../assetsComp/effectRComp";
+import BackComp from "../../assetsComp/backComp";
 
 
 function DetailComp() {
@@ -35,7 +27,7 @@ function DetailComp() {
 
     const params = useParams()
 
-
+    const navigate = useNavigate()
 
 
 
@@ -96,7 +88,7 @@ function DetailComp() {
     }, []); // 空依赖数组确保事件监听只被添加和移除一次
 
 
-    const navigate = useNavigate()
+
 
 
     return (
@@ -107,9 +99,11 @@ function DetailComp() {
             <div ref={headRef} className='bg-[#0C1F33]    w-full    flex justify-center
             '>
                 <div className='w-full flex justify-between items-center'>
-                    <img src={EffectLImg} alt="" className=' w-[25%]'/>
-                    <img src={LogoImg} alt="" className='w-[15%]'/>
-                    <img src={EffectRImg} alt="" className='w-[20%]'/>
+                        <EffectLComp className=' w-[25%]'/>
+                        <LogoComp className=' w-[15%]'/>
+
+                        <EffectRComp className=' w-[20%]'/>
+
                 </div>
             </div>
 
@@ -123,15 +117,17 @@ function DetailComp() {
                 
                  `} style={{top: headSize.height - 4}}>
 
-                <div className=' cursor-pointer hover:border-b hover:border-[#3799F6]' onClick={() => {
+            <div className=' cursor-pointer hover:border-b hover:border-[#3799F6]' onClick={() => {
                     commonStore.setViewArticle(false)
                     commonStore.setIsLoaded(true)
 
                     navigate(`/`)
 
                 }}>
-                    <img src={BackImg} alt=""/>
+                <div className=' w-[20%]'>
+                    <BackComp/>
                 </div>
+            </div>
 
                 <div className='mt-[8px]'>
 

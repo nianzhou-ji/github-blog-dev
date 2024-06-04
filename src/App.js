@@ -1,7 +1,7 @@
 
 import HomeComp from "./components/homeComp/homeComp";
 import {observer} from "mobx-react-lite";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes  } from 'react-router-dom';
 import DetailComp from "./components/detailComp/detailComp";
 
 function App() {

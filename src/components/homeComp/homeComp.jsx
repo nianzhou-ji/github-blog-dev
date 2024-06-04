@@ -1,9 +1,3 @@
-import EffectLImg from '../../assets/cover/effectL.svg'
-import EffectRImg from '../../assets/cover/effectR.svg'
-import LogoImg from '../../assets/cover/logo.svg'
-import AvatarImg from '../../assets/profile/avatar.svg'
-import GithubImg from '../../assets/profile/github.svg'
-
 import React, {useEffect, useRef, useState} from "react";
 import {observer} from "mobx-react-lite";
 
@@ -17,13 +11,20 @@ import {BiSolidToTop as ToTopIcon} from "react-icons/bi";
 import {IoPricetags as TagsIcon} from "react-icons/io5";
 
 import {useBlogsHooks} from "../../hooks/useBlogsHooks";
+import {useNavigate} from "react-router-dom";
+import GithubComp from "../../assetsComp/githubComp";
+import LogoComp from "../../assetsComp/logoComp";
+import AvatarComp from "../../assetsComp/avatarComp";
+import EffectLComp from "../../assetsComp/effectLComp";
+import EffectRComp from "../../assetsComp/effectRComp";
+import ProfileLinkComp from "../../assetsComp/profileLinkComp";
 
 
 function HomeComp() {
     const BorderClass = ' cursor-pointer  hover:border-[2px] border-[#071422] hover:rounded-[6px] hover:border-[#38BDF8]'
 
     const [rootScrollPos, setRootScrollPos] = useState(0)
-    const {fetchBlog,initApp} = useBlogsHooks()
+    const {fetchBlog, initApp} = useBlogsHooks()
 
     const {commonStore} = useStore()
     useEffect(() => {
@@ -44,7 +45,6 @@ function HomeComp() {
 
 
     const rootRef = useRef(null)
-
 
 
     useEffect(() => {
@@ -78,7 +78,7 @@ function HomeComp() {
     }, []); // 空依赖数组确保事件监听只被添加和移除一次
 
 
-
+    const navigate = useNavigate()
 
 
     return (
@@ -89,9 +89,9 @@ function HomeComp() {
             <div ref={headRef} className='bg-[#0C1F33]    w-full    flex justify-center
             '>
                 <div className='w-full flex justify-between items-center'>
-                    <img src={EffectLImg} alt="" className=' w-[25%]'/>
-                    <img src={LogoImg} alt="" className='w-[15%]'/>
-                    <img src={EffectRImg} alt="" className='w-[20%]'/>
+                    <EffectLComp className=' w-[25%]'/>
+                    <LogoComp className=' w-[15%]'/>
+                    <EffectRComp className=' w-[20%]'/>
                 </div>
             </div>
 
@@ -102,16 +102,23 @@ function HomeComp() {
                 w-[80%] 
                  p-[16px]
                 
-                 `} style={{top: headSize.height - 4}}>
+                 `} style={{top: headSize.height - 60}}>
 
-                <img src={AvatarImg} alt="" className='w-[15%]'/>
+
+                <AvatarComp className='w-[45%]'/>
+
+
                 <div className='ml-[32px] mr-[24px]  h-full  flex-auto '>
                     <div className='flex  justify-between'>
                         <p className='text-white font-bold'>{commonStore.profileConfig.name}</p>
-                        <img src={GithubImg} alt="" className='cursor-pointer hover:border-b hover:border-[#3799F6]'
-                             onClick={() => {
-                                 window.open(commonStore.profileConfig.GitHubUrl, '_blank');
-                             }}/>
+                        {/*<img src={GithubImg} alt="" className='cursor-pointer hover:border-b hover:border-[#3799F6]'*/}
+                        {/*     onClick={() => {*/}
+                        {/*         window.open(commonStore.profileConfig.GitHubUrl, '_blank');*/}
+                        {/*     }}/>*/}
+
+                        <ProfileLinkComp className='cursor-pointer hover:border-b hover:border-[#3799F6]'  onClick={() => {
+                            window.open(commonStore.profileConfig.GitHubUrl, '_blank');
+                        }}/>
                     </div>
 
                     <AbbreviatedComp
@@ -144,7 +151,7 @@ function HomeComp() {
                 {
                     commonStore.getFilterArticles().map((item, index) => <div id={item.id}
                                                                               className={BorderClass + ' p-[32px] pb-[40px] rounded-[8px] w-full h-[300x] bg-[#122231]  mb-[40px] relative '}
-                                                                              onClick={() => fetchBlog(item)}
+                                                                              onClick={() => navigate(`/blogs/${item.id}`)}
                                                                               key={index}
                     >
                         <div className='flex justify-between '>
