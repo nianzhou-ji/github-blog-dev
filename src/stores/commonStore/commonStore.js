@@ -90,6 +90,16 @@ class CommonStore {
     }
 
 
+
+
+    isLoaded = false
+
+
+    setIsLoaded(value){
+        this.isLoaded = value
+    }
+
+
     patchSearchEngineConfig(value) {
         const temp = this.searchEngineConfig
         if (value.searchResultMenuOpen !== undefined) {
