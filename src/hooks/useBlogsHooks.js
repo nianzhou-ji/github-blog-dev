@@ -53,7 +53,7 @@ export const useBlogsHooks = () => {
         // ];
 
 
-       const urls = await getDownloadUrls(markdownUrl)
+        const urls = await getDownloadUrls(markdownUrl)
 
 
         console.log(urls)
@@ -80,10 +80,14 @@ export const useBlogsHooks = () => {
                 'text/plain': '.txt',
                 'application/pdf': '.pdf',
                 'text/markdown': '.md',
-                'text/markdown; charset=UTF-8': '.md',
                 // 添加更多你需要的 MIME 类型
             };
-            return mimeTypes[contentType] || '';
+
+            for (const mimeType of Object.keys(mimeTypes)) {
+                if (contentType.includes(mimeType)) return mimeTypes[mimeType]
+            }
+
+            return ''
         };
 
         const createZip = async () => {
