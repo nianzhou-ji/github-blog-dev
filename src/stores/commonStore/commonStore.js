@@ -4,6 +4,13 @@ import _ from "lodash";
 
 class CommonStore {
 
+    currentHomePageScrollTop = 0
+
+    updateCurrentHomePageScrollTop(value) {
+        this.currentHomePageScrollTop = value
+    }
+
+
     profileSize = {}
 
 
@@ -13,9 +20,17 @@ class CommonStore {
 
     profileConfig = {}
 
-    updateProfileConfig(value){
+    updateProfileConfig(value) {
         this.profileConfig = value
 
+    }
+
+
+    currentClickedArticleID = null
+
+
+    updateCurrentClickedArticleID(value) {
+        this.currentClickedArticleID = value
     }
 
 
@@ -90,12 +105,10 @@ class CommonStore {
     }
 
 
-
-
     isLoaded = false
 
 
-    setIsLoaded(value){
+    setIsLoaded(value) {
         this.isLoaded = value
     }
 
@@ -173,6 +186,42 @@ class CommonStore {
     }
 
 
+    // 自定义自然排序函数
+    naturalSort=(first,second)=> {
+        const a = first.name
+        const b = second.name
+
+
+        // 使用正则表达式提取数字和字母部分
+        const regex = /(\d+)|(\D+)/g;
+        const aParts = a.match(regex);
+        const bParts = b.match(regex);
+
+        // 比较每一部分
+        for (let i = 0; i < Math.max(aParts.length, bParts.length); i++) {
+            const aPart = aParts[i] || '';
+            const bPart = bParts[i] || '';
+
+            // 数字部分按数值比较
+            if (/\d/.test(aPart) && /\d/.test(bPart)) {
+                const aNum = parseInt(aPart, 10);
+                const bNum = parseInt(bPart, 10);
+                if (aNum !== bNum) {
+                    return aNum - bNum;
+                }
+            } else {
+                // 字母部分按字母顺序比较
+                const comparison = aPart.localeCompare(bPart);
+                if (comparison !== 0) {
+                    return comparison;
+                }
+            }
+        }
+
+        return 0;
+    }
+
+
     getFilterArticles = () => {
         let temp = this.articles?.filter(item => {
             if (this.filterTagsChecked().length === 0) return true
@@ -193,6 +242,10 @@ class CommonStore {
             if (this.searchFilter.includes(item.id)) return true
             return false
         })
+
+
+        // 增加模拟windows下的文件排序桂萼进行排序
+         temp = temp.sort(this.naturalSort);
 
         return temp
 
@@ -245,12 +298,6 @@ class CommonStore {
     articles = []
     setArticles = (value) => {
         this.articles = value
-    }
-
-    viewArticle = false
-
-    setViewArticle = (value) => {
-        this.viewArticle = value
     }
 
 

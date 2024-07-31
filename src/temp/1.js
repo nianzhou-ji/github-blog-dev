@@ -1,0 +1,1 @@
+console.log('js 判断一个字符串是否含有子串base64'.includes('base64'));

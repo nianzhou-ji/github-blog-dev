@@ -1,67 +1,3301 @@
 {
   "assets": [
+
     {
-      "id": "fawefw3r2315",
+      "id": "qe432vfs28-03ef-1179-8126-9456io13sdvsdvgf77c",
+      "name": "本地优先的临时数据收集单页应用程序",
+      "url": "个人开源项目/本地优先的临时数据收集单页应用程序.md",
+      "date": "2024/06/16 16:27:48",
+      "summary": "本地优先的临时数据收集单页应用程序",
+      "tags": [
+        "个人开源项目"
+      ]
+    },
+
+
+       {
+      "id": "34qcd28-03ef-11jf-8126-9456ioqmf77c",
+      "name": "test.md",
+      "url": "misc/test.md",
+      "date": "2024/06/02 09:27:48",
+      "summary": "test",
+      "tags": [
+        "Test"
+      ]
+    },
+
+
+   {
+      "id": "q3qcd28-03ef-11jf-8126-9456ioqmf77c",
+      "name": "进程、线程、协程、核心数等概念以及关系.md",
+      "url": "misc/进程、线程、协程、核心数等概念以及关系.md",
+      "date": "2024/05/30 17:48:48",
+      "summary": "进程、线程、协程、核心数等概念以及关系",
+      "tags": [
+        "计算机基础"
+      ]
+    },
+    
+
+   {
+      "id": "f2qcd28-03ef-11jf-8126-9456ioqmf77c",
+      "name": "Python和Cpp的编译执行流程.md",
+      "url": "misc/Python和Cpp的编译执行流程.md",
+      "date": "2024/05/30 17:46:48",
+      "summary": "Python和Cpp的编译执行流程",
+      "tags": [
+        "Python",
+        "C++"
+      ]
+    },
+
+    
+    {
+      "id": "faqcd28-03ef-11jf-8126-9456io42f77c",
+      "name": "软件设计原则和设计模式.md",
+      "url": "软件工程/软件设计原则和设计模式.md",
+      "date": "2024/05/29 18:46:48",
+      "summary": "软件设计原则和设计模式概述",
+      "tags": [
+        "软件工程"
+      ]
+    },
+    {
+      "id": "faqcd28-06ef-11jf-8126-9456f742f77c",
+      "name": "Python 下载电子书.md",
+      "url": "工具代码/Python 下载电子书.md",
+      "date": "2024/05/21 15:26:48",
+      "summary": "Python批量下载电子书",
+      "tags": [
+        "工具代码"
+      ]
+    },
+    {
+      "id": "fa2cd28-09ef-11ef-8f26-94e6f742f77c",
+      "name": "Android Automotive OS The Architecture",
+      "url": "misc/Android Automotive OS The Architecture.md",
+      "date": "2024/05/19 19:28:32",
+      "summary": "Android Automotive OS The Architecture",
+      "tags": [
+        "Automotive",
+        "Android"
+      ]
+    },
+    {
+      "id": "fa0bcd28-09ef-11ef-8f26-94e6f742f76c",
+      "name": "606项目关键技术点",
+      "url": "Python/606项目关键技术点.md",
+      "date": "2024/05/04 16:20:32",
+      "summary": "606项目关键技术点",
+      "tags": [
+        "606 项目",
+        "Matlab",
+        "Python"
+      ]
+    },
+    {
+      "id": "fa0cb5a6-09ef-11ef-a66c-94e6f742f76c",
+      "name": "C++ lambda表达式与函数对象",
+      "url": "C++/C++ lambda表达式与函数对象.md",
+      "date": "2024/05/04 16:20:46",
+      "summary": "C++ lambda表达式与函数对象",
+      "tags": [
+        "C++"
+      ]
+    },
+    {
+      "id": "fa0fc0dc-09ef-11ef-bc45-94e6f742f76c",
+      "name": "C++中的explicit关键字",
+      "url": "C++/C++中的explicit关键字.md",
+      "date": "2024/05/04 16:20:46",
+      "summary": "C++中的explicit关键字",
+      "tags": [
+        "C++"
+      ]
+    },
+    {
+      "id": "fa10aa90-09ef-11ef-bcf1-94e6f742f76c",
+      "name": "CLion 输出遇到中文乱码解决办法",
+      "url": "CLion/CLion 输出遇到中文乱码解决办法.md",
+      "date": "2024/05/04 16:20:46",
+      "summary": "CLion 输出遇到中文乱码解决办法",
+      "tags": [
+        "CLion"
+      ]
+    },
+    {
+      "id": "fa348629-09ef-11ef-b712-94e6f742f76c",
+      "name": "python 调用matlab优化算法",
+      "url": "Python/python 调用matlab优化算法.md",
+      "date": "2024/05/04 16:20:46",
+      "summary": "python 调用matlab优化算法",
+      "tags": [
+        "Matlab",
+        "Python"
+      ]
+    },
+    {
+      "id": "fa371adf-09ef-11ef-b2a0-94e6f742f76c",
+      "name": "python 调用matlab脚本",
+      "url": "Python/python 调用matlab脚本.md",
+      "date": "2024/05/04 16:20:46",
+      "summary": "python 调用matlab脚本",
+      "tags": [
+        "Matlab",
+        "Python"
+      ]
+    },
+    {
+      "id": "fa3f07fe-09ef-11ef-83c1-94e6f742f76c",
+      "name": "Ubuntu交叉编译boost ARM64步骤",
+      "url": "Ubuntu/Ubuntu交叉编译boost ARM64步骤.md",
+      "date": "2024/05/04 16:20:46",
+      "summary": "Ubuntu交叉编译boost ARM64步骤",
+      "tags": [
+        "Ubuntu",
+        "Boost"
+      ]
+    },
+    {
+      "id": "0f58f810-09f3-11ef-852c-94e6f742f76c",
+      "name": "git常用操作指南",
+      "url": "Git/git常用操作指南.md",
+      "date": "2024/05/04 16:20:46",
+      "summary": "git常用操作指南",
+      "tags": [
+        "Git"
+      ]
+    },
+    {
+      "id": "8e3d4b06-0b6c-11ef-9bcd-005056c00008",
+      "name": "AR Creator学习分享目录",
+      "url": "AR Creator/AR Creator学习分享目录.md",
+      "date": "2024/04/30 16:53:35",
+      "summary": "AR Creator 学习资源分享",
+      "tags": [
+        "AR Creator"
+      ]
+    },
+    {
+      "id": "8e4efe3f-0b6c-11ef-80fd-005056c00008",
+      "name": "pycharm配置external tools",
+      "url": "PyCharm/pycharm配置external tools.md",
+      "date": "2024/04/30 16:56:48",
+      "summary": "PyCharm配置PyQt5的资源转换、UI转换、设计器的external tools，方便快捷打开",
+      "tags": [
+        "PyCharm",
+        "PyQt5"
+      ]
+    },
+    {
+      "id": "42a754cd-0b7c-11ef-9565-005056c00008",
+      "name": "pycharm工程移动-终端命令执行异常",
+      "url": "PyCharm/pycharm工程移动-终端命令执行异常.md",
+      "date": "2024/05/06 14:20:12",
+      "summary": "pycharm工程移动-终端命令执行异常解决办法",
+      "tags": [
+        "PyCharm"
+      ]
+    },
+    {
+      "id": "42b06224-0b7c-11ef-b580-005056c00008",
+      "name": "python logging日志模块初探",
+      "url": "Python/python logging日志模块初探.md",
+      "date": "2024/05/06 14:39:00",
+      "summary": "python logging日志模块初探",
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "id": "42b82a14-0b7c-11ef-afa3-005056c00008",
+      "name": "python 虚拟机",
+      "url": "Python/python 虚拟机.md",
+      "date": "2024/05/06 14:43:21",
+      "summary": "python 虚拟机介绍",
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "id": "42bda703-0b7c-11ef-ada8-005056c00008",
+      "name": "python路径操作新标准：pathlib 模块",
+      "url": "Python/python路径操作新标准：pathlib 模块.md",
+      "date": "2024/05/06 14:32:35",
+      "summary": "python路径操作新标准：pathlib 模块介绍",
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "id": "42d6862f-0b7c-11ef-8c35-005056c00008",
+      "name": "Ubuntu “Could not get lock varlibdpkglock-frontend” 问题解决",
+      "url": "Ubuntu/Ubuntu “Could not get lock varlibdpkglock-frontend” 问题解决.md",
+      "date": "2024/05/06 14:48:23",
+      "summary": "Ubuntu “Could not get lock varlibdpkglock-frontend” 问题解决",
+      "tags": [
+        "Ubuntu"
+      ]
+    },
+    {
+      "id": "595b76fd-0b82-11ef-98c9-005056c00008",
       "name": "0.1 — Introduction to these tutorials",
-      "date": "2024/03/21 16:20:46",
-      "url": "test1.md",
-      "summary": "Welcome to the Learn C++ tutorials! Above all else, these tutorials aim to make learning C++ easy.\n\nUnlike many other sites and books, these tutorials don’t assume you have any prior programming experience. We’ll teach you everything you need to know as you progress, with lots of examples along the way.\n\nWhether you’re interested in learning C++ as a hobby or for professional development, you’re in the right place!",
-      "tags": ["CPP"]
-
+      "url": "learncpp.com/0.1 — Introduction to these tutorials.md",
+      "date": "2023/04/08 20:18:51",
+      "summary": "0.1 — Introduction to these tutorials",
+      "tags": [
+        "learncpp.com"
+      ]
     },
     {
-      "id": "fawefaslnweeowgn",
+      "id": "595c3a4a-0b82-11ef-876b-005056c00008",
+      "name": "0.10 — Configuring your compiler Compiler extensions",
+      "url": "learncpp.com/0.10 — Configuring your compiler Compiler extensions.md",
+      "date": "2023/04/14 15:40:06",
+      "summary": "0.10 — Configuring your compiler Compiler extensions",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "597c3132-0b82-11ef-8b5c-005056c00008",
+      "name": "0.11 — Configuring your compiler Warning and error levels",
+      "url": "learncpp.com/0.11 — Configuring your compiler Warning and error levels.md",
+      "date": "2022/10/31 15:43:17",
+      "summary": "0.11 — Configuring your compiler Warning and error levels",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "59b1fc58-0b82-11ef-8ad8-005056c00008",
+      "name": "0.12 — Configuring your compiler Choosing a language standard",
+      "url": "learncpp.com/0.12 — Configuring your compiler Choosing a language standard.md",
+      "date": "2022/10/31 15:50:53",
+      "summary": "0.12 — Configuring your compiler Choosing a language standard",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "59cbcbda-0b82-11ef-a888-005056c00008",
       "name": "0.2 — Introduction to programming languages",
-      "url": "test2.md",
-      "date": "2024/03/24",
-      "summary": "Modern computers are incredibly fast, and getting faster all the time. However, computers also have some significant constraints: they only natively understand a limited set of commands, and must be told exactly what to do.",
-      "tags": ["CPP","jabva","JAVAdSCRyIPT"]
-
+      "url": "learncpp.com/0.2 — Introduction to programming languages.md",
+      "date": "2023/05/25 21:14:42",
+      "summary": "0.2 — Introduction to programming languages",
+      "tags": [
+        "learncpp.com"
+      ]
     },
     {
-      "id": "fawefewf23r81d5v",
-      "name": " safawfaewJavaScript data types and data structures ypes and data structuresypes and data structuresypes and data structures",
-      "url": "test3.md",
-      "date": "2024/03/21",
-      "summary": "nianzhou.ji ata structures, but these often differ from one\n                        language to another. This article attempts to list the built-in data structures available in\n                        JavaScript and what properties they have. These can be used to build other data structures.\n                        Wherever possible, comparisons with other languages are drawn.\n\n                        Dynamic typing\n                        JavaScript is a loosely typed and dynamic language. Variables in JavaScript are not directly\n                        associated with any particular value type, and any variable can be assigned (and re-assigned)\n                        values of all types:\n\n                        let foo = 42; // foo is now a number\n                        foo = 'bar'; // foo is now a string\n                        foo = true; // foo is now a boolean",
-      "tags": ["JAVASCRIPT", "PYTHON"]
-
+      "id": "59d2f67f-0b82-11ef-9b9d-005056c00008",
+      "name": "0.3 — Introduction to CC++",
+      "url": "learncpp.com/0.3 — Introduction to CC++.md",
+      "date": "2022/10/31 13:53:46",
+      "summary": "0.3 — Introduction to CC++",
+      "tags": [
+        "learncpp.com"
+      ]
     },
     {
-      "id": "fawefewfaweiofvssaawer81d5v",
-      "name": "nianzhou.ji and data structuresypes and data structuresypes and data structures",
-      "url": "test3.md",
-      "date": "2024/03/21",
-      "summary": "ata structures, but these often differ from one\n                        language to another. This article attempts to list the built-in data structures available in\n                        JavaScript and what properties they have. These can be used to build other data structures.\n                        Wherever possible, comparisons with other languages are drawn.\n\n                        Dynamic typing\n                        JavaScript is a loosely typed and dynamic language. Variables in JavaScript are not directly\n                        associated with any particular value type, and any variable can be assigned (and re-assigned)\n                        values of all types:\n\n                        let foo = 42; // foo is now a number\n                        foo = 'bar'; // foo is now a string\n                        foo = true; // foo is now a boolean",
-      "tags": ["JAVASCRIPT", "java"]
-
+      "id": "59d393ff-0b82-11ef-9cb2-005056c00008",
+      "name": "0.4 — Introduction to C++ development",
+      "url": "learncpp.com/0.4 — Introduction to C++ development.md",
+      "date": "2023/05/26 21:14:22",
+      "summary": "0.4 — Introduction to C++ development",
+      "tags": [
+        "learncpp.com"
+      ]
     },
     {
-      "id": "151w5ef32f",
-      "name": "safawfaewJavaScript data types and data structures ypes and data structuresypes and data structuresypes and data structures",
-      "url": "test3.md",
-      "date": "2024/03/21",
-      "summary": "ata structures, but these often differ from one\n                        language to another. This article attempts to list the built-in data structures available in\n                        JavaScript and what properties they have. These can be used to build other data structures.\n                        Wherever possible, comparisons with other languages are drawn.\n\n                        Dynamic typing\n                        JavaScript is a loosely typed and dynamic language. Variables in JavaScript are not directly\n                        associated with any particular value type, and any variable can be assigned (and re-assigned)\n                        values of all types:\n\n                        let foo = 42; // foo is now a number\n                        foo = 'bar'; // foo is now a string\n                        foo = true; // foo is now a boolean",
-      "tags": ["JAVASCRIPT", "javwea","JAVA3SCRIPT"]
-
+      "id": "59d651a8-0b82-11ef-b878-005056c00008",
+      "name": "0.5 — Introduction to the compiler, linker, and libraries",
+      "url": "learncpp.com/0.5 — Introduction to the compiler, linker, and libraries.md",
+      "date": "2022/10/31 14:55:05",
+      "summary": "0.5 — Introduction to the compiler, linker, and libraries",
+      "tags": [
+        "learncpp.com"
+      ]
     },
     {
-      "id": "151w5effwevgwe8g48w4g832f",
-      "name": "safawfaewJavaScript data types and data structures ypes and data structuresypes and data structuresypes and data structures",
-      "url": "test3.md",
-      "date": "2024/03/21",
-      "summary": "ata structures, but these often differ from one\n                        language to another. This article attempts to list the built-in data structures available in\n                        JavaScript and what properties they have. These can be used to build other data structures.\n                        Wherever possible, comparisons with other languages are drawn.\n\n                        Dynamic typing\n                        JavaScript is a loosely typed and dynamic language. Variables in JavaScript are not directly\n                        associated with any particular value type, and any variable can be assigned (and re-assigned)\n                        values of all types:\n\n                        let foo = 42; // foo is now a number\n                        foo = 'bar'; // foo is now a string\n                        foo = true; // foo is now a boolean",
-      "tags": ["JAVASCRIPT", "jadva","JAVdASCRIPT"]
-
+      "id": "59deb61c-0b82-11ef-89e7-005056c00008",
+      "name": "0.6 — Installing an Integrated Development Environment (IDE)",
+      "url": "learncpp.com/0.6 — Installing an Integrated Development Environment (IDE).md",
+      "date": "2022/10/31 15:03:13",
+      "summary": "0.6 — Installing an Integrated Development Environment (IDE)",
+      "tags": [
+        "learncpp.com"
+      ]
     },
     {
-      "id": "151sfaewgw1451541gg48w4g832f",
-      "name": "safawfaewJavaScript data types and data structures ypes and data structuresypes and data structuresypes and data structures",
-      "url": "test3.md",
-      "date": "2024/03/21",
-      "summary": "ata structures, but these often differ from one\n                        language to another. This article attempts to list the built-in data structures available in\n                        JavaScript and what properties they have. These can be used to build other data structures.\n                        Wherever possible, comparisons with other languages are drawn.\n\n                        Dynamic typing\n                        JavaScript is a loosely typed and dynamic language. Variables in JavaScript are not directly\n                        associated with any particular value type, and any variable can be assigned (and re-assigned)\n                        values of all types:\n\n                        let foo = 42; // foo is now a number\n                        foo = 'bar'; // foo is now a string\n                        foo = true; // foo is now a boolean",
-      "tags": ["JAVASCRIPT", "JAVAdShCRIPT",  "jayva"]
-
+      "id": "59dfa075-0b82-11ef-bd90-005056c00008",
+      "name": "0.7 — Compiling your first program",
+      "url": "learncpp.com/0.7 — Compiling your first program.md",
+      "date": "2022/10/31 15:12:24",
+      "summary": "0.7 — Compiling your first program",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "5a1fddbf-0b82-11ef-8384-005056c00008",
+      "name": "0.8 — A few common C++ problems",
+      "url": "learncpp.com/0.8 — A few common C++ problems.md",
+      "date": "2022/10/31 15:36:47",
+      "summary": "0.8 — A few common C++ problems",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "5a20a110-0b82-11ef-a7a1-005056c00008",
+      "name": "0.9 — Configuring your compiler Build configurations",
+      "url": "learncpp.com/0.9 — Configuring your compiler Build configurations.md",
+      "date": "2022/10/31 15:40:13",
+      "summary": "0.9 — Configuring your compiler Build configurations",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "5a25aa24-0b82-11ef-afd8-005056c00008",
+      "name": "1.1 — Statements and the structure of a program",
+      "url": "learncpp.com/1.1 — Statements and the structure of a program.md",
+      "date": "2022/10/31 16:29:22",
+      "summary": "1.1 — Statements and the structure of a program",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "5a264660-0b82-11ef-a301-005056c00008",
+      "name": "1.10 — Introduction to expressions",
+      "url": "learncpp.com/1.10 — Introduction to expressions.md",
+      "date": "2022/11/01 16:57:22",
+      "summary": "1.10 — Introduction to expressions",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "5a2757ce-0b82-11ef-92a4-005056c00008",
+      "name": "1.11 — Developing your first program",
+      "url": "learncpp.com/1.11 — Developing your first program.md",
+      "date": "2022/11/01 16:59:40",
+      "summary": "1.11 — Developing your first program",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c4433b5-0b83-11ef-8d56-005056c00008",
+      "name": "1.2 — Comments",
+      "url": "learncpp.com/1.2 — Comments.md",
+      "date": "2022/10/31 16:58:19",
+      "summary": "1.2 — Comments",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c44f706-0b83-11ef-864c-005056c00008",
+      "name": "1.3 — Introduction to objects and variables",
+      "url": "learncpp.com/1.3 — Introduction to objects and variables.md",
+      "date": "2022/10/31 18:50:35",
+      "summary": "1.3 — Introduction to objects and variables",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c45ba59-0b83-11ef-a830-005056c00008",
+      "name": "1.4 — Variable assignment and initialization",
+      "url": "learncpp.com/1.4 — Variable assignment and initialization.md",
+      "date": "2023/05/30 10:29:03",
+      "summary": "1.4 — Variable assignment and initialization",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c465696-0b83-11ef-8d0b-005056c00008",
+      "name": "1.5 — Introduction to iostream cout, cin, and endl",
+      "url": "learncpp.com/1.5 — Introduction to iostream cout, cin, and endl.md",
+      "date": "2023/05/30 10:40:33",
+      "summary": "1.5 — Introduction to iostream cout, cin, and endl",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c4719e5-0b83-11ef-a22e-005056c00008",
+      "name": "1.6 — Uninitialized variables and undefined behavior",
+      "url": "learncpp.com/1.6 — Uninitialized variables and undefined behavior.md",
+      "date": "2022/11/01 15:39:06",
+      "summary": "1.6 — Uninitialized variables and undefined behavior",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c47dd34-0b83-11ef-b4a6-005056c00008",
+      "name": "1.7 — Keywords and naming identifiers",
+      "url": "learncpp.com/1.7 — Keywords and naming identifiers.md",
+      "date": "2023/05/30 11:07:20",
+      "summary": "1.7 — Keywords and naming identifiers",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c48a084-0b83-11ef-9f7d-005056c00008",
+      "name": "1.8 — Whitespace and basic formatting",
+      "url": "learncpp.com/1.8 — Whitespace and basic formatting.md",
+      "date": "2023/05/30 11:09:40",
+      "summary": "1.8 — Whitespace and basic formatting",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c493cc3-0b83-11ef-8183-005056c00008",
+      "name": "1.9 — Introduction to literals and operators",
+      "url": "learncpp.com/1.9 — Introduction to literals and operators.md",
+      "date": "2022/11/01 16:30:09",
+      "summary": "1.9 — Introduction to literals and operators",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c4a0015-0b83-11ef-9a18-005056c00008",
+      "name": "1.x — Chapter 1 summary and quiz",
+      "url": "learncpp.com/1.x — Chapter 1 summary and quiz.md",
+      "date": "2022/11/01 17:13:06",
+      "summary": "1.x — Chapter 1 summary and quiz",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c4a9c58-0b83-11ef-b79a-005056c00008",
+      "name": "10.1 — Introduction to program-defined (user-defined) types",
+      "url": "learncpp.com/10.1 — Introduction to program-defined (user-defined) types.md",
+      "date": "2023/04/19 10:33:09",
+      "summary": "10.1 — Introduction to program-defined (user-defined) types",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c4badca-0b83-11ef-a4fd-005056c00008",
+      "name": "10.10 — Class templates",
+      "url": "learncpp.com/10.10 — Class templates.md",
+      "date": "2022/11/09 10:12:19",
+      "summary": "10.10 — Class templates",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c4c9825-0b83-11ef-bea2-005056c00008",
+      "name": "10.11 — Class template argument deduction (CTAD) and deduction guides",
+      "url": "learncpp.com/10.11 — Class template argument deduction (CTAD) and deduction guides.md",
+      "date": "2022/11/09 10:20:18",
+      "summary": "10.11 — Class template argument deduction (CTAD) and deduction guides",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c4d5b73-0b83-11ef-9887-005056c00008",
+      "name": "10.2 — Unscoped enumerations",
+      "url": "learncpp.com/10.2 — Unscoped enumerations.md",
+      "date": "2022/11/08 19:36:40",
+      "summary": "10.2 — Unscoped enumerations",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c4e1ec4-0b83-11ef-b8d3-005056c00008",
+      "name": "10.3 — Unscoped enumeration input and output",
+      "url": "learncpp.com/10.3 — Unscoped enumeration input and output.md",
+      "date": "2022/11/08 19:40:39",
+      "summary": "10.3 — Unscoped enumeration input and output",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c4ee213-0b83-11ef-8206-005056c00008",
+      "name": "10.4 — Scoped enumerations (enum classes)",
+      "url": "learncpp.com/10.4 — Scoped enumerations (enum classes).md",
+      "date": "2023/06/01 14:57:26",
+      "summary": "10.4 — Scoped enumerations (enum classes)",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c4fa565-0b83-11ef-8b8e-005056c00008",
+      "name": "10.5 — Introduction to structs, members, and member selection",
+      "url": "learncpp.com/10.5 — Introduction to structs, members, and member selection.md",
+      "date": "2022/11/08 19:52:21",
+      "summary": "10.5 — Introduction to structs, members, and member selection",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c5068b6-0b83-11ef-8b64-005056c00008",
+      "name": "10.6 — Struct aggregate initialization",
+      "url": "learncpp.com/10.6 — Struct aggregate initialization.md",
+      "date": "2022/11/09 09:28:16",
+      "summary": "10.6 — Struct aggregate initialization",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c5104f4-0b83-11ef-980f-005056c00008",
+      "name": "10.7 — Default member initialization",
+      "url": "learncpp.com/10.7 — Default member initialization.md",
+      "date": "2023/06/01 18:08:17",
+      "summary": "10.7 — Default member initialization",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c51c844-0b83-11ef-aad1-005056c00008",
+      "name": "10.8 — Struct passing and miscellany",
+      "url": "learncpp.com/10.8 — Struct passing and miscellany.md",
+      "date": "2022/11/09 10:04:08",
+      "summary": "10.8 — Struct passing and miscellany",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c560e0a-0b83-11ef-bcfb-005056c00008",
+      "name": "10.9 — Member selection with pointers and references",
+      "url": "learncpp.com/10.9 — Member selection with pointers and references.md",
+      "date": "2022/11/09 10:10:13",
+      "summary": "10.9 — Member selection with pointers and references",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c56d155-0b83-11ef-92be-005056c00008",
+      "name": "10.x — Chapter 10 summary and quiz",
+      "url": "learncpp.com/10.x — Chapter 10 summary and quiz.md",
+      "date": "2022/11/09 10:25:20",
+      "summary": "10.x — Chapter 10 summary and quiz",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3c5794a4-0b83-11ef-b874-005056c00008",
+      "name": "10.y — Using a language reference",
+      "url": "learncpp.com/10.y — Using a language reference.md",
+      "date": "2022/11/09 10:33:45",
+      "summary": "10.y — Using a language reference",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3cbe7197-0b83-11ef-a649-005056c00008",
+      "name": "11.10 — C-style string symbolic constants",
+      "url": "learncpp.com/11.10 — C-style string symbolic constants.md",
+      "date": "2022/11/09 18:30:51",
+      "summary": "11.10 — C-style string symbolic constants",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3cbf8303-0b83-11ef-9120-005056c00008",
+      "name": "11.11 — Dynamic memory allocation with new and delete",
+      "url": "learncpp.com/11.11 — Dynamic memory allocation with new and delete.md",
+      "date": "2023/06/02 11:03:52",
+      "summary": "11.11 — Dynamic memory allocation with new and delete",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3cc06d68-0b83-11ef-9e27-005056c00008",
+      "name": "11.12 — Dynamically allocating arrays",
+      "url": "learncpp.com/11.12 — Dynamically allocating arrays.md",
+      "date": "2023/06/02 11:23:57",
+      "summary": "11.12 — Dynamically allocating arrays",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3cc109a3-0b83-11ef-8050-005056c00008",
+      "name": "11.13 — For-each loops",
+      "url": "learncpp.com/11.13 — For-each loops.md",
+      "date": "2023/04/19 13:38:02",
+      "summary": "11.13 — For-each loops",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3cc1f407-0b83-11ef-bf24-005056c00008",
+      "name": "11.14 — Void pointers",
+      "url": "learncpp.com/11.14 — Void pointers.md",
+      "date": "2022/11/10 14:33:34",
+      "summary": "11.14 — Void pointers",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3cc2b757-0b83-11ef-b2ab-005056c00008",
+      "name": "11.15 — Pointers to pointers and dynamic multidimensional arrays",
+      "url": "learncpp.com/11.15 — Pointers to pointers and dynamic multidimensional arrays.md",
+      "date": "2022/11/10 14:38:54",
+      "summary": "11.15 — Pointers to pointers and dynamic multidimensional arrays",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3cc37aa6-0b83-11ef-830d-005056c00008",
+      "name": "11.16 — An introduction to stdarray",
+      "url": "learncpp.com/11.16 — An introduction to stdarray.md",
+      "date": "2023/04/19 13:45:14",
+      "summary": "11.16 — An introduction to stdarray",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3cc46508-0b83-11ef-8fa8-005056c00008",
+      "name": "11.17 — An introduction to stdvector",
+      "url": "learncpp.com/11.17 — An introduction to stdvector.md",
+      "date": "2022/11/10 16:26:36",
+      "summary": "11.17 — An introduction to stdvector",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3cc54f68-0b83-11ef-9ff9-005056c00008",
+      "name": "11.18 — Introduction to iterators",
+      "url": "learncpp.com/11.18 — Introduction to iterators.md",
+      "date": "2022/11/10 16:35:03",
+      "summary": "11.18 — Introduction to iterators",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3cc639c8-0b83-11ef-aa04-005056c00008",
+      "name": "11.19 — Introduction to standard library algorithms",
+      "url": "learncpp.com/11.19 — Introduction to standard library algorithms.md",
+      "date": "2022/11/10 17:05:29",
+      "summary": "11.19 — Introduction to standard library algorithms",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3cc74b37-0b83-11ef-8f55-005056c00008",
+      "name": "11.5 — Multidimensional Arrays",
+      "url": "learncpp.com/11.5 — Multidimensional Arrays.md",
+      "date": "2022/11/09 16:27:07",
+      "summary": "11.5 — Multidimensional Arrays",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3cc80e88-0b83-11ef-8c24-005056c00008",
+      "name": "11.6 — C-style strings",
+      "url": "learncpp.com/11.6 — C-style strings.md",
+      "date": "2022/11/09 16:29:02",
+      "summary": "11.6 — C-style strings",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3cc8f8e8-0b83-11ef-8fe8-005056c00008",
+      "name": "11.7 — stdstring_view (part 2)",
+      "url": "learncpp.com/11.7 — stdstring_view (part 2).md",
+      "date": "2022/11/09 17:51:51",
+      "summary": "11.7 — stdstring_view (part 2)",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3cca0a58-0b83-11ef-9406-005056c00008",
+      "name": "11.8 — Pointers and arrays",
+      "url": "learncpp.com/11.8 — Pointers and arrays.md",
+      "date": "2023/06/02 10:11:58",
+      "summary": "11.8 — Pointers and arrays",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3ccb1bc7-0b83-11ef-a201-005056c00008",
+      "name": "11.9 — Pointer arithmetic and array indexing",
+      "url": "learncpp.com/11.9 — Pointer arithmetic and array indexing.md",
+      "date": "2022/11/09 18:23:26",
+      "summary": "11.9 — Pointer arithmetic and array indexing",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "3ccbdf14-0b83-11ef-9b4b-005056c00008",
+      "name": "11.x — Chapter 11 comprehensive quiz",
+      "url": "learncpp.com/11.x — Chapter 11 comprehensive quiz.md",
+      "date": "2022/11/15 10:28:09",
+      "summary": "11.x — Chapter 11 comprehensive quiz",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9d857df-0b83-11ef-b92b-005056c00008",
+      "name": "11.1 — Arrays (Part I)",
+      "url": "learncpp.com/11.1 — Arrays (Part I).md",
+      "date": "2022/11/09 10:49:25",
+      "summary": "11.1 — Arrays (Part I)",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9d9694c-0b83-11ef-93c5-005056c00008",
+      "name": "11.2 — Arrays (Part II)",
+      "url": "learncpp.com/11.2 — Arrays (Part II).md",
+      "date": "2022/11/09 11:01:26",
+      "summary": "11.2 — Arrays (Part II)",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9da7abf-0b83-11ef-93fa-005056c00008",
+      "name": "11.3 — Arrays and loops",
+      "url": "learncpp.com/11.3 — Arrays and loops.md",
+      "date": "2022/11/09 11:06:43",
+      "summary": "11.3 — Arrays and loops",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9db3e0d-0b83-11ef-b3ee-005056c00008",
+      "name": "11.4 — Sorting an array using selection sort",
+      "url": "learncpp.com/11.4 — Sorting an array using selection sort.md",
+      "date": "2022/11/09 11:24:02",
+      "summary": "11.4 — Sorting an array using selection sort",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9dc015d-0b83-11ef-a411-005056c00008",
+      "name": "12.1 — Function Pointers",
+      "url": "learncpp.com/12.1 — Function Pointers.md",
+      "date": "2022/11/15 11:16:32",
+      "summary": "12.1 — Function Pointers",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9dd39dd-0b83-11ef-9c43-005056c00008",
+      "name": "12.2 — The stack and the heap",
+      "url": "learncpp.com/12.2 — The stack and the heap.md",
+      "date": "2022/11/15 13:29:44",
+      "summary": "12.2 — The stack and the heap",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9de243e-0b83-11ef-8699-005056c00008",
+      "name": "12.3 — stdvector capacity and stack behavior",
+      "url": "learncpp.com/12.3 — stdvector capacity and stack behavior.md",
+      "date": "2022/11/15 14:06:20",
+      "summary": "12.3 — stdvector capacity and stack behavior",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9df35ae-0b83-11ef-ab0f-005056c00008",
+      "name": "12.4 — Recursion",
+      "url": "learncpp.com/12.4 — Recursion.md",
+      "date": "2022/11/15 15:11:37",
+      "summary": "12.4 — Recursion",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9ed185b-0b83-11ef-983d-005056c00008",
+      "name": "12.5 — Command line arguments",
+      "url": "learncpp.com/12.5 — Command line arguments.md",
+      "date": "2022/11/15 15:13:20",
+      "summary": "12.5 — Command line arguments",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9ee29d0-0b83-11ef-b641-005056c00008",
+      "name": "12.6 — Ellipsis (and why to avoid them)",
+      "url": "learncpp.com/12.6 — Ellipsis (and why to avoid them).md",
+      "date": "2022/11/15 15:18:49",
+      "summary": "12.6 — Ellipsis (and why to avoid them)",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9ef142c-0b83-11ef-a7d4-005056c00008",
+      "name": "12.7 — Introduction to lambdas (anonymous functions)",
+      "url": "learncpp.com/12.7 — Introduction to lambdas (anonymous functions).md",
+      "date": "2022/12/01 08:53:23",
+      "summary": "12.7 — Introduction to lambdas (anonymous functions)",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9effe8b-0b83-11ef-9dfd-005056c00008",
+      "name": "12.8 — Lambda captures",
+      "url": "learncpp.com/12.8 — Lambda captures.md",
+      "date": "2022/11/16 10:56:20",
+      "summary": "12.8 — Lambda captures",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9f15e34-0b83-11ef-909e-005056c00008",
+      "name": "12.x — Chapter 12 comprehensive quiz",
+      "url": "learncpp.com/12.x — Chapter 12 comprehensive quiz.md",
+      "date": "2022/11/16 11:05:38",
+      "summary": "12.x — Chapter 12 comprehensive quiz",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9f2216d-0b83-11ef-930f-005056c00008",
+      "name": "13.1 — Welcome to object-oriented programming",
+      "url": "learncpp.com/13.1 — Welcome to object-oriented programming.md",
+      "date": "2023/06/02 13:58:38",
+      "summary": "13.1 — Welcome to object-oriented programming",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9f2bdab-0b83-11ef-9479-005056c00008",
+      "name": "13.10 — The hidden “this” pointer",
+      "url": "learncpp.com/13.10 — The hidden “this” pointer.md",
+      "date": "2022/11/18 09:56:43",
+      "summary": "13.10 — The hidden “this” pointer",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9f3a80f-0b83-11ef-b861-005056c00008",
+      "name": "13.11 — Class code and header files",
+      "url": "learncpp.com/13.11 — Class code and header files.md",
+      "date": "2023/06/07 18:42:04",
+      "summary": "13.11 — Class code and header files",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9f4926a-0b83-11ef-bb1a-005056c00008",
+      "name": "13.12 — Const class objects and member functions",
+      "url": "learncpp.com/13.12 — Const class objects and member functions.md",
+      "date": "2022/11/18 13:27:52",
+      "summary": "13.12 — Const class objects and member functions",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9f57ccb-0b83-11ef-80be-005056c00008",
+      "name": "13.13 — Static member variables",
+      "url": "learncpp.com/13.13 — Static member variables.md",
+      "date": "2022/11/18 14:18:19",
+      "summary": "13.13 — Static member variables",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9f68e40-0b83-11ef-8b98-005056c00008",
+      "name": "13.14 — Static member functions",
+      "url": "learncpp.com/13.14 — Static member functions.md",
+      "date": "2023/06/07 19:21:22",
+      "summary": "13.14 — Static member functions",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9f77898-0b83-11ef-9994-005056c00008",
+      "name": "13.15 — Friend functions and classes",
+      "url": "learncpp.com/13.15 — Friend functions and classes.md",
+      "date": "2022/11/18 14:28:52",
+      "summary": "13.15 — Friend functions and classes",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9f88a12-0b83-11ef-a2cb-005056c00008",
+      "name": "13.16 — Anonymous objects",
+      "url": "learncpp.com/13.16 — Anonymous objects.md",
+      "date": "2022/11/18 14:39:59",
+      "summary": "13.16 — Anonymous objects",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9f9c28c-0b83-11ef-b0fd-005056c00008",
+      "name": "13.17 — Nested types in classes",
+      "url": "learncpp.com/13.17 — Nested types in classes.md",
+      "date": "2022/11/18 14:43:06",
+      "summary": "13.17 — Nested types in classes",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9faaced-0b83-11ef-b488-005056c00008",
+      "name": "13.18 — Timing your code",
+      "url": "learncpp.com/13.18 — Timing your code.md",
+      "date": "2022/11/18 14:43:54",
+      "summary": "13.18 — Timing your code",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9fb974b-0b83-11ef-8dcc-005056c00008",
+      "name": "13.2 — Classes and class members",
+      "url": "learncpp.com/13.2 — Classes and class members.md",
+      "date": "2023/06/02 14:17:21",
+      "summary": "13.2 — Classes and class members",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9fcbdfd-0b83-11ef-af1e-005056c00008",
+      "name": "13.3 — Public vs private access specifiers",
+      "url": "learncpp.com/13.3 — Public vs private access specifiers.md",
+      "date": "2023/06/02 16:10:54",
+      "summary": "13.3 — Public vs private access specifiers",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "b9fdcf80-0b83-11ef-86a9-005056c00008",
+      "name": "13.4 — Access functions and encapsulation",
+      "url": "learncpp.com/13.4 — Access functions and encapsulation.md",
+      "date": "2022/11/17 13:36:14",
+      "summary": "13.4 — Access functions and encapsulation",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "ba012c09-0b83-11ef-858a-005056c00008",
+      "name": "13.5 — Constructors",
+      "url": "learncpp.com/13.5 — Constructors.md",
+      "date": "2022/11/17 13:50:48",
+      "summary": "13.5 — Constructors",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "ba023d7b-0b83-11ef-9f46-005056c00008",
+      "name": "13.6 — Constructor member initializer lists",
+      "url": "learncpp.com/13.6 — Constructor member initializer lists.md",
+      "date": "2023/06/02 17:38:45",
+      "summary": "13.6 — Constructor member initializer lists",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "ba034ee5-0b83-11ef-96bc-005056c00008",
+      "name": "13.7 — Non-static member initialization",
+      "url": "learncpp.com/13.7 — Non-static member initialization.md",
+      "date": "2022/11/17 14:23:12",
+      "summary": "13.7 — Non-static member initialization",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "ba041239-0b83-11ef-bba7-005056c00008",
+      "name": "13.8 — Overlapping and delegating constructors",
+      "url": "learncpp.com/13.8 — Overlapping and delegating constructors.md",
+      "date": "2023/06/06 11:36:41",
+      "summary": "13.8 — Overlapping and delegating constructors",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "ba0523b0-0b83-11ef-bd06-005056c00008",
+      "name": "13.9 — Destructors",
+      "url": "learncpp.com/13.9 — Destructors.md",
+      "date": "2023/06/06 11:49:37",
+      "summary": "13.9 — Destructors",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "ba060e09-0b83-11ef-b90b-005056c00008",
+      "name": "13.x — Chapter 13 comprehensive quiz",
+      "url": "learncpp.com/13.x — Chapter 13 comprehensive quiz.md",
+      "date": "2022/11/18 14:51:44",
+      "summary": "13.x — Chapter 13 comprehensive quiz",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "ba06d157-0b83-11ef-aac3-005056c00008",
+      "name": "14.1 — Introduction to operator overloading",
+      "url": "learncpp.com/14.1 — Introduction to operator overloading.md",
+      "date": "2022/11/21 08:58:30",
+      "summary": "14.1 — Introduction to operator overloading",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "ba0794a7-0b83-11ef-8376-005056c00008",
+      "name": "14.10 — Overloading the parenthesis operator",
+      "url": "learncpp.com/14.10 — Overloading the parenthesis operator.md",
+      "date": "2022/11/21 09:14:42",
+      "summary": "14.10 — Overloading the parenthesis operator",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "ba087f07-0b83-11ef-a546-005056c00008",
+      "name": "14.11 — Overloading typecasts",
+      "url": "learncpp.com/14.11 — Overloading typecasts.md",
+      "date": "2022/11/21 09:15:39",
+      "summary": "14.11 — Overloading typecasts",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "ba094256-0b83-11ef-914c-005056c00008",
+      "name": "14.12 — The copy constructor",
+      "url": "learncpp.com/14.12 — The copy constructor.md",
+      "date": "2022/11/21 09:17:16",
+      "summary": "14.12 — The copy constructor",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "ba0a2cbe-0b83-11ef-a2a8-005056c00008",
+      "name": "14.13 — Copy initialization",
+      "url": "learncpp.com/14.13 — Copy initialization.md",
+      "date": "2022/11/21 09:32:57",
+      "summary": "14.13 — Copy initialization",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "ba0af006-0b83-11ef-bf6a-005056c00008",
+      "name": "14.14 — Converting constructors, explicit, and delete",
+      "url": "learncpp.com/14.14 — Converting constructors, explicit, and delete.md",
+      "date": "2022/11/21 09:42:42",
+      "summary": "14.14 — Converting constructors, explicit, and delete",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c311ab61-0b84-11ef-8f36-005056c00008",
+      "name": "14.15 — Overloading the assignment operator",
+      "url": "learncpp.com/14.15 — Overloading the assignment operator.md",
+      "date": "2022/11/21 10:00:13",
+      "summary": "14.15 — Overloading the assignment operator",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c31295c1-0b84-11ef-b602-005056c00008",
+      "name": "14.16 — Shallow vs. deep copying",
+      "url": "learncpp.com/14.16 — Shallow vs. deep copying.md",
+      "date": "2022/11/21 10:01:20",
+      "summary": "14.16 — Shallow vs. deep copying",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c3138021-0b84-11ef-80a0-005056c00008",
+      "name": "14.17 — Overloading operators and function templates",
+      "url": "learncpp.com/14.17 — Overloading operators and function templates.md",
+      "date": "2022/11/21 10:07:18",
+      "summary": "14.17 — Overloading operators and function templates",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c3146a7f-0b84-11ef-89c9-005056c00008",
+      "name": "14.2 — Overloading the arithmetic operators using friend functions",
+      "url": "learncpp.com/14.2 — Overloading the arithmetic operators using friend functions.md",
+      "date": "2022/11/21 09:01:19",
+      "summary": "14.2 — Overloading the arithmetic operators using friend functions",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c3157bf0-0b84-11ef-b9b2-005056c00008",
+      "name": "14.3 — Overloading operators using normal functions",
+      "url": "learncpp.com/14.3 — Overloading operators using normal functions.md",
+      "date": "2022/11/21 09:02:09",
+      "summary": "14.3 — Overloading operators using normal functions",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c3166650-0b84-11ef-8dc0-005056c00008",
+      "name": "14.4 — Overloading the IO operators",
+      "url": "learncpp.com/14.4 — Overloading the IO operators.md",
+      "date": "2022/11/21 09:03:48",
+      "summary": "14.4 — Overloading the IO operators",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c31750b0-0b84-11ef-a9f8-005056c00008",
+      "name": "14.5 — Overloading operators using member functions",
+      "url": "learncpp.com/14.5 — Overloading operators using member functions.md",
+      "date": "2022/11/21 09:04:53",
+      "summary": "14.5 — Overloading operators using member functions",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c3183b14-0b84-11ef-b4e3-005056c00008",
+      "name": "14.6 — Overloading unary operators +, -, and !",
+      "url": "learncpp.com/14.6 — Overloading unary operators +, -, and !.md",
+      "date": "2022/11/21 09:05:56",
+      "summary": "14.6 — Overloading unary operators +, -, and !",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c318fe60-0b84-11ef-981e-005056c00008",
+      "name": "14.7 — Overloading the comparison operators",
+      "url": "learncpp.com/14.7 — Overloading the comparison operators.md",
+      "date": "2022/11/21 09:07:14",
+      "summary": "14.7 — Overloading the comparison operators",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c319e8bd-0b84-11ef-9d53-005056c00008",
+      "name": "14.8 — Overloading the increment and decrement operators",
+      "url": "learncpp.com/14.8 — Overloading the increment and decrement operators.md",
+      "date": "2022/11/21 09:08:11",
+      "summary": "14.8 — Overloading the increment and decrement operators",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c31ad320-0b84-11ef-b9a7-005056c00008",
+      "name": "14.9 — Overloading the subscript operator",
+      "url": "learncpp.com/14.9 — Overloading the subscript operator.md",
+      "date": "2022/11/21 09:09:59",
+      "summary": "14.9 — Overloading the subscript operator",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c31bbd80-0b84-11ef-b157-005056c00008",
+      "name": "14.x — Chapter 14 comprehensive quiz",
+      "url": "learncpp.com/14.x — Chapter 14 comprehensive quiz.md",
+      "date": "2022/11/21 10:08:13",
+      "summary": "14.x — Chapter 14 comprehensive quiz",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c31c9903-0b84-11ef-8281-005056c00008",
+      "name": "16.1 — Object relationships",
+      "url": "learncpp.com/16.1 — Object relationships.md",
+      "date": "2022/11/21 10:14:35",
+      "summary": "16.1 — Object relationships",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c31d5c51-0b84-11ef-9f2d-005056c00008",
+      "name": "16.2 — Composition",
+      "url": "learncpp.com/16.2 — Composition.md",
+      "date": "2022/11/21 10:38:28",
+      "summary": "16.2 — Composition",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c31e46b1-0b84-11ef-a849-005056c00008",
+      "name": "16.3 — Aggregation",
+      "url": "learncpp.com/16.3 — Aggregation.md",
+      "date": "2022/11/21 11:41:49",
+      "summary": "16.3 — Aggregation",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c31f3111-0b84-11ef-8f8c-005056c00008",
+      "name": "16.4 — Association",
+      "url": "learncpp.com/16.4 — Association.md",
+      "date": "2022/11/21 11:49:20",
+      "summary": "16.4 — Association",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c3204282-0b84-11ef-b464-005056c00008",
+      "name": "16.5 — Dependencies",
+      "url": "learncpp.com/16.5 — Dependencies.md",
+      "date": "2022/11/21 11:58:39",
+      "summary": "16.5 — Dependencies",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c327bc8c-0b84-11ef-a342-005056c00008",
+      "name": "16.6 — Container classes",
+      "url": "learncpp.com/16.6 — Container classes.md",
+      "date": "2022/11/21 12:04:23",
+      "summary": "16.6 — Container classes",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c328f513-0b84-11ef-b9b8-005056c00008",
+      "name": "16.7 — stdinitializer_list",
+      "url": "learncpp.com/16.7 — stdinitializer_list.md",
+      "date": "2022/11/21 12:06:14",
+      "summary": "16.7 — stdinitializer_list",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c32a2d94-0b84-11ef-9f64-005056c00008",
+      "name": "16.x — Chapter 16 comprehensive quiz",
+      "url": "learncpp.com/16.x — Chapter 16 comprehensive quiz.md",
+      "date": "2022/11/21 12:08:15",
+      "summary": "16.x — Chapter 16 comprehensive quiz",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c32b17f0-0b84-11ef-b871-005056c00008",
+      "name": "17.1 — Introduction to inheritance",
+      "url": "learncpp.com/17.1 — Introduction to inheritance.md",
+      "date": "2022/11/21 12:09:11",
+      "summary": "17.1 — Introduction to inheritance",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c32c777d-0b84-11ef-8b21-005056c00008",
+      "name": "17.2 — Basic inheritance in C++",
+      "url": "learncpp.com/17.2 — Basic inheritance in C++.md",
+      "date": "2022/11/22 08:49:37",
+      "summary": "17.2 — Basic inheritance in C++",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c32e15b7-0b84-11ef-adc3-005056c00008",
+      "name": "17.3 — Order of construction of derived classes",
+      "url": "learncpp.com/17.3 — Order of construction of derived classes.md",
+      "date": "2022/11/22 08:59:02",
+      "summary": "17.3 — Order of construction of derived classes",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c32f4e39-0b84-11ef-a6c3-005056c00008",
+      "name": "17.4 — Constructors and initialization of derived classes",
+      "url": "learncpp.com/17.4 — Constructors and initialization of derived classes.md",
+      "date": "2022/11/22 09:04:34",
+      "summary": "17.4 — Constructors and initialization of derived classes",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c330adde-0b84-11ef-879e-005056c00008",
+      "name": "17.5 — Inheritance and access specifiers",
+      "url": "learncpp.com/17.5 — Inheritance and access specifiers.md",
+      "date": "2022/11/22 09:41:46",
+      "summary": "17.5 — Inheritance and access specifiers",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c331bf3d-0b84-11ef-9001-005056c00008",
+      "name": "17.6 — Adding new functionality to a derived class",
+      "url": "learncpp.com/17.6 — Adding new functionality to a derived class.md",
+      "date": "2022/11/22 10:04:15",
+      "summary": "17.6 — Adding new functionality to a derived class",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c332d0a6-0b84-11ef-ab68-005056c00008",
+      "name": "17.7 — Calling inherited functions and overriding behavior",
+      "url": "learncpp.com/17.7 — Calling inherited functions and overriding behavior.md",
+      "date": "2022/11/22 10:36:24",
+      "summary": "17.7 — Calling inherited functions and overriding behavior",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c3345750-0b84-11ef-a843-005056c00008",
+      "name": "17.8 — Hiding inherited functionality",
+      "url": "learncpp.com/17.8 — Hiding inherited functionality.md",
+      "date": "2022/11/22 10:43:46",
+      "summary": "17.8 — Hiding inherited functionality",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c33568bc-0b84-11ef-a628-005056c00008",
+      "name": "17.9 — Multiple inheritance",
+      "url": "learncpp.com/17.9 — Multiple inheritance.md",
+      "date": "2022/11/22 11:02:47",
+      "summary": "17.9 — Multiple inheritance",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c336c848-0b84-11ef-abf3-005056c00008",
+      "name": "17.x — Chapter 17 comprehensive quiz",
+      "url": "learncpp.com/17.x — Chapter 17 comprehensive quiz.md",
+      "date": "2022/11/22 11:03:31",
+      "summary": "17.x — Chapter 17 comprehensive quiz",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c337b2a7-0b84-11ef-84ef-005056c00008",
+      "name": "18.1 — Pointers and references to the base class of derived objects",
+      "url": "learncpp.com/18.1 — Pointers and references to the base class of derived objects.md",
+      "date": "2022/11/22 11:06:53",
+      "summary": "18.1 — Pointers and references to the base class of derived objects",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c338eb27-0b84-11ef-a47d-005056c00008",
+      "name": "18.10 — Dynamic casting",
+      "url": "learncpp.com/18.10 — Dynamic casting.md",
+      "date": "2022/11/23 09:09:41",
+      "summary": "18.10 — Dynamic casting",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c33a98d6-0b84-11ef-a6ce-005056c00008",
+      "name": "18.11 — Printing inherited classes using operator",
+      "url": "learncpp.com/18.11 — Printing inherited classes using operator.md",
+      "date": "2022/11/23 09:12:47",
+      "summary": "18.11 — Printing inherited classes using operator",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c33bc0d2-0b84-11ef-a598-005056c00008",
+      "name": "18.2 — Virtual functions and polymorphism",
+      "url": "learncpp.com/18.2 — Virtual functions and polymorphism.md",
+      "date": "2023/06/09 15:24:19",
+      "summary": "18.2 — Virtual functions and polymorphism",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c33cf964-0b84-11ef-9c98-005056c00008",
+      "name": "18.3 — The override and final specifiers, and covariant return types",
+      "url": "learncpp.com/18.3 — The override and final specifiers, and covariant return types.md",
+      "date": "2023/06/09 15:32:11",
+      "summary": "18.3 — The override and final specifiers, and covariant return types",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c33e31e3-0b84-11ef-8997-005056c00008",
+      "name": "18.4 — Virtual destructors, virtual assignment, and overriding virtualization",
+      "url": "learncpp.com/18.4 — Virtual destructors, virtual assignment, and overriding virtualization.md",
+      "date": "2022/11/22 11:46:08",
+      "summary": "18.4 — Virtual destructors, virtual assignment, and overriding virtualization",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c33f4355-0b84-11ef-a626-005056c00008",
+      "name": "18.5 — Early binding and late binding",
+      "url": "learncpp.com/18.5 — Early binding and late binding.md",
+      "date": "2022/11/22 11:48:13",
+      "summary": "18.5 — Early binding and late binding",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c3402db4-0b84-11ef-8cac-005056c00008",
+      "name": "18.6 — The virtual table",
+      "url": "learncpp.com/18.6 — The virtual table.md",
+      "date": "2022/11/22 11:50:39",
+      "summary": "18.6 — The virtual table",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c341b454-0b84-11ef-a2f3-005056c00008",
+      "name": "18.7 — Pure virtual functions, abstract base classes, and interface classes",
+      "url": "learncpp.com/18.7 — Pure virtual functions, abstract base classes, and interface classes.md",
+      "date": "2023/06/13 09:42:00",
+      "summary": "18.7 — Pure virtual functions, abstract base classes, and interface classes",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c342ecd6-0b84-11ef-93d4-005056c00008",
+      "name": "18.8 — Virtual base classes",
+      "url": "learncpp.com/18.8 — Virtual base classes.md",
+      "date": "2022/11/22 19:47:17",
+      "summary": "18.8 — Virtual base classes",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c3442553-0b84-11ef-825d-005056c00008",
+      "name": "18.9 — Object slicing",
+      "url": "learncpp.com/18.9 — Object slicing.md",
+      "date": "2023/06/13 11:33:55",
+      "summary": "18.9 — Object slicing",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "c34536c4-0b84-11ef-b212-005056c00008",
+      "name": "18.x — Chapter 18 comprehensive quiz",
+      "url": "learncpp.com/18.x — Chapter 18 comprehensive quiz.md",
+      "date": "2023/06/13 13:35:41",
+      "summary": "18.x — Chapter 18 comprehensive quiz",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "78fe3acd-0b88-11ef-8edc-005056c00008",
+      "name": "19.1 — Template classes",
+      "url": "learncpp.com/19.1 — Template classes.md",
+      "date": "2022/11/23 09:17:26",
+      "summary": "19.1 — Template classes",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "78ff4c3e-0b88-11ef-be33-005056c00008",
+      "name": "19.2 — Template non-type parameters",
+      "url": "learncpp.com/19.2 — Template non-type parameters.md",
+      "date": "2022/11/23 09:35:43",
+      "summary": "19.2 — Template non-type parameters",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "79000f8f-0b88-11ef-9918-005056c00008",
+      "name": "19.3 — Function template specialization",
+      "url": "learncpp.com/19.3 — Function template specialization.md",
+      "date": "2022/11/23 09:38:21",
+      "summary": "19.3 — Function template specialization",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "7900f9ef-0b88-11ef-96b5-005056c00008",
+      "name": "19.4 — Class template specialization",
+      "url": "learncpp.com/19.4 — Class template specialization.md",
+      "date": "2022/11/23 09:40:14",
+      "summary": "19.4 — Class template specialization",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "7901e44a-0b88-11ef-a61e-005056c00008",
+      "name": "19.5 — Partial template specialization",
+      "url": "learncpp.com/19.5 — Partial template specialization.md",
+      "date": "2022/11/23 09:45:45",
+      "summary": "19.5 — Partial template specialization",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "7902ceae-0b88-11ef-97d4-005056c00008",
+      "name": "19.6 — Partial template specialization for pointers",
+      "url": "learncpp.com/19.6 — Partial template specialization for pointers.md",
+      "date": "2022/11/23 09:46:42",
+      "summary": "19.6 — Partial template specialization for pointers",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "7903b910-0b88-11ef-be14-005056c00008",
+      "name": "19.x — Chapter 19 comprehensive quiz",
+      "url": "learncpp.com/19.x — Chapter 19 comprehensive quiz.md",
+      "date": "2022/11/23 09:47:37",
+      "summary": "19.x — Chapter 19 comprehensive quiz",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "79047c5e-0b88-11ef-b159-005056c00008",
+      "name": "2.1 — Introduction to functions",
+      "url": "learncpp.com/2.1 — Introduction to functions.md",
+      "date": "2022/11/01 19:12:32",
+      "summary": "2.1 — Introduction to functions",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "7905b4dd-0b88-11ef-af47-005056c00008",
+      "name": "2.10 — Introduction to the preprocessor",
+      "url": "learncpp.com/2.10 — Introduction to the preprocessor.md",
+      "date": "2022/11/02 15:39:40",
+      "summary": "2.10 — Introduction to the preprocessor",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "79069f41-0b88-11ef-b6b7-005056c00008",
+      "name": "2.11 — Header files",
+      "url": "learncpp.com/2.11 — Header files.md",
+      "date": "2023/05/30 19:43:56",
+      "summary": "2.11 — Header files",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "79119bbd-0b88-11ef-936a-005056c00008",
+      "name": "2.12 — Header guards",
+      "url": "learncpp.com/2.12 — Header guards.md",
+      "date": "2023/05/31 09:51:41",
+      "summary": "2.12 — Header guards",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "7912ad31-0b88-11ef-9513-005056c00008",
+      "name": "2.13 — How to design your first programs",
+      "url": "learncpp.com/2.13 — How to design your first programs.md",
+      "date": "2023/04/18 10:47:06",
+      "summary": "2.13 — How to design your first programs",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "7913978d-0b88-11ef-b114-005056c00008",
+      "name": "2.2 — Function return values (value-returning functions)",
+      "url": "learncpp.com/2.2 — Function return values (value-returning functions).md",
+      "date": "2022/11/02 10:20:57",
+      "summary": "2.2 — Function return values (value-returning functions)",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "7914d010-0b88-11ef-bd2c-005056c00008",
+      "name": "2.3 — Void functions (non-value returning functions)",
+      "url": "learncpp.com/2.3 — Void functions (non-value returning functions).md",
+      "date": "2023/05/30 13:22:09",
+      "summary": "2.3 — Void functions (non-value returning functions)",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "7915ba6d-0b88-11ef-82c6-005056c00008",
+      "name": "2.4 — Introduction to function parameters and arguments",
+      "url": "learncpp.com/2.4 — Introduction to function parameters and arguments.md",
+      "date": "2023/05/30 13:33:58",
+      "summary": "2.4 — Introduction to function parameters and arguments",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "7918f077-0b88-11ef-862b-005056c00008",
+      "name": "2.5 — Introduction to local scope",
+      "url": "learncpp.com/2.5 — Introduction to local scope.md",
+      "date": "2022/11/02 11:45:47",
+      "summary": "2.5 — Introduction to local scope",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "7919d91d-0b88-11ef-a588-005056c00008",
+      "name": "2.6 — Why functions are useful, and how to use them effectively",
+      "url": "learncpp.com/2.6 — Why functions are useful, and how to use them effectively.md",
+      "date": "2023/05/30 18:17:24",
+      "summary": "2.6 — Why functions are useful, and how to use them effectively",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "791ac37e-0b88-11ef-b0f2-005056c00008",
+      "name": "2.7 — Forward declarations and definitions",
+      "url": "learncpp.com/2.7 — Forward declarations and definitions.md",
+      "date": "2023/05/30 18:32:50",
+      "summary": "2.7 — Forward declarations and definitions",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "791bd4ee-0b88-11ef-a5ea-005056c00008",
+      "name": "2.8 — Programs with multiple code files",
+      "url": "learncpp.com/2.8 — Programs with multiple code files.md",
+      "date": "2022/11/02 14:29:04",
+      "summary": "2.8 — Programs with multiple code files",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "793b25dc-0b88-11ef-8836-005056c00008",
+      "name": "2.9 — Naming collisions and an introduction to namespaces",
+      "url": "learncpp.com/2.9 — Naming collisions and an introduction to namespaces.md",
+      "date": "2022/11/02 15:05:05",
+      "summary": "2.9 — Naming collisions and an introduction to namespaces",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "793c5e5d-0b88-11ef-9ca4-005056c00008",
+      "name": "2.x — Chapter 2 summary and quiz",
+      "url": "learncpp.com/2.x — Chapter 2 summary and quiz.md",
+      "date": "2023/05/31 11:12:09",
+      "summary": "2.x — Chapter 2 summary and quiz",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "793d6fcb-0b88-11ef-87fa-005056c00008",
+      "name": "20.1 — The need for exceptions",
+      "url": "learncpp.com/20.1 — The need for exceptions.md",
+      "date": "2022/11/23 09:49:26",
+      "summary": "20.1 — The need for exceptions",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "793e813e-0b88-11ef-a7f7-005056c00008",
+      "name": "20.2 — Basic exception handling",
+      "url": "learncpp.com/20.2 — Basic exception handling.md",
+      "date": "2023/06/13 13:47:18",
+      "summary": "20.2 — Basic exception handling",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "793f92ac-0b88-11ef-a794-005056c00008",
+      "name": "20.3 — Exceptions, functions, and stack unwinding",
+      "url": "learncpp.com/20.3 — Exceptions, functions, and stack unwinding.md",
+      "date": "2022/11/23 10:37:15",
+      "summary": "20.3 — Exceptions, functions, and stack unwinding",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "79411948-0b88-11ef-97c4-005056c00008",
+      "name": "20.4 — Uncaught exceptions and catch-all handlers",
+      "url": "learncpp.com/20.4 — Uncaught exceptions and catch-all handlers.md",
+      "date": "2022/11/23 10:47:50",
+      "summary": "20.4 — Uncaught exceptions and catch-all handlers",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "794251cc-0b88-11ef-aed1-005056c00008",
+      "name": "20.5 — Exceptions, classes, and inheritance",
+      "url": "learncpp.com/20.5 — Exceptions, classes, and inheritance.md",
+      "date": "2022/11/23 10:54:56",
+      "summary": "20.5 — Exceptions, classes, and inheritance",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "7943b15a-0b88-11ef-90c6-005056c00008",
+      "name": "20.6 — Rethrowing exceptions",
+      "url": "learncpp.com/20.6 — Rethrowing exceptions.md",
+      "date": "2022/11/23 11:12:12",
+      "summary": "20.6 — Rethrowing exceptions",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "7944e9e3-0b88-11ef-aae4-005056c00008",
+      "name": "20.7 — Function try blocks",
+      "url": "learncpp.com/20.7 — Function try blocks.md",
+      "date": "2022/11/23 11:14:28",
+      "summary": "20.7 — Function try blocks",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "7946225e-0b88-11ef-b238-005056c00008",
+      "name": "20.8 — Exception dangers and downsides",
+      "url": "learncpp.com/20.8 — Exception dangers and downsides.md",
+      "date": "2022/11/23 11:20:10",
+      "summary": "20.8 — Exception dangers and downsides",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "794733d0-0b88-11ef-b747-005056c00008",
+      "name": "20.9 — Exception specifications and noexcept",
+      "url": "learncpp.com/20.9 — Exception specifications and noexcept.md",
+      "date": "2022/11/23 11:24:34",
+      "summary": "20.9 — Exception specifications and noexcept",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "181607cd-0b8c-11ef-b025-005056c00008",
+      "name": "20.x — Chapter 20 comprehensive quiz",
+      "url": "learncpp.com/20.x — Chapter 20 comprehensive quiz.md",
+      "date": "2022/11/23 11:29:23",
+      "summary": "20.x — Chapter 20 comprehensive quiz",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "1817193e-0b8c-11ef-baf4-005056c00008",
+      "name": "21.1 — The Standard Library",
+      "url": "learncpp.com/21.1 — The Standard Library.md",
+      "date": "2022/11/23 21:12:25",
+      "summary": "21.1 — The Standard Library",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "1817dc8c-0b8c-11ef-9cb9-005056c00008",
+      "name": "21.2 — STL containers overview",
+      "url": "learncpp.com/21.2 — STL containers overview.md",
+      "date": "2023/06/13 15:07:16",
+      "summary": "21.2 — STL containers overview",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "1818c6ed-0b8c-11ef-904a-005056c00008",
+      "name": "21.3 — STL iterators overview",
+      "url": "learncpp.com/21.3 — STL iterators overview.md",
+      "date": "2022/11/24 11:47:21",
+      "summary": "21.3 — STL iterators overview",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "1819b14d-0b8c-11ef-9257-005056c00008",
+      "name": "21.4 — STL algorithms overview",
+      "url": "learncpp.com/21.4 — STL algorithms overview.md",
+      "date": "2022/11/24 12:04:31",
+      "summary": "21.4 — STL algorithms overview",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "181a749d-0b8c-11ef-b9a0-005056c00008",
+      "name": "22.1 — stdstring and stdwstring",
+      "url": "learncpp.com/22.1 — stdstring and stdwstring.md",
+      "date": "2022/11/24 12:26:48",
+      "summary": "22.1 — stdstring and stdwstring",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "1828f38c-0b8c-11ef-9258-005056c00008",
+      "name": "22.2 — stdstring construction and destruction",
+      "url": "learncpp.com/22.2 — stdstring construction and destruction.md",
+      "date": "2022/11/24 19:59:32",
+      "summary": "22.2 — stdstring construction and destruction",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "182a04fb-0b8c-11ef-b43a-005056c00008",
+      "name": "22.3 — stdstring length and capacity",
+      "url": "learncpp.com/22.3 — stdstring length and capacity.md",
+      "date": "2022/11/24 20:16:09",
+      "summary": "22.3 — stdstring length and capacity",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "182b166c-0b8c-11ef-80ad-005056c00008",
+      "name": "22.4 — stdstring character access and conversion to C-style",
+      "url": "learncpp.com/22.4 — stdstring character access and conversion to C-style.md",
+      "date": "2022/11/24 20:17:14",
+      "summary": "22.4 — stdstring character access and conversion to C-style",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "182c27de-0b8c-11ef-8558-005056c00008",
+      "name": "22.5 — stdstring assignment and swapping",
+      "url": "learncpp.com/22.5 — stdstring assignment and swapping.md",
+      "date": "2022/11/24 20:19:13",
+      "summary": "22.5 — stdstring assignment and swapping",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "182d605e-0b8c-11ef-8a6c-005056c00008",
+      "name": "22.6 — stdstring appending",
+      "url": "learncpp.com/22.6 — stdstring appending.md",
+      "date": "2022/11/24 20:24:42",
+      "summary": "22.6 — stdstring appending",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "182ebff1-0b8c-11ef-9195-005056c00008",
+      "name": "22.7 — stdstring inserting",
+      "url": "learncpp.com/22.7 — stdstring inserting.md",
+      "date": "2022/11/24 21:00:48",
+      "summary": "22.7 — stdstring inserting",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "18301f79-0b8c-11ef-b46b-005056c00008",
+      "name": "23.1 — Input and output (IO) streams",
+      "url": "learncpp.com/23.1 — Input and output (IO) streams.md",
+      "date": "2022/11/24 21:02:15",
+      "summary": "23.1 — Input and output (IO) streams",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "183130ed-0b8c-11ef-ab39-005056c00008",
+      "name": "23.2 — Input with istream",
+      "url": "learncpp.com/23.2 — Input with istream.md",
+      "date": "2022/11/24 21:03:21",
+      "summary": "23.2 — Input with istream",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "1832907d-0b8c-11ef-b619-005056c00008",
+      "name": "23.3 — Output with ostream and ios",
+      "url": "learncpp.com/23.3 — Output with ostream and ios.md",
+      "date": "2022/11/24 21:04:20",
+      "summary": "23.3 — Output with ostream and ios",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "1833f011-0b8c-11ef-add4-005056c00008",
+      "name": "23.4 — Stream classes for strings",
+      "url": "learncpp.com/23.4 — Stream classes for strings.md",
+      "date": "2022/11/24 21:08:16",
+      "summary": "23.4 — Stream classes for strings",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "183576ae-0b8c-11ef-aa9c-005056c00008",
+      "name": "23.5 — Stream states and input validation",
+      "url": "learncpp.com/23.5 — Stream states and input validation.md",
+      "date": "2022/11/24 21:11:39",
+      "summary": "23.5 — Stream states and input validation",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "1836fd51-0b8c-11ef-b519-005056c00008",
+      "name": "23.6 — Basic file IO",
+      "url": "learncpp.com/23.6 — Basic file IO.md",
+      "date": "2022/11/24 21:13:28",
+      "summary": "23.6 — Basic file IO",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "183835ca-0b8c-11ef-8987-005056c00008",
+      "name": "23.7 — Random file IO",
+      "url": "learncpp.com/23.7 — Random file IO.md",
+      "date": "2022/11/24 21:17:13",
+      "summary": "23.7 — Random file IO",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "183bdf4e-0b8c-11ef-827f-005056c00008",
+      "name": "3.1 — Syntax and semantic errors",
+      "url": "learncpp.com/3.1 — Syntax and semantic errors.md",
+      "date": "2022/11/03 11:10:29",
+      "summary": "3.1 — Syntax and semantic errors",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "183cf0bd-0b8c-11ef-ba53-005056c00008",
+      "name": "3.10 — Finding issues before they become problems",
+      "url": "learncpp.com/3.10 — Finding issues before they become problems.md",
+      "date": "2022/11/03 17:30:31",
+      "summary": "3.10 — Finding issues before they become problems",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "183e293a-0b8c-11ef-8ec1-005056c00008",
+      "name": "3.2 — The debugging process",
+      "url": "learncpp.com/3.2 — The debugging process.md",
+      "date": "2022/11/03 11:16:17",
+      "summary": "3.2 — The debugging process",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "183f3aab-0b8c-11ef-bbb5-005056c00008",
+      "name": "3.4 — Basic debugging tactics",
+      "url": "learncpp.com/3.4 — Basic debugging tactics.md",
+      "date": "2022/11/03 14:00:02",
+      "summary": "3.4 — Basic debugging tactics",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "1840e85c-0b8c-11ef-bda4-005056c00008",
+      "name": "3.5 — More debugging tactics",
+      "url": "learncpp.com/3.5 — More debugging tactics.md",
+      "date": "2023/04/18 11:00:32",
+      "summary": "3.5 — More debugging tactics",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "1841f9ca-0b8c-11ef-aa1a-005056c00008",
+      "name": "3.6 — Using an integrated debugger Stepping",
+      "url": "learncpp.com/3.6 — Using an integrated debugger Stepping.md",
+      "date": "2022/11/03 14:32:07",
+      "summary": "3.6 — Using an integrated debugger Stepping",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "187d5515-0b8c-11ef-8213-005056c00008",
+      "name": "3.7 — Using an integrated debugger Running and breakpoints",
+      "url": "learncpp.com/3.7 — Using an integrated debugger Running and breakpoints.md",
+      "date": "2022/11/03 17:22:28",
+      "summary": "3.7 — Using an integrated debugger Running and breakpoints",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "18874025-0b8c-11ef-af72-005056c00008",
+      "name": "3.8 — Using an integrated debugger Watching variables",
+      "url": "learncpp.com/3.8 — Using an integrated debugger Watching variables.md",
+      "date": "2022/11/03 17:24:57",
+      "summary": "3.8 — Using an integrated debugger Watching variables",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "18a5cb0b-0b8c-11ef-952f-005056c00008",
+      "name": "3.9 — Using an integrated debugger The call stack",
+      "url": "learncpp.com/3.9 — Using an integrated debugger The call stack.md",
+      "date": "2022/11/03 17:28:55",
+      "summary": "3.9 — Using an integrated debugger The call stack",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "18b7bb57-0b8c-11ef-80f5-005056c00008",
+      "name": "3.x — Chapter 3 summary and quiz",
+      "url": "learncpp.com/3.x — Chapter 3 summary and quiz.md",
+      "date": "2022/11/03 18:25:51",
+      "summary": "3.x — Chapter 3 summary and quiz",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "147eec22-0b8d-11ef-830b-005056c00008",
+      "name": "4.1 — Introduction to fundamental data types",
+      "url": "learncpp.com/4.1 — Introduction to fundamental data types.md",
+      "date": "2023/05/31 11:19:06",
+      "summary": "4.1 — Introduction to fundamental data types",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "1485a2e2-0b8d-11ef-bfec-005056c00008",
+      "name": "4.10 — Introduction to if statements",
+      "url": "learncpp.com/4.10 — Introduction to if statements.md",
+      "date": "2022/11/04 10:58:43",
+      "summary": "4.10 — Introduction to if statements",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "1486b451-0b8d-11ef-a5d6-005056c00008",
+      "name": "4.11 — Chars",
+      "url": "learncpp.com/4.11 — Chars.md",
+      "date": "2022/11/04 11:19:32",
+      "summary": "4.11 — Chars",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "1487c5c2-0b8d-11ef-a5f3-005056c00008",
+      "name": "4.12 — Introduction to type conversion and static_cast",
+      "url": "learncpp.com/4.12 — Introduction to type conversion and static_cast.md",
+      "date": "2023/05/31 16:12:07",
+      "summary": "4.12 — Introduction to type conversion and static_cast",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "1488fe41-0b8d-11ef-84cd-005056c00008",
+      "name": "4.13 — Const variables and symbolic constants",
+      "url": "learncpp.com/4.13 — Const variables and symbolic constants.md",
+      "date": "2022/11/04 19:12:57",
+      "summary": "4.13 — Const variables and symbolic constants",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "148a0fb1-0b8d-11ef-a2ec-005056c00008",
+      "name": "4.14 — Compile-time constants, constant expressions, and constexpr",
+      "url": "learncpp.com/4.14 — Compile-time constants, constant expressions, and constexpr.md",
+      "date": "2022/11/07 10:10:11",
+      "summary": "4.14 — Compile-time constants, constant expressions, and constexpr",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "148afa12-0b8d-11ef-858a-005056c00008",
+      "name": "4.15 — Literals",
+      "url": "learncpp.com/4.15 — Literals.md",
+      "date": "2022/11/07 10:16:06",
+      "summary": "4.15 — Literals",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "148c0b82-0b8d-11ef-85f4-005056c00008",
+      "name": "4.16 — Numeral systems (decimal, binary, hexadecimal, and octal)",
+      "url": "learncpp.com/4.16 — Numeral systems (decimal, binary, hexadecimal, and octal).md",
+      "date": "2022/11/07 10:28:27",
+      "summary": "4.16 — Numeral systems (decimal, binary, hexadecimal, and octal)",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "148d1cf1-0b8d-11ef-a90d-005056c00008",
+      "name": "4.17 — Introduction to stdstring",
+      "url": "learncpp.com/4.17 — Introduction to stdstring.md",
+      "date": "2023/05/31 18:55:09",
+      "summary": "4.17 — Introduction to stdstring",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "148e2e62-0b8d-11ef-ba95-005056c00008",
+      "name": "4.18 — Introduction to stdstring_view",
+      "url": "learncpp.com/4.18 — Introduction to stdstring_view.md",
+      "date": "2022/11/07 11:27:58",
+      "summary": "4.18 — Introduction to stdstring_view",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "148f4027-0b8d-11ef-aed8-005056c00008",
+      "name": "4.2 — Void",
+      "url": "learncpp.com/4.2 — Void.md",
+      "date": "2023/05/31 11:28:30",
+      "summary": "4.2 — Void",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14902a30-0b8d-11ef-a971-005056c00008",
+      "name": "4.3 — Object sizes and the sizeof operator",
+      "url": "learncpp.com/4.3 — Object sizes and the sizeof operator.md",
+      "date": "2023/04/18 11:30:47",
+      "summary": "4.3 — Object sizes and the sizeof operator",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14913ba0-0b8d-11ef-b1b0-005056c00008",
+      "name": "4.4 — Signed integers",
+      "url": "learncpp.com/4.4 — Signed integers.md",
+      "date": "2022/11/03 19:19:24",
+      "summary": "4.4 — Signed integers",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14922601-0b8d-11ef-8148-005056c00008",
+      "name": "4.5 — Unsigned integers, and why to avoid them",
+      "url": "learncpp.com/4.5 — Unsigned integers, and why to avoid them.md",
+      "date": "2022/11/03 19:36:49",
+      "summary": "4.5 — Unsigned integers, and why to avoid them",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14935e86-0b8d-11ef-96d4-005056c00008",
+      "name": "4.6 — Fixed-width integers and size_t",
+      "url": "learncpp.com/4.6 — Fixed-width integers and size_t.md",
+      "date": "2022/11/03 19:57:35",
+      "summary": "4.6 — Fixed-width integers and size_t",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "1494e521-0b8d-11ef-a2aa-005056c00008",
+      "name": "4.7 — Introduction to scientific notation",
+      "url": "learncpp.com/4.7 — Introduction to scientific notation.md",
+      "date": "2022/11/04 09:40:54",
+      "summary": "4.7 — Introduction to scientific notation",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14961d9f-0b8d-11ef-8669-005056c00008",
+      "name": "4.8 — Floating point numbers",
+      "url": "learncpp.com/4.8 — Floating point numbers.md",
+      "date": "2023/05/31 11:49:56",
+      "summary": "4.8 — Floating point numbers",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "1497a446-0b8d-11ef-b854-005056c00008",
+      "name": "4.9 — Boolean values",
+      "url": "learncpp.com/4.9 — Boolean values.md",
+      "date": "2022/11/04 10:57:02",
+      "summary": "4.9 — Boolean values",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "1498dcc6-0b8d-11ef-a939-005056c00008",
+      "name": "4.x — Chapter 4 summary and quiz",
+      "url": "learncpp.com/4.x — Chapter 4 summary and quiz.md",
+      "date": "2023/04/18 14:05:45",
+      "summary": "4.x — Chapter 4 summary and quiz",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "1499ee30-0b8d-11ef-8ede-005056c00008",
+      "name": "5.1 — Operator precedence and associativity",
+      "url": "learncpp.com/5.1 — Operator precedence and associativity.md",
+      "date": "2022/11/07 11:37:09",
+      "summary": "5.1 — Operator precedence and associativity",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "149aff9f-0b8d-11ef-bded-005056c00008",
+      "name": "5.2 — Arithmetic operators",
+      "url": "learncpp.com/5.2 — Arithmetic operators.md",
+      "date": "2022/11/07 11:44:12",
+      "summary": "5.2 — Arithmetic operators",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "149c381f-0b8d-11ef-a91b-005056c00008",
+      "name": "5.3 — Modulus and Exponentiation",
+      "url": "learncpp.com/5.3 — Modulus and Exponentiation.md",
+      "date": "2022/11/07 11:45:47",
+      "summary": "5.3 — Modulus and Exponentiation",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "149d97ae-0b8d-11ef-9879-005056c00008",
+      "name": "5.4 — Incrementdecrement operators, and side effects",
+      "url": "learncpp.com/5.4 — Incrementdecrement operators, and side effects.md",
+      "date": "2023/04/18 14:09:01",
+      "summary": "5.4 — Incrementdecrement operators, and side effects",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "149ef740-0b8d-11ef-b567-005056c00008",
+      "name": "5.5 — Comma and conditional operators",
+      "url": "learncpp.com/5.5 — Comma and conditional operators.md",
+      "date": "2022/11/07 13:29:20",
+      "summary": "5.5 — Comma and conditional operators",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14a056d2-0b8d-11ef-a539-005056c00008",
+      "name": "5.6 — Relational operators and floating point comparisons",
+      "url": "learncpp.com/5.6 — Relational operators and floating point comparisons.md",
+      "date": "2022/11/07 13:33:25",
+      "summary": "5.6 — Relational operators and floating point comparisons",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14a1dd70-0b8d-11ef-b13a-005056c00008",
+      "name": "5.7 — Logical operators",
+      "url": "learncpp.com/5.7 — Logical operators.md",
+      "date": "2022/11/07 13:42:14",
+      "summary": "5.7 — Logical operators",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14a2eedf-0b8d-11ef-a783-005056c00008",
+      "name": "5.x — Chapter 5 summary and quiz",
+      "url": "learncpp.com/5.x — Chapter 5 summary and quiz.md",
+      "date": "2022/11/07 13:46:35",
+      "summary": "5.x — Chapter 5 summary and quiz",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14a4004e-0b8d-11ef-82d3-005056c00008",
+      "name": "6.1 — Compound statements (blocks)",
+      "url": "learncpp.com/6.1 — Compound statements (blocks).md",
+      "date": "2022/11/07 14:05:15",
+      "summary": "6.1 — Compound statements (blocks)",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14a538d3-0b8d-11ef-ab61-005056c00008",
+      "name": "6.10 — Static local variables",
+      "url": "learncpp.com/6.10 — Static local variables.md",
+      "date": "2023/06/01 10:00:30",
+      "summary": "6.10 — Static local variables",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14a67153-0b8d-11ef-b29d-005056c00008",
+      "name": "6.11 — Scope, duration, and linkage summary",
+      "url": "learncpp.com/6.11 — Scope, duration, and linkage summary.md",
+      "date": "2022/11/07 16:02:38",
+      "summary": "6.11 — Scope, duration, and linkage summary",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14a7a9ce-0b8d-11ef-b7e7-005056c00008",
+      "name": "6.12 — Using declarations and using directives",
+      "url": "learncpp.com/6.12 — Using declarations and using directives.md",
+      "date": "2022/11/07 16:13:24",
+      "summary": "6.12 — Using declarations and using directives",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14ab534f-0b8d-11ef-bd81-005056c00008",
+      "name": "6.13 — Inline functions",
+      "url": "learncpp.com/6.13 — Inline functions.md",
+      "date": "2022/11/07 16:26:44",
+      "summary": "6.13 — Inline functions",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14ac8bd6-0b8d-11ef-9dd3-005056c00008",
+      "name": "6.14 — Constexpr and consteval functions",
+      "url": "learncpp.com/6.14 — Constexpr and consteval functions.md",
+      "date": "2022/11/07 16:31:24",
+      "summary": "6.14 — Constexpr and consteval functions",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14ad9d3b-0b8d-11ef-a372-005056c00008",
+      "name": "6.15 — Unnamed and inline namespaces",
+      "url": "learncpp.com/6.15 — Unnamed and inline namespaces.md",
+      "date": "2022/11/07 16:33:25",
+      "summary": "6.15 — Unnamed and inline namespaces",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14aed5c4-0b8d-11ef-a4c1-005056c00008",
+      "name": "6.2 — User-defined namespaces and the scope resolution operator",
+      "url": "learncpp.com/6.2 — User-defined namespaces and the scope resolution operator.md",
+      "date": "2023/04/18 14:49:45",
+      "summary": "6.2 — User-defined namespaces and the scope resolution operator",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14b0354c-0b8d-11ef-b09e-005056c00008",
+      "name": "6.3 — Local variables",
+      "url": "learncpp.com/6.3 — Local variables.md",
+      "date": "2022/11/07 14:50:06",
+      "summary": "6.3 — Local variables",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14b11faf-0b8d-11ef-86ee-005056c00008",
+      "name": "6.4 — Introduction to global variables",
+      "url": "learncpp.com/6.4 — Introduction to global variables.md",
+      "date": "2022/11/07 14:53:42",
+      "summary": "6.4 — Introduction to global variables",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14b2311b-0b8d-11ef-be55-005056c00008",
+      "name": "6.5 — Variable shadowing (name hiding)",
+      "url": "learncpp.com/6.5 — Variable shadowing (name hiding).md",
+      "date": "2022/11/07 14:58:42",
+      "summary": "6.5 — Variable shadowing (name hiding)",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14b31b7f-0b8d-11ef-8a42-005056c00008",
+      "name": "6.6 — Internal linkage",
+      "url": "learncpp.com/6.6 — Internal linkage.md",
+      "date": "2022/11/07 15:00:48",
+      "summary": "6.6 — Internal linkage",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14b42cee-0b8d-11ef-a512-005056c00008",
+      "name": "6.7 — External linkage and variable forward declarations",
+      "url": "learncpp.com/6.7 — External linkage and variable forward declarations.md",
+      "date": "2022/11/07 15:07:00",
+      "summary": "6.7 — External linkage and variable forward declarations",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14b53e60-0b8d-11ef-a410-005056c00008",
+      "name": "6.8 — Why (non-const) global variables are evil",
+      "url": "learncpp.com/6.8 — Why (non-const) global variables are evil.md",
+      "date": "2022/11/07 15:24:55",
+      "summary": "6.8 — Why (non-const) global variables are evil",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14b676de-0b8d-11ef-8432-005056c00008",
+      "name": "6.9 — Sharing global constants across multiple files (using inline variables)",
+      "url": "learncpp.com/6.9 — Sharing global constants across multiple files (using inline variables).md",
+      "date": "2023/06/01 09:42:12",
+      "summary": "6.9 — Sharing global constants across multiple files (using inline variables)",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14b7884f-0b8d-11ef-b645-005056c00008",
+      "name": "6.x — Chapter 6 summary and quiz",
+      "url": "learncpp.com/6.x — Chapter 6 summary and quiz.md",
+      "date": "2022/11/07 16:34:56",
+      "summary": "6.x — Chapter 6 summary and quiz",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14b899be-0b8d-11ef-b073-005056c00008",
+      "name": "O.1 — Bit flags and bit manipulation via stdbitset",
+      "url": "learncpp.com/O.1 — Bit flags and bit manipulation via stdbitset.md",
+      "date": "2022/11/07 13:52:11",
+      "summary": "O.1 — Bit flags and bit manipulation via stdbitset",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14b9841d-0b8d-11ef-8e4e-005056c00008",
+      "name": "O.2 — Bitwise operators",
+      "url": "learncpp.com/O.2 — Bitwise operators.md",
+      "date": "2022/11/07 13:56:17",
+      "summary": "O.2 — Bitwise operators",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "14ba958d-0b8d-11ef-be98-005056c00008",
+      "name": "O.3 — Bit manipulation with bitwise operators and bit masks",
+      "url": "learncpp.com/O.3 — Bit manipulation with bitwise operators and bit masks.md",
+      "date": "2022/11/07 13:58:37",
+      "summary": "O.3 — Bit manipulation with bitwise operators and bit masks",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "4998aece-0b8e-11ef-b030-005056c00008",
+      "name": "O.4 — Converting between binary and decimal",
+      "url": "learncpp.com/O.4 — Converting between binary and decimal.md",
+      "date": "2022/11/07 14:04:01",
+      "summary": "O.4 — Converting between binary and decimal",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "4999c03e-0b8e-11ef-88a2-005056c00008",
+      "name": "7.1 — Control flow introduction",
+      "url": "learncpp.com/7.1 — Control flow introduction.md",
+      "date": "2022/11/07 16:36:02",
+      "summary": "7.1 — Control flow introduction",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "499ad1ab-0b8e-11ef-bb15-005056c00008",
+      "name": "7.10 — Break and continue",
+      "url": "learncpp.com/7.10 — Break and continue.md",
+      "date": "2022/11/07 18:51:12",
+      "summary": "7.10 — Break and continue",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "499bbc0d-0b8e-11ef-b02b-005056c00008",
+      "name": "7.11 — Halts (exiting your program early)",
+      "url": "learncpp.com/7.11 — Halts (exiting your program early).md",
+      "date": "2022/11/07 19:33:41",
+      "summary": "7.11 — Halts (exiting your program early)",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "499cf48d-0b8e-11ef-9a29-005056c00008",
+      "name": "7.12 — Introduction to testing your code",
+      "url": "learncpp.com/7.12 — Introduction to testing your code.md",
+      "date": "2022/11/07 19:46:38",
+      "summary": "7.12 — Introduction to testing your code",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "499ddeed-0b8e-11ef-9225-005056c00008",
+      "name": "7.13 — Code coverage",
+      "url": "learncpp.com/7.13 — Code coverage.md",
+      "date": "2022/11/07 19:52:17",
+      "summary": "7.13 — Code coverage",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "499ef062-0b8e-11ef-8990-005056c00008",
+      "name": "7.14 — Common semantic errors in C++",
+      "url": "learncpp.com/7.14 — Common semantic errors in C++.md",
+      "date": "2022/11/07 19:53:41",
+      "summary": "7.14 — Common semantic errors in C++",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49a001cc-0b8e-11ef-be0b-005056c00008",
+      "name": "7.15 — Detecting and handling errors",
+      "url": "learncpp.com/7.15 — Detecting and handling errors.md",
+      "date": "2022/11/07 19:54:45",
+      "summary": "7.15 — Detecting and handling errors",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49a0ec2c-0b8e-11ef-86df-005056c00008",
+      "name": "7.16 — stdcin and handling invalid input",
+      "url": "learncpp.com/7.16 — stdcin and handling invalid input.md",
+      "date": "2022/11/07 19:57:38",
+      "summary": "7.16 — stdcin and handling invalid input",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49a224ab-0b8e-11ef-9685-005056c00008",
+      "name": "7.17 — Assert and static_assert",
+      "url": "learncpp.com/7.17 — Assert and static_assert.md",
+      "date": "2022/11/08 10:14:07",
+      "summary": "7.17 — Assert and static_assert",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49a30f0d-0b8e-11ef-9adc-005056c00008",
+      "name": "7.18 — Introduction to random number generation",
+      "url": "learncpp.com/7.18 — Introduction to random number generation.md",
+      "date": "2022/11/08 10:18:06",
+      "summary": "7.18 — Introduction to random number generation",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49a4207c-0b8e-11ef-8ee2-005056c00008",
+      "name": "7.19 — Generating random numbers using Mersenne Twister",
+      "url": "learncpp.com/7.19 — Generating random numbers using Mersenne Twister.md",
+      "date": "2022/11/08 10:29:40",
+      "summary": "7.19 — Generating random numbers using Mersenne Twister",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49a558fc-0b8e-11ef-8923-005056c00008",
+      "name": "7.2 — If statements and blocks",
+      "url": "learncpp.com/7.2 — If statements and blocks.md",
+      "date": "2022/11/07 16:40:24",
+      "summary": "7.2 — If statements and blocks",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49a64360-0b8e-11ef-bcd5-005056c00008",
+      "name": "7.3 — Common if statement problems",
+      "url": "learncpp.com/7.3 — Common if statement problems.md",
+      "date": "2022/11/07 16:43:04",
+      "summary": "7.3 — Common if statement problems",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49a754cc-0b8e-11ef-bc4a-005056c00008",
+      "name": "7.4 — Switch statement basics",
+      "url": "learncpp.com/7.4 — Switch statement basics.md",
+      "date": "2022/11/07 17:55:36",
+      "summary": "7.4 — Switch statement basics",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49a8663c-0b8e-11ef-b010-005056c00008",
+      "name": "7.5 — Switch fallthrough and scoping",
+      "url": "learncpp.com/7.5 — Switch fallthrough and scoping.md",
+      "date": "2023/06/01 11:02:52",
+      "summary": "7.5 — Switch fallthrough and scoping",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49a9509c-0b8e-11ef-8503-005056c00008",
+      "name": "7.6 — Goto statements",
+      "url": "learncpp.com/7.6 — Goto statements.md",
+      "date": "2022/11/07 18:22:04",
+      "summary": "7.6 — Goto statements",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49aa3afd-0b8e-11ef-acb8-005056c00008",
+      "name": "7.7 — Introduction to loops and while statements",
+      "url": "learncpp.com/7.7 — Introduction to loops and while statements.md",
+      "date": "2022/11/07 18:23:50",
+      "summary": "7.7 — Introduction to loops and while statements",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49ab4c71-0b8e-11ef-9bf8-005056c00008",
+      "name": "7.8 — Do while statements",
+      "url": "learncpp.com/7.8 — Do while statements.md",
+      "date": "2022/11/07 18:32:57",
+      "summary": "7.8 — Do while statements",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49ac36c9-0b8e-11ef-a6b7-005056c00008",
+      "name": "7.9 — For statements",
+      "url": "learncpp.com/7.9 — For statements.md",
+      "date": "2022/11/07 18:41:00",
+      "summary": "7.9 — For statements",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49ad6f4e-0b8e-11ef-86c1-005056c00008",
+      "name": "7.x — Chapter 7 summary and quiz",
+      "url": "learncpp.com/7.x — Chapter 7 summary and quiz.md",
+      "date": "2022/11/08 10:31:30",
+      "summary": "7.x — Chapter 7 summary and quiz",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49aea7ca-0b8e-11ef-a927-005056c00008",
+      "name": "8.1 — Implicit type conversion (coercion)",
+      "url": "learncpp.com/8.1 — Implicit type conversion (coercion).md",
+      "date": "2022/11/08 10:43:54",
+      "summary": "8.1 — Implicit type conversion (coercion)",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49afe04c-0b8e-11ef-90d4-005056c00008",
+      "name": "8.10 — Function overload differentiation",
+      "url": "learncpp.com/8.10 — Function overload differentiation.md",
+      "date": "2022/11/08 11:47:09",
+      "summary": "8.10 — Function overload differentiation",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49b118ca-0b8e-11ef-8f3f-005056c00008",
+      "name": "8.11 — Function overload resolution and ambiguous matches",
+      "url": "learncpp.com/8.11 — Function overload resolution and ambiguous matches.md",
+      "date": "2022/11/08 13:15:39",
+      "summary": "8.11 — Function overload resolution and ambiguous matches",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49b29f6c-0b8e-11ef-91a5-005056c00008",
+      "name": "8.12 — Default arguments",
+      "url": "learncpp.com/8.12 — Default arguments.md",
+      "date": "2022/11/08 13:24:10",
+      "summary": "8.12 — Default arguments",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49b3d7e9-0b8e-11ef-89c9-005056c00008",
+      "name": "8.13 — Function templates",
+      "url": "learncpp.com/8.13 — Function templates.md",
+      "date": "2022/11/08 13:35:39",
+      "summary": "8.13 — Function templates",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49b4e958-0b8e-11ef-886c-005056c00008",
+      "name": "8.14 — Function template instantiation",
+      "url": "learncpp.com/8.14 — Function template instantiation.md",
+      "date": "2022/11/08 13:53:07",
+      "summary": "8.14 — Function template instantiation",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49b6be1e-0b8e-11ef-86cb-005056c00008",
+      "name": "8.15 — Function templates with multiple template types",
+      "url": "learncpp.com/8.15 — Function templates with multiple template types.md",
+      "date": "2022/11/08 13:54:22",
+      "summary": "8.15 — Function templates with multiple template types",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49b844ba-0b8e-11ef-bb28-005056c00008",
+      "name": "8.2 — Floating-point and integral promotion",
+      "url": "learncpp.com/8.2 — Floating-point and integral promotion.md",
+      "date": "2022/11/08 10:56:20",
+      "summary": "8.2 — Floating-point and integral promotion",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49b9a448-0b8e-11ef-bc00-005056c00008",
+      "name": "8.3 — Numeric conversions",
+      "url": "learncpp.com/8.3 — Numeric conversions.md",
+      "date": "2022/11/08 11:01:46",
+      "summary": "8.3 — Numeric conversions",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49bb03e0-0b8e-11ef-857b-005056c00008",
+      "name": "8.4 — Arithmetic conversions",
+      "url": "learncpp.com/8.4 — Arithmetic conversions.md",
+      "date": "2022/11/08 11:04:35",
+      "summary": "8.4 — Arithmetic conversions",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49bc3c5d-0b8e-11ef-8c35-005056c00008",
+      "name": "8.5 — Explicit type conversion (casting) and static_cast",
+      "url": "learncpp.com/8.5 — Explicit type conversion (casting) and static_cast.md",
+      "date": "2022/11/08 11:08:45",
+      "summary": "8.5 — Explicit type conversion (casting) and static_cast",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49bd9bf3-0b8e-11ef-ad32-005056c00008",
+      "name": "8.6 — Typedefs and type aliases",
+      "url": "learncpp.com/8.6 — Typedefs and type aliases.md",
+      "date": "2022/11/08 11:23:08",
+      "summary": "8.6 — Typedefs and type aliases",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49bed46d-0b8e-11ef-b8a7-005056c00008",
+      "name": "8.7 — Type deduction for objects using the auto keyword",
+      "url": "learncpp.com/8.7 — Type deduction for objects using the auto keyword.md",
+      "date": "2022/11/08 11:30:08",
+      "summary": "8.7 — Type deduction for objects using the auto keyword",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49c00cf6-0b8e-11ef-948a-005056c00008",
+      "name": "8.8 — Type deduction for functions",
+      "url": "learncpp.com/8.8 — Type deduction for functions.md",
+      "date": "2022/11/08 11:40:29",
+      "summary": "8.8 — Type deduction for functions",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49c16c7c-0b8e-11ef-bbf7-005056c00008",
+      "name": "8.9 — Introduction to function overloading",
+      "url": "learncpp.com/8.9 — Introduction to function overloading.md",
+      "date": "2022/11/08 11:42:05",
+      "summary": "8.9 — Introduction to function overloading",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49c27ded-0b8e-11ef-94cf-005056c00008",
+      "name": "8.x — Chapter 8 summary and quiz",
+      "url": "learncpp.com/8.x — Chapter 8 summary and quiz.md",
+      "date": "2022/11/08 14:04:28",
+      "summary": "8.x — Chapter 8 summary and quiz",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49c3b66b-0b8e-11ef-a28e-005056c00008",
+      "name": "9.1 — Introduction to compound data types",
+      "url": "learncpp.com/9.1 — Introduction to compound data types.md",
+      "date": "2023/04/18 15:49:03",
+      "summary": "9.1 — Introduction to compound data types",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49c4a0cb-0b8e-11ef-9d76-005056c00008",
+      "name": "9.10 — Pass by address (part 2)",
+      "url": "learncpp.com/9.10 — Pass by address (part 2).md",
+      "date": "2022/11/08 18:32:57",
+      "summary": "9.10 — Pass by address (part 2)",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49c62769-0b8e-11ef-92ce-005056c00008",
+      "name": "9.11 — Return by reference and return by address",
+      "url": "learncpp.com/9.11 — Return by reference and return by address.md",
+      "date": "2022/11/08 19:02:56",
+      "summary": "9.11 — Return by reference and return by address",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49c75feb-0b8e-11ef-9f36-005056c00008",
+      "name": "9.12 — Type deduction with pointers, references, and const",
+      "url": "learncpp.com/9.12 — Type deduction with pointers, references, and const.md",
+      "date": "2022/11/08 19:04:49",
+      "summary": "9.12 — Type deduction with pointers, references, and const",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49c8bf78-0b8e-11ef-9418-005056c00008",
+      "name": "9.2 — Value categories (lvalues and rvalues)",
+      "url": "learncpp.com/9.2 — Value categories (lvalues and rvalues).md",
+      "date": "2022/11/08 14:33:31",
+      "summary": "9.2 — Value categories (lvalues and rvalues)",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49c9d0e9-0b8e-11ef-acf7-005056c00008",
+      "name": "9.3 — Lvalue references",
+      "url": "learncpp.com/9.3 — Lvalue references.md",
+      "date": "2022/11/08 15:00:06",
+      "summary": "9.3 — Lvalue references",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49cae259-0b8e-11ef-b6c0-005056c00008",
+      "name": "9.4 — Lvalue references to const",
+      "url": "learncpp.com/9.4 — Lvalue references to const.md",
+      "date": "2022/11/08 15:08:39",
+      "summary": "9.4 — Lvalue references to const",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49cbf3c9-0b8e-11ef-a791-005056c00008",
+      "name": "9.5 — Pass by lvalue reference",
+      "url": "learncpp.com/9.5 — Pass by lvalue reference.md",
+      "date": "2023/06/01 13:32:12",
+      "summary": "9.5 — Pass by lvalue reference",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49cd5359-0b8e-11ef-87b5-005056c00008",
+      "name": "9.6 — Introduction to pointers",
+      "url": "learncpp.com/9.6 — Introduction to pointers.md",
+      "date": "2023/06/01 13:48:34",
+      "summary": "9.6 — Introduction to pointers",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49d40a1e-0b8e-11ef-b997-005056c00008",
+      "name": "9.7 — Null pointers",
+      "url": "learncpp.com/9.7 — Null pointers.md",
+      "date": "2022/11/08 16:57:31",
+      "summary": "9.7 — Null pointers",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49d71759-0b8e-11ef-abcf-005056c00008",
+      "name": "9.8 — Pointers and const",
+      "url": "learncpp.com/9.8 — Pointers and const.md",
+      "date": "2022/11/08 16:58:46",
+      "summary": "9.8 — Pointers and const",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49d84fda-0b8e-11ef-bf06-005056c00008",
+      "name": "9.9 — Pass by address",
+      "url": "learncpp.com/9.9 — Pass by address.md",
+      "date": "2022/11/08 17:45:12",
+      "summary": "9.9 — Pass by address",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49d98859-0b8e-11ef-9c84-005056c00008",
+      "name": "9.x — Chapter 9 summary and quiz",
+      "url": "learncpp.com/9.x — Chapter 9 summary and quiz.md",
+      "date": "2022/11/08 19:10:30",
+      "summary": "9.x — Chapter 9 summary and quiz",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49da99c9-0b8e-11ef-91be-005056c00008",
+      "name": "A.1 — Static and dynamic libraries",
+      "url": "learncpp.com/A.1 — Static and dynamic libraries.md",
+      "date": "2022/11/24 21:17:57",
+      "summary": "A.1 — Static and dynamic libraries",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49dbab36-0b8e-11ef-9c34-005056c00008",
+      "name": "A.2 — Using libraries with Visual Studio",
+      "url": "learncpp.com/A.2 — Using libraries with Visual Studio.md",
+      "date": "2022/11/24 21:25:48",
+      "summary": "A.2 — Using libraries with Visual Studio",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49dd0ac7-0b8e-11ef-adc2-005056c00008",
+      "name": "A.3 — Using libraries with CodeBlocks",
+      "url": "learncpp.com/A.3 — Using libraries with CodeBlocks.md",
+      "date": "2022/11/24 21:26:17",
+      "summary": "A.3 — Using libraries with CodeBlocks",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49edd3a7-0b8e-11ef-8939-005056c00008",
+      "name": "A.4 — C++ FAQ",
+      "url": "learncpp.com/A.4 — C++ FAQ.md",
+      "date": "2022/11/24 21:27:53",
+      "summary": "A.4 — C++ FAQ",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49eee51b-0b8e-11ef-b5d7-005056c00008",
+      "name": "B.1 — Introduction to C++11",
+      "url": "learncpp.com/B.1 — Introduction to C++11.md",
+      "date": "2022/11/24 21:28:49",
+      "summary": "B.1 — Introduction to C++11",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49efcf76-0b8e-11ef-ae71-005056c00008",
+      "name": "B.2 — Introduction to C++14",
+      "url": "learncpp.com/B.2 — Introduction to C++14.md",
+      "date": "2022/11/24 21:29:17",
+      "summary": "B.2 — Introduction to C++14",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49f0b9d7-0b8e-11ef-b236-005056c00008",
+      "name": "B.3 — Introduction to C++17",
+      "url": "learncpp.com/B.3 — Introduction to C++17.md",
+      "date": "2022/11/24 21:29:37",
+      "summary": "B.3 — Introduction to C++17",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49f1a437-0b8e-11ef-bd5d-005056c00008",
+      "name": "B.4 — Introduction to C++20",
+      "url": "learncpp.com/B.4 — Introduction to C++20.md",
+      "date": "2022/11/24 21:30:04",
+      "summary": "B.4 — Introduction to C++20",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49f28e97-0b8e-11ef-b174-005056c00008",
+      "name": "C.1 — The end",
+      "url": "learncpp.com/C.1 — The end.md",
+      "date": "2022/11/24 21:31:30",
+      "summary": "C.1 — The end",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49f3a008-0b8e-11ef-9100-005056c00008",
+      "name": "M.1 — Introduction to smart pointers and move semantics",
+      "url": "learncpp.com/M.1 — Introduction to smart pointers and move semantics.md",
+      "date": "2022/11/23 11:36:14",
+      "summary": "M.1 — Introduction to smart pointers and move semantics",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49f4d887-0b8e-11ef-952c-005056c00008",
+      "name": "M.2 — R-value references",
+      "url": "learncpp.com/M.2 — R-value references.md",
+      "date": "2022/11/23 11:38:52",
+      "summary": "M.2 — R-value references",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49f5c2e9-0b8e-11ef-96df-005056c00008",
+      "name": "M.3 — Move constructors and move assignment",
+      "url": "learncpp.com/M.3 — Move constructors and move assignment.md",
+      "date": "2022/11/23 11:43:53",
+      "summary": "M.3 — Move constructors and move assignment",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49f74987-0b8e-11ef-8fc2-005056c00008",
+      "name": "M.4 — stdmove",
+      "url": "learncpp.com/M.4 — stdmove.md",
+      "date": "2022/11/23 11:48:11",
+      "summary": "M.4 — stdmove",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49f8820e-0b8e-11ef-b202-005056c00008",
+      "name": "M.5 — stdmove_if_noexcept",
+      "url": "learncpp.com/M.5 — stdmove_if_noexcept.md",
+      "date": "2022/11/23 11:50:13",
+      "summary": "M.5 — stdmove_if_noexcept",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49f99377-0b8e-11ef-bf04-005056c00008",
+      "name": "M.6 — stdunique_ptr",
+      "url": "learncpp.com/M.6 — stdunique_ptr.md",
+      "date": "2022/11/23 13:39:05",
+      "summary": "M.6 — stdunique_ptr",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49faf308-0b8e-11ef-a905-005056c00008",
+      "name": "M.7 — stdshared_ptr",
+      "url": "learncpp.com/M.7 — stdshared_ptr.md",
+      "date": "2022/11/23 20:51:22",
+      "summary": "M.7 — stdshared_ptr",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49fc0472-0b8e-11ef-a7c2-005056c00008",
+      "name": "M.8 — Circular dependency issues with stdshared_ptr, and stdweak_ptr",
+      "url": "learncpp.com/M.8 — Circular dependency issues with stdshared_ptr, and stdweak_ptr.md",
+      "date": "2022/11/23 20:52:52",
+      "summary": "M.8 — Circular dependency issues with stdshared_ptr, and stdweak_ptr",
+      "tags": [
+        "learncpp.com"
+      ]
+    },
+    {
+      "id": "49fd6408-0b8e-11ef-bd3d-005056c00008",
+      "name": "M.x — Chapter M comprehensive review",
+      "url": "learncpp.com/M.x — Chapter M comprehensive review.md",
+      "date": "2022/11/23 20:59:49",
+      "summary": "M.x — Chapter M comprehensive review",
+      "tags": [
+        "learncpp.com"
+      ]
     }
   ]
 }

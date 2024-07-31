@@ -1,4 +1,3 @@
-
 import {ImCalendar as CalendarIcon} from "react-icons/im";
 import {GiTimeBomb as TimeICon} from "react-icons/gi";
 import MDEditor from '@uiw/react-md-editor';
@@ -17,30 +16,28 @@ import LogoComp from "../../assetsComp/logoComp";
 import EffectRComp from "../../assetsComp/effectRComp";
 import BackComp from "../../assetsComp/backComp";
 
+import {FaDownload as DownloadIcon} from "react-icons/fa";
+
 
 function DetailComp() {
 
     const [rootScrollPos, setRootScrollPos] = useState(0)
 
-    const {fetchBlog, initApp} = useBlogsHooks()
+    const {fetchBlog, initApp, downloadMarkdownFile} = useBlogsHooks()
 
 
     const params = useParams()
 
     const navigate = useNavigate()
 
-
-
-
-
     const {commonStore} = useStore()
     useEffect(() => {
         const callBack = async () => {
             await initApp()
-            const item =commonStore.articles.find(item=>item.id===params.id)
-            if(item){
+            const item = commonStore.articles.find(item => item.id === params.id)
+            if (item) {
                 await fetchBlog(item)
-            }else {
+            } else {
                 alert(`There is no blog with ID ${params.id}.`)
                 navigate('/')
             }
@@ -54,55 +51,35 @@ function DetailComp() {
 
     const [headRef, headSize] = useResizeObserver()
 
-
-    const rootRef = useRef(null)
-
-    useEffect(() => {
-        const scrollElement = rootRef.current;
-        // 当组件加载后，添加滚动事件监听器
-        const handleScroll = () => {
-            if (scrollElement) {
-                // console.log('Scroll position:', rootRef.current.scrollTop);
-
-                const totalHeight = scrollElement.scrollHeight - scrollElement.clientHeight;
-                const scrollPosition = scrollElement.scrollTop;
-
-                // 计算滚动的百分比
-                const scrolledPercentage = (scrollPosition / totalHeight) * 100;
-
-                setRootScrollPos(scrolledPercentage)
-            }
-        };
-
-
-        if (scrollElement) {
-            scrollElement.addEventListener('scroll', handleScroll);
-        }
-
-        // 清理函数：组件卸载前，移除滚动事件监听器
-        return () => {
-            if (scrollElement) {
-                scrollElement.removeEventListener('scroll', handleScroll);
-            }
-        };
-    }, []); // 空依赖数组确保事件监听只被添加和移除一次
-
-
-
+    const rootRef = useRef(null);
 
 
     return (
 
 
-        <div id={'JpRoot'} ref={rootRef}
+        <div ref={rootRef} onScroll={(e) => {
+
+            const scrollElement = e.target
+
+            const totalHeight = scrollElement.scrollHeight - scrollElement.clientHeight;
+            const scrollPosition = scrollElement.scrollTop;
+
+            // 计算滚动的百分比
+            const scrolledPercentage = (scrollPosition / totalHeight) * 100;
+
+            setRootScrollPos(scrolledPercentage)
+
+
+            // console.log(e.target.scrollTop,e.target.scrollHeight - e.target.clientHeight, 'detail');
+        }}
              className='pt-[2px] min-h-screen max-h-screen  w-screen bg-[#071422] relative flex items-center flex-col overflow-auto '>
             <div ref={headRef} className='bg-[#0C1F33]    w-full    flex justify-center
             '>
                 <div className='w-full flex justify-between items-center'>
-                        <EffectLComp className=' w-[25%]'/>
-                        <LogoComp className=' w-[15%]'/>
+                    <EffectLComp className=' w-[25%]'/>
+                    <LogoComp className=' w-[15%]'/>
 
-                        <EffectRComp className=' w-[20%]'/>
+                    <EffectRComp className=' w-[20%]'/>
 
                 </div>
             </div>
@@ -117,17 +94,15 @@ function DetailComp() {
                 
                  `} style={{top: headSize.height - 60}}>
 
-            <div className=' cursor-pointer hover:border-b hover:border-[#3799F6]' onClick={() => {
-                    commonStore.setViewArticle(false)
+                <div className=' cursor-pointer hover:border-b hover:border-[#3799F6]' onClick={() => {
                     commonStore.setIsLoaded(true)
-
                     navigate(`/`)
 
                 }}>
-                <div className=' w-[20%]'>
-                    <BackComp/>
+                    <div className=' w-[20%]'>
+                        <BackComp/>
+                    </div>
                 </div>
-            </div>
 
                 <div className='mt-[8px]'>
 
@@ -142,7 +117,7 @@ function DetailComp() {
                 </div>
 
 
-                <div className={`$${commonStore.viewArticle ? null : 'hidden'} flex  mt-[8px] justify-between`}>
+                <div className={`flex  mt-[8px] justify-between w-[100%]`}>
                     <div className='flex items-center '>
                         <CalendarIcon size={20} color={'#AFC3D3'}/>
                         <p data-tip={'document creating time.'}
@@ -150,13 +125,24 @@ function DetailComp() {
                     </div>
 
 
-                    <div className='flex items-center ml-2'>
-                        <TimeICon size={20} color={'#AFC3D3'}/>
-                        <p data-tip={'Reading consumes time.'}
-                           className='tooltip text-[#7C97B1]  ml-1'>{commonStore.convertMinutesToHMS(commonStore.articleContent.length / commonStore.averageReadVelocity)}</p>
+                    {/*<div className='flex items-center ml-2'>*/}
+                    {/*    <TimeICon size={20} color={'#AFC3D3'}/>*/}
+                    {/*    <p data-tip={'Reading consumes time.'}*/}
+                    {/*       className='tooltip text-[#7C97B1]  ml-1'>{commonStore.convertMinutesToHMS(commonStore.articleContent.length / commonStore.averageReadVelocity)}</p>*/}
+                    {/*</div>*/}
+
+                    <div className='flex items-center ml-2 cursor-pointer tooltip-left tooltip'
+                         data-tip={'Download Markdown File'}>
+                        <DownloadIcon size={20} color={'#AFC3D3'} onClick={async () => {
+
+
+                            const item = commonStore.articles.find(item => item.id === params.id)
+                            const res = await downloadMarkdownFile(`/blogs/${item.url}`)
+                            console.log(res)
+
+                        }}/>
+
                     </div>
-
-
                 </div>
 
 
@@ -164,7 +150,7 @@ function DetailComp() {
 
 
             <div
-                className={`${commonStore.viewArticle && commonStore.isLoaded ? null : 'hidden'} mt-[150px] mb-[100px] w-[80vw]`}
+                className={`${commonStore.isLoaded ? null : 'hidden'} mt-[150px] mb-[100px] w-[80vw]`}
                 data-color-mode="dark">
                 <MDEditor.Markdown source={commonStore.articleContent} style={{
                     whiteSpace: 'pre-wrap',
