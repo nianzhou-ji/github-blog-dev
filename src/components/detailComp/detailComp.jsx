@@ -17,6 +17,7 @@ import EffectRComp from "../../assetsComp/effectRComp";
 import BackComp from "../../assetsComp/backComp";
 
 import {FaDownload as DownloadIcon} from "react-icons/fa";
+import MarkdownViewer from "../MarkdownComp/MarkdownViewer";
 
 
 function DetailComp() {
@@ -152,11 +153,7 @@ function DetailComp() {
             <div
                 className={`${commonStore.isLoaded ? null : 'hidden'} mt-[150px] mb-[100px] w-[80vw]`}
                 data-color-mode="dark">
-                <MDEditor.Markdown source={commonStore.articleContent} style={{
-                    whiteSpace: 'pre-wrap',
-                    backgroundColor: '#071522',
-                    color: '#AFC3D3'
-                }}/>
+                <MarkdownViewer markdownText={commonStore.articleContent}/>
             </div>
 
 
