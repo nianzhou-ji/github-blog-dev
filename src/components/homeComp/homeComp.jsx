@@ -201,20 +201,21 @@ function HomeComp() {
             </div>
 
 
-            <div className={`fixed right-1 bottom-3 p-1 cursor-pointer`}>
-                <TagsIcon size={32} color={commonStore.checkTagsChecked() ? '#38BDF8' : '#AAD3F5'} onClick={() => {
+            <div className={`fixed left-1 bottom-3 p-1 cursor-pointer`}>
+                <TagsIcon size={32} color={commonStore.checkTagsChecked() ? '#38BDF8' : '#AAD3F5'} onClick={(e) => {
                     document.getElementById('tagsEl').click()
                 }}/>
 
-                <div className="drawer  ">
+                <div className="drawer  drawer-end">
                     <input id="my-drawer-4" type="checkbox" className="drawer-toggle"/>
                     <div className="drawer-content">
                         {/* Page content here */}
-                        <label htmlFor="my-drawer-4" className="drawer-button btn btn-primary hidden" id={'tagsEl'}>Open
+                        <label htmlFor="my-drawer-4" className="drawer-button btn btn-primary hidden" id={'tagsEl'}
+                               >Open
                             drawer</label>
                     </div>
                     <div className="drawer-side ">
-                        <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
+                        <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"  ></label>
                         <ul className="menu p-4 w-[50vw] max-w-[200px] min-h-full bg-base-200 text-base-content">
                             {/* Sidebar content here */}
 
@@ -264,19 +265,11 @@ function HomeComp() {
             </div>
 
 
-            <div className={`${rootScrollPos > 1 ? null : 'hidden'} fixed left-1 bottom-3 p-1  cursor-pointer`}
-                 onClick={() => {
-                     rootRef.current.scrollTop = 0;
-                 }}>
 
-                <ToTopIcon size={32} color={'#AAD3F5'}/>
-
-            </div>
 
 
             <progress className="fixed top-0 h-[4px] rounded-0 w-screen progress bg-[#0C2036] progress-success"
                       value={rootScrollPos} max="100"></progress>
-
 
 
             {/*<p className="fixed top-5 "*/}

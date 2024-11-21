@@ -1,11 +1,10 @@
 import {ImCalendar as CalendarIcon} from "react-icons/im";
-import {GiTimeBomb as TimeICon} from "react-icons/gi";
-import MDEditor from '@uiw/react-md-editor';
+
 
 import React, {useEffect, useRef, useState} from "react";
 import {observer} from "mobx-react-lite";
 import {useStore} from "../../stores";
-
+import { MdOutlineToc as TOCICon} from "react-icons/md";
 import {useResizeObserver} from "../../hooks/useResizeObserver";
 import AbbreviatedComp from "../../abbreviatedComp/abbreviatedComp";
 import {BiSolidToTop as ToTopIcon} from "react-icons/bi";
@@ -18,6 +17,7 @@ import BackComp from "../../assetsComp/backComp";
 
 import {FaDownload as DownloadIcon} from "react-icons/fa";
 import MarkdownViewer from "../MarkdownComp/MarkdownViewer";
+import TocComp from "../TOCComp/TOCComp";
 
 
 function DetailComp() {
@@ -157,7 +157,7 @@ function DetailComp() {
             </div>
 
 
-            <div className={`${rootScrollPos > 1 ? null : 'hidden'} fixed left-1 bottom-3 p-1  cursor-pointer`}
+            <div className={`${rootScrollPos > 1 ? null : 'hidden'} fixed right-3 bottom-3 p-1  cursor-pointer`}
                  onClick={() => {
                      rootRef.current.scrollTop = 0;
                  }}>
@@ -177,6 +177,33 @@ function DetailComp() {
                 <div className={`skeleton h-4 w-28 bg-[#152231]`}></div>
                 <div className={`skeleton h-4 w-full bg-[#152231]`}></div>
                 <div className={`skeleton h-4 w-full bg-[#152231]`}></div>
+            </div>
+
+
+            .
+            <div className={`fixed left-1 bottom-3 p-1 cursor-pointer`}>
+                <TOCICon size={32} onClick={() => {
+                    document.getElementById('tocEl').click()
+
+                }}/>
+
+                <div className="drawer drawer-end">
+                    <input id="my-drawer-4" type="checkbox" className="drawer-toggle"/>
+                    <div className="drawer-content">
+                        {/* Page content here */}
+                        <label htmlFor="my-drawer-4" className="drawer-button btn btn-primary hidden" id={'tocEl'}>Open
+                            drawer</label>
+                    </div>
+                    <div className="drawer-side ">
+                        <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"
+                               onClick={() => {
+
+                               }}></label>
+
+                        <TocComp markdown={commonStore.articleContent}/>
+
+                    </div>
+                </div>
             </div>
 
 
