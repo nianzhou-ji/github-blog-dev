@@ -4,9 +4,13 @@ import {observer} from "mobx-react-lite";
 import { HashRouter as Router, Route, Routes  } from 'react-router-dom';
 import DetailComp from "./components/detailComp/detailComp";
 import DownloadZip from "./components/TestComp/DownloadZip";
+import {Previewer} from "pagedjs";
+import {useEffect} from "react";
 
 
 function App() {
+
+
 
     return (
 

@@ -1,9 +1,13 @@
 import MarkdownPreview from '@uiw/react-markdown-preview';
-
+import { Previewer } from 'pagedjs';
 import CodeRenderer from "./CodeRenderer";
 import Utils from "../../utils";
+import {useEffect} from "react";
 
 const MarkdownViewer = ({markdownText}) => {
+
+
+
 
     let chapterCounters = { h1: 0, h2: 0, h3: 0, h4: 0, h5: 0, h6: 0 };
 
@@ -11,6 +15,9 @@ const MarkdownViewer = ({markdownText}) => {
 
 
         <MarkdownPreview
+
+
+
             source={markdownText}
             style={{
                 backgroundColor: '#071422',

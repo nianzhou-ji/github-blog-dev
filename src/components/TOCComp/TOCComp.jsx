@@ -53,7 +53,8 @@ const CollapsibleItem = ({item, children}) => {
         }}>
             <div
                 onClick={() => setIsOpen((prev) => !prev)}
-                style={{cursor: children ? "pointer" : "default"}}
+                // style={{cursor: children ? "pointer" : "default"}}
+                style={{cursor:  "pointer" }}
                 className="flex items-center tooltip tooltip-left"
 
                 data-tip={`${item.numbering} ${item.text}`}
@@ -65,7 +66,7 @@ const CollapsibleItem = ({item, children}) => {
                     {item.numbering} {item.text}
                 </span>
                 {children && (
-                    <span className="ml-2 text-blue-500">
+                    <span className="ml-2 text-[#3294F8]">
                         {isOpen ? "[-]" : "[+]"}
                     </span>
                 )}
@@ -105,10 +106,10 @@ const TocComp = ({markdown}) => {
         }
 
 
-        return <ul className={"menu p-2 bg-base-200 text-base-content"}>
+        return <ul className={"menu p-2 bg-base-200 text-base-content min-w-[15vw]"}>
             {/* 在最外层添加额外的 <li> */}
             {parentLevel === 0 && (
-                <li key="extra-item" className="text-gray-500">
+                <li key="extra-item" className="text-[#3294F8] text-xl mb-2 cursor-default">
                     文档目录
                 </li>
             )}

@@ -222,7 +222,7 @@ function HomeComp() {
 
                             <li>
                                 <div className='flex justify-between items-center'>
-                                    <p className='text-2xl text-[#C4D5E3]'>Tags</p>
+                                    <p className='text-2xl text-[#C4D5E3] cursor-default'>Tags</p>
                                     <p className='text-[#7C97B1] cursor-pointer hover:border-b hover:border-[#7C97B1]'
                                        onClick={() => {
                                            commonStore.tags.forEach((item, index) => {

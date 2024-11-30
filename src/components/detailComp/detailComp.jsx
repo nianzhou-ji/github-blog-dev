@@ -20,7 +20,11 @@ import MarkdownViewer from "../MarkdownComp/MarkdownViewer";
 import TocComp from "../TOCComp/TOCComp";
 
 
+
 function DetailComp() {
+
+
+
 
     const [rootScrollPos, setRootScrollPos] = useState(0)
 
@@ -58,7 +62,7 @@ function DetailComp() {
     return (
 
 
-        <div ref={rootRef} onScroll={(e) => {
+        <div id={'testRoot'} ref={rootRef} onScroll={(e) => {
 
             const scrollElement = e.target
 
