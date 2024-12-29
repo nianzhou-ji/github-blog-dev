@@ -13,35 +13,51 @@ export const useBlogsHooks = () => {
         const response = await fetch(markdownUrl);
         if (!response.ok) {
             console.error('Network response was not ok.');
-            return
+            return;
         }
 
         const markdownText = await response.text();
 
-// 正则表达式来匹配Markdown中的图片URL或本地路径
+        // 正则表达式来匹配Markdown中的图片URL或本地路径
         const imgRegex = /(!\[.*?\]\()(([^)]*?\.(?:png|jpg|jpeg|gif|PNG|JPG|JPEG|GIF)))(\))/g;
+        // 正则表达式来匹配Markdown中的视频URL（<video>标签）
+        const videoRegex = /<video[^>]*>\s*<source[^>]*src="([^"]+)"[^>]*>/g;
 
         let match;
+        const urls = [{url: markdownUrl, parentDir: null}];
 
-        const urls = [{url: markdownUrl, parentDir: null},]
-
-// 使用循环来依次匹配并替换URL
+        // 匹配图片URL
         while ((match = imgRegex.exec(markdownText)) !== null) {
-            const url = match[2]; // URL或本地路径
+            const url = match[2]; // 图片URL或本地路径
 
             const parentPath = markdownUrl.substring(0, markdownUrl.lastIndexOf('/'));
 
             if (!url.includes('base64')) {
                 urls.push({
-                    url: parentPath + '/' + url, parentDir: url.substring(0, url.lastIndexOf('/'))
-                })
+                    url: parentPath + '/' + url,
+                    parentDir: url.substring(0, url.lastIndexOf('/'))
+                });
             }
-
-
         }
 
-        return urls
-    }
+        // 匹配视频URL
+        while ((match = videoRegex.exec(markdownText)) !== null) {
+            const videoUrl = match[1]; // 视频URL
+
+            const parentPath = markdownUrl.substring(0, markdownUrl.lastIndexOf('/'));
+
+            if (!videoUrl.includes('base64')) {
+                urls.push({
+                    url: parentPath + '/' + videoUrl,
+                    parentDir: videoUrl.substring(0, videoUrl.lastIndexOf('/'))
+                });
+            }
+        }
+
+
+
+        return urls;
+    };
 
 
     const downloadMarkdownFile = async (markdownUrl, zipFileName = 'output.zip') => {
@@ -80,6 +96,9 @@ export const useBlogsHooks = () => {
                 'text/plain': '.txt',
                 'application/pdf': '.pdf',
                 'text/markdown': '.md',
+                // 'video/mp4': '.mp4',  // 添加 MP4 文件类型
+
+                'video/webm': '.webm',  // 添加 WebM 文件类型
                 // 添加更多你需要的 MIME 类型
             };
 
@@ -125,48 +144,187 @@ export const useBlogsHooks = () => {
 
 
     const replaceMarkdownUrl = async (markdownText, prefix, id) => {
-
-        const convertImageUrlToBlobUrl = async (imageUrl) => {
-            if (location.pathname === '/') return
-            const response = await fetch(imageUrl);
+        const convertMediaUrlToBlobUrl = async (mediaUrl) => {
+            if (location.pathname === '/') return;
+            const response = await fetch(mediaUrl);
             const blob = await response.blob();
             const blobUrl = URL.createObjectURL(blob);
             return blobUrl;
-        }
+        };
+
+        const replaceImageUrl = async (markdownText, prefix) => {
+            const imgRegex = /(!\[.*?\]\()(([^)]*?\.(?:png|jpg|jpeg|gif|PNG|JPG|JPEG|GIF)))(\))/g;
+
+            let match;
+            let updatedMarkdownText = markdownText;
+
+            // 使用循环来依次匹配并替换图片URL
+            while ((match = imgRegex.exec(markdownText)) !== null) {
+                if (location.pathname === '/') return;
+                if (commonStore.articleObj === null) return;
+                if (id !== commonStore.articleObj.id) return;
+
+                const fullMatch = match[0]; // 完整的匹配字符串
+                const url = match[2]; // 图片URL或本地路径
+
+                if (!url.includes('base64')) {
+                    const imageUrl = prefix + '/' + url;
+                    const blobUrl = await convertMediaUrlToBlobUrl(imageUrl);
+                    const newUrl = blobUrl; // 生成新的URL
+
+                    // 替换旧的URL为新的URL
+                    updatedMarkdownText = updatedMarkdownText.replace(fullMatch, `${match[1]}${newUrl}${match[4]}`);
+                    commonStore.setArticleContent(updatedMarkdownText);
+                }
+            }
+
+            return updatedMarkdownText;
+        };
+
+        const replaceVideoUrl = async (markdownText, prefix) => {
+            const videoRegex = /<video[^>]*>\s*<source[^>]*src="([^"]+)"[^>]*>/g;
+
+            let match;
+            let updatedMarkdownText = markdownText;
+
+            // 使用循环来依次匹配并替换视频URL
+            while ((match = videoRegex.exec(markdownText)) !== null) {
+                if (location.pathname === '/') return;
+                if (commonStore.articleObj === null) return;
+                if (id !== commonStore.articleObj.id) return;
+
+                const fullMatch = match[0]; // 完整的匹配字符串
+                const videoUrl = match[1]; // 视频URL
+
+                if (!videoUrl.includes('base64')) {
+                    const fullVideoUrl = prefix + '/' + videoUrl;
+                    console.log(videoUrl, 'videoUrl');
+                    const blobUrl = await convertMediaUrlToBlobUrl(fullVideoUrl);
+                    const newUrl = blobUrl; // 生成新的URL
+
+                    // 替换旧的URL为新的URL
+                    updatedMarkdownText = updatedMarkdownText.replace(fullMatch, `<video><source src="${newUrl}">`);
+                    commonStore.setArticleContent(updatedMarkdownText);
+                }
+            }
+
+            return updatedMarkdownText;
+        };
 
 
-// 正则表达式来匹配Markdown中的图片URL或本地路径
-        const imgRegex = /(!\[.*?\]\()(([^)]*?\.(?:png|jpg|jpeg|gif|PNG|JPG|JPEG|GIF)))(\))/g;
+        // 解析并获取章节信息
+        const getChapterHeaders = (markdownText) => {
+            const headerRegex = /^(#) (.*?)$/gm;  // 匹配一级标题 # 后面跟着的章节标题
+            const chapterHeaders = [];
+            let match;
 
-        let match;
-        let updatedMarkdownText = markdownText;
+            // 遍历所有一级标题并记录章节号及行号
+            while ((match = headerRegex.exec(markdownText)) !== null) {
+                chapterHeaders.push({
+                    chapterNumber: chapterHeaders.length + 1, // 章节号
+                    headerText: match[2], // 章节标题
+                    lineIndex: match.index // 标题所在的行索引位置
+                });
+            }
 
-// 使用循环来依次匹配并替换URL
-        while ((match = imgRegex.exec(markdownText)) !== null) {
-            if (location.pathname === '/') return
+            return chapterHeaders;
+        };
 
-            if (commonStore.articleObj === null) return
+        // 根据 data-caption 的值识别类型并进行处理
+        const getTypeFromCaption = (captionText) => {
+            if (captionText.toLowerCase().includes('figure')) {
+                return '图';
+            } else if (captionText.toLowerCase().includes('video')) {
+                return '视频';
+            } else if (captionText.toLowerCase().includes('table')) {
+                return '表';
+            }
+            return '未知';
+        };
 
-            if (id !== commonStore.articleObj.id) return
 
-            const fullMatch = match[0]; // 完整的匹配字符串
-            const url = match[2]; // URL或本地路径
-            if (!url.includes('base64')) {
-                const imageUrl = prefix + '/' + url
-                const blodUrl = await convertImageUrlToBlobUrl(imageUrl)
+        const replaceDivText = (markdownText, chapterHeaders) => {
+            const divRegex = /<div[^>]*data-caption=["']([^"']+)["'][^>]*>(.*?)<\/div>/g;
+            let match;
+            let updatedMarkdownText = markdownText;
+            let divCount = 0; // 记录带 data-caption 属性的 div 出现的次数
+            let currentChapterIndex = -1; // 当前所在章节的索引
 
-                const newUrl = blodUrl; // 生成新的URL
+            // 遍历所有 div 标签并处理
+            while ((match = divRegex.exec(markdownText)) !== null) {
+                if (location.pathname === '/') return;
+                if (commonStore.articleObj === null) return;
+                if (id !== commonStore.articleObj.id) return;
 
-                // 替换旧的URL为新的URL
-                updatedMarkdownText = updatedMarkdownText.replace(fullMatch, `${match[1]}${newUrl}${match[4]}`);
+                const fullMatch = match[0]; // 完整的匹配字符串
+                const captionValue = match[1]; // 获取 data-caption 属性的值
+                const originalText = match[2]; // div 中的原始文本（例如 image-20241218102810074）
+
+                // 获取当前 <div> 标签的位置
+                const divIndex = match.index;
+
+                // 查找该 div 上面的最近一级标题
+                let chapterIndex = -1;
+
+                // 查找该 div 所在章节的行号
+                for (let i = 0; i < chapterHeaders.length; i++) {
+                    const chapterHeader = chapterHeaders[i];
+
+                    // 如果 <div> 位于该章节标题之下，则该 div 属于该章节
+                    if (divIndex >= chapterHeader.lineIndex) {
+                        chapterIndex = i;
+                    } else {
+                        break;
+                    }
+                }
+
+                // 如果找到了章节号
+                const chapterNumber = chapterIndex !== -1 ? chapterHeaders[chapterIndex].chapterNumber : '未知';
+
+                // 如果当前章节发生变化，则重置 divCount 为 1
+                if (chapterIndex !== currentChapterIndex) {
+                    divCount = 1; // 重新开始编号
+                    currentChapterIndex = chapterIndex; // 更新当前章节
+                } else {
+                    divCount += 1; // 在同一章节内，增加编号
+                }
+
+                // 根据 data-caption 的值判断是图、视频还是表
+                const type = getTypeFromCaption(captionValue);
+
+                // 拼接新的文本：类型 + 章节号 + 索引编号 + 原始文本
+                const newText = `${type} ${chapterNumber}-${divCount}: ${originalText}`;
+
+                // 替换 div 标签内的文本内容，保留原有的 data-caption 和其他属性
+                updatedMarkdownText = updatedMarkdownText.replace(fullMatch, (match) => {
+                    return match.replace(originalText, newText);
+                });
+
+                // 更新文章内容
                 commonStore.setArticleContent(updatedMarkdownText);
             }
 
+            return updatedMarkdownText;
+        };
 
-        }
 
 
-    }
+
+        // 先替换图片URL
+        let updatedMarkdownText = await replaceImageUrl(markdownText, prefix);
+
+        // 再替换视频URL
+        updatedMarkdownText = await replaceVideoUrl(updatedMarkdownText, prefix);
+
+
+        // 获取所有章节标题及其行号
+        const chapterHeaders = getChapterHeaders(updatedMarkdownText);
+
+        // 最后替换 div 中的文本
+        updatedMarkdownText = replaceDivText(updatedMarkdownText, chapterHeaders);
+
+        return updatedMarkdownText;
+    };
 
 
     const initApp = async () => {

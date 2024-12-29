@@ -3,58 +3,89 @@
 @tailwind utilities;
 
 
-
-
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
 
-  .w-md-editor-toolbar{
-    & svg {
-      width: 1.3rem;
-      height: 1.3rem;
+    .w-md-editor-toolbar {
+        & svg {
+            width: 1.3rem;
+            height: 1.3rem;
+        }
     }
-  }
+
+    .wmde-markdown table thead>tr {
+        background-color: #0D1116 !important;
+    }
+
+    .wmde-markdown table tbody>tr {
+        background-color: #161B22 !important;
+    }
 
 
+    /* 设置整个表格的边框 */
+    .wmde-markdown table td, table th {
+        border: 2px solid #30363D  !important; /* 加粗的黑色边框 */
+        padding: 4px  !important; /* 设置内边距，让单元格内容有一些间距 */
+
+    }
 
 
-  .wmde-markdown ol {
-    list-style: null !important;
-  }
+    /* 设置整个表格的边框 */
+    .wmde-markdown table td {
+        text-align: center !important; /* 水平居中 */
+        vertical-align: middle !important; /* 垂直居中 */
 
-  .wmde-markdown ul {
-    list-style: unset !important;
-  }
-
-
-  .JpSearchHighlight{
-    border: #38BDF8 solid 2px;
-  }
-
-  .JpInputFocusClass:focus{
-    border: 2px solid #38BDF8;  /* 设置边框为2像素的实线，颜色为蓝色 */
-  }
+    }
 
 
-  #JpRoot {
-    overflow: auto; /* 启用滚动 */
-    -ms-overflow-style: none;  /* IE和Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
+    .rehype-figure figcaption {
+        text-align: center;
+    }
 
-  #JpRoot::-webkit-scrollbar {
-    display: none;  /* Chrome, Safari 和 Opera */
-  }
+
+    .wmde-markdown table {
+        width: 100% !important;
+        display: table !important;
+    }
+
+
+    .wmde-markdown ol {
+        list-style: null !important;
+    }
+
+    .wmde-markdown ul {
+        list-style: unset !important;
+    }
+
+
+    .JpSearchHighlight {
+        border: #38BDF8 solid 2px;
+    }
+
+    .JpInputFocusClass:focus {
+        border: 2px solid #38BDF8; /* 设置边框为2像素的实线，颜色为蓝色 */
+    }
+
+
+    #JpRoot {
+        overflow: auto; /* 启用滚动 */
+        -ms-overflow-style: none; /* IE和Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+
+    #JpRoot::-webkit-scrollbar {
+        display: none; /* Chrome, Safari 和 Opera */
+    }
 
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }

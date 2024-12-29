@@ -18,6 +18,7 @@ import BackComp from "../../assetsComp/backComp";
 import {FaDownload as DownloadIcon} from "react-icons/fa";
 import MarkdownViewer from "../MarkdownComp/MarkdownViewer";
 import TocComp from "../TOCComp/TOCComp";
+import {useReactToPrint} from "react-to-print";
 
 
 
@@ -57,6 +58,8 @@ function DetailComp() {
     const [headRef, headSize] = useResizeObserver()
 
     const rootRef = useRef(null);
+
+
 
 
     return (
@@ -143,9 +146,12 @@ function DetailComp() {
 
                             const item = commonStore.articles.find(item => item.id === params.id)
                             const res = await downloadMarkdownFile(`/blogs/${item.url}`)
-                            console.log(res)
+
 
                         }}/>
+
+
+
 
                     </div>
                 </div>
@@ -155,7 +161,7 @@ function DetailComp() {
 
 
             <div
-                className={`${commonStore.isLoaded ? null : 'hidden'} mt-[150px] mb-[100px] w-[80vw]`}
+                className={`${commonStore.isLoaded ? null : 'hidden'} mt-[150px] mb-[100px] w-[80vw] `}
                 data-color-mode="dark">
                 <MarkdownViewer markdownText={commonStore.articleContent}/>
             </div>
